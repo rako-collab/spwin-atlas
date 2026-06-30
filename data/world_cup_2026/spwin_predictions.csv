@@ -1,4 +1,6 @@
 match_id,engine_version,pre_match_grade,recommendation,stake_pct,result,profit_loss_units,clv_status,notes
 WC2026-R32-001,SPWIN v2.4 Platinum Pro,B-/C+,Canada 90-min win,1-2%,Win,,Unknown,Canada won 1-0; recommendation was hold if already bought and no top-up
 WC2026-R32-001,SPWIN-Live v2.4,N/A,Hold existing Canada ticket; no new bet,0%,Correct live management,,N/A,82-minute live data showed Canada pressure but limited time
-WC2026-R32-002,SPWIN v2.4 Platinum Pro,C+,Brazil -0.75 small or PASS,0-1%,Win,,Unknown,Brazil won 2-1; handicap grading requires exact AH settlement review
+WC2026-R32-002,SPWIN v2.4 Platinum Pro,C+,Brazil -0.75 small or PASS,0-1%,Win,,Unknown,Brazil won 2-1; Brazil-side read was directionally correct
+WC2026-R32-003,SPWIN v2.4 Platinum Pro,B-/C+,Germany -1.25 small or PASS,0-1%,Loss,,Negative,Germany drew 1-1 and Paraguay advanced on penalties; validates caution against A-grade upgrade
+WC2026-R32-004,SPWIN v2.4 Platinum Pro,PASS,No pre-match bet,0%,Correct pass,,N/A,Netherlands-Morocco finished 1-1 and Morocco advanced on penalties; trap profile validated
