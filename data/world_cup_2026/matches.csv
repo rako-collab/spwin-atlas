@@ -1,0 +1,3 @@
+match_id,tournament,stage,date_sgt,kickoff_sgt,home_team,away_team,ht_score,ft_score,winner,btts,total_goals,over_2_5,odd_even,data_quality,source_result,source_odds,source_stats,notes
+WC2026-R32-001,World Cup 2026,Round of 32,2026-06-29,03:00,South Africa,Canada,0-0,0-1,Canada,No,1,No,Odd,4,World Cup game record,SGOdds event 140174,Live stats provided in SPWIN chat,Canada late 1-0 win; validates Canada selection Under 2.5 and BTTS No
+WC2026-R32-002,World Cup 2026,Round of 32,2026-06-30,01:00,Brazil,Japan,,2-1,Brazil,Yes,3,Yes,Odd,3,World Cup game record,SGOdds event 140179,,Brazil won 2-1; added as completed fixture seed pending full odds/stat backfill
