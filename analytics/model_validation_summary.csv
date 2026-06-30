@@ -1,9 +1,10 @@
 metric,value,notes
-total_recommendations,0,Template until SPWIN validation rows are populated
-total_bets,0,Only non-PASS recommendations with stake_units greater than zero
-total_passes,0,PASS decisions tracked separately
-total_staked_units,0,
-total_profit_loss_units,0,
-roi_pct,,Calculated after validation records are populated
-avg_clv,,Calculated after closing odds are populated
-calibration_error,,Calculated after predicted probabilities are populated
+total_recommendations,5,Initial records from SPWIN chat decisions only
+total_bets,3,Non-PASS recommendations with normalized 1-unit stake
+total_passes,1,Formal PASS decision for Netherlands/Holland vs Morocco
+total_live_management_records,1,SPWIN-Live hold/no-new-bet decision
+total_staked_units,3,Normalized units for validation; actual user stake not recorded
+total_profit_loss_units,0.42,Canada +0.60 Brazil AH +0.82 Germany -1.00
+roi_pct,14.00,Initial small sample only; not statistically meaningful
+avg_clv,-0.15,Only Canada record has odds_taken and closing_odds available
+calibration_error,,Requires larger sample and more complete predicted probabilities
