@@ -1,0 +1,6 @@
+grade,total_recommendations,total_bets,wins,losses,pushes,total_staked_units,total_profit_loss_units,roi_pct,hit_rate_pct,notes
+A+,0,0,0,0,0,0,0,,,Template
+A,0,0,0,0,0,0,0,,,Template
+B,0,0,0,0,0,0,0,,,Template
+C,0,0,0,0,0,0,0,,,Template
+PASS,0,0,0,0,0,0,0,,,PASS accuracy tracked in pass_performance.csv
