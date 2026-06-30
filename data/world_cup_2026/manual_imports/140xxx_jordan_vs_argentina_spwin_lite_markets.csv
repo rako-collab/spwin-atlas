@@ -1,0 +1,11 @@
+match_id,source_event_id,match,date,ht_score,ft_score,market,selection,team,line,opening_odds,closing_odds,movement_pct,result,notes
+WC2026-GS-JOR-ARG,unknown,Jordan vs Argentina,2026-06-28,0-2,1-3,1X2,Jordan,Jordan,,12.00,21.00,75.0,Loss,User-provided SGOdds past odds text
+WC2026-GS-JOR-ARG,unknown,Jordan vs Argentina,2026-06-28,0-2,1-3,1X2,Draw,Draw,,5.20,8.50,63.5,Loss,User-provided SGOdds past odds text
+WC2026-GS-JOR-ARG,unknown,Jordan vs Argentina,2026-06-28,0-2,1-3,1X2,Argentina,Argentina,,1.18,1.05,-11.0,Win,User-provided SGOdds past odds text
+WC2026-GS-JOR-ARG,unknown,Jordan vs Argentina,2026-06-28,0-2,1-3,AH,Jordan +2.5,Jordan,+2.5,1.45,1.75,20.7,Loss,User-provided SGOdds past odds text
+WC2026-GS-JOR-ARG,unknown,Jordan vs Argentina,2026-06-28,0-2,1-3,AH,Argentina -2.5,Argentina,-2.5,2.32,1.82,-21.6,Win,User-provided SGOdds past odds text
+WC2026-GS-JOR-ARG,unknown,Jordan vs Argentina,2026-06-28,0-2,1-3,BTTS,Yes,,,2.15,2.70,25.6,Win,User-provided SGOdds past odds text
+WC2026-GS-JOR-ARG,unknown,Jordan vs Argentina,2026-06-28,0-2,1-3,BTTS,No,,,1.53,1.33,-13.1,Loss,User-provided SGOdds past odds text
+WC2026-GS-JOR-ARG,unknown,Jordan vs Argentina,2026-06-28,0-2,1-3,HT_1X2,Jordan,Jordan,,9.50,13.00,36.8,Loss,User-provided SGOdds past odds text
+WC2026-GS-JOR-ARG,unknown,Jordan vs Argentina,2026-06-28,0-2,1-3,HT_1X2,Draw,Draw,,2.55,2.85,11.8,Loss,User-provided SGOdds past odds text
+WC2026-GS-JOR-ARG,unknown,Jordan vs Argentina,2026-06-28,0-2,1-3,HT_1X2,Argentina,Argentina,,1.55,1.42,-8.4,Win,User-provided SGOdds past odds text
