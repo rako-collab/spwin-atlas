@@ -1,1 +1,2 @@
 source_event_id,source_url,input_file,import_status,markets_detected,rows_written,warnings,captured_at_sgt,notes
+140174,https://sgodds.com/football/results-past-odds/South-Africa-vs-Canada-140174,web.run:turn956562view1,partial_verified_import,20,50,manual_web_extraction_only_for_single_match,2026-06-30T23:59:00+08:00,Verified key markets from SGOdds detail page; full archive not yet batch-imported
