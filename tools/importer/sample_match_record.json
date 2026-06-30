@@ -1,0 +1,62 @@
+{
+  "match_id": "WC2026-R32-001",
+  "tournament": "World Cup 2026",
+  "stage": "Round of 32",
+  "date_sgt": "2026-06-29",
+  "kickoff_sgt": "03:00",
+  "home_team": "South Africa",
+  "away_team": "Canada",
+  "ht_score": "0-0",
+  "ft_score": "0-1",
+  "winner": "Canada",
+  "btts": "No",
+  "total_goals": 1,
+  "over_2_5": "No",
+  "odd_even": "Odd",
+  "data_quality": 4,
+  "source_result": "World Cup game record",
+  "source_odds": "SGOdds event 140174",
+  "source_stats": "Live stats provided in SPWIN chat",
+  "notes": "Canada late 1-0 win; validates Canada selection, Under 2.5 and BTTS No.",
+  "odds": [
+    {
+      "market": "1X2",
+      "selection": "Canada",
+      "line": "",
+      "opening_odds": 1.67,
+      "current_odds": 1.60,
+      "closing_odds": 1.75,
+      "source": "SGOdds/Singapore Pools",
+      "captured_at_sgt": "2026-06-29",
+      "notes": "User bought Canada 90-min win around 1.60."
+    }
+  ],
+  "spwin_predictions": [
+    {
+      "engine_version": "SPWIN v2.4 Platinum Pro",
+      "pre_match_grade": "B-/C+",
+      "recommendation": "Canada 90-min win",
+      "stake_pct": "1-2%",
+      "result": "Win",
+      "profit_loss_units": "",
+      "clv_status": "Unknown",
+      "notes": "Recommendation was hold if already bought and no top-up."
+    }
+  ],
+  "live_snapshots": [
+    {
+      "minute": 82,
+      "score": "0-0",
+      "home_xg": 0.10,
+      "away_xg": 1.23,
+      "home_sot": 1,
+      "away_sot": 6,
+      "home_corners": 1,
+      "away_corners": 4,
+      "home_possession": 57,
+      "away_possession": 43,
+      "live_engine_decision": "Hold existing Canada ticket; no new bet",
+      "notes": "Canada had strong chance quality edge but limited time remained."
+    }
+  ]
+}
