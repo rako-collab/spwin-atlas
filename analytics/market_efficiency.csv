@@ -1,0 +1,6 @@
+stage,market_outcome,matches,pct_within_stage
+Group Stage,market_correct,46,0.639
+Group Stage,market_draw_miss,20,0.278
+Group Stage,market_upset,6,0.083
+Round of 32,market_correct,2,0.5
+Round of 32,market_upset,2,0.5
