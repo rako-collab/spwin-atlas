@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SPWIN Module Score Record",
+  "type": "object",
+  "required": ["match_id", "engine_version"],
+  "properties": {
+    "match_id": {"type": "string"},
+    "engine_version": {"type": "string"},
+    "team_strength_score": {"type": ["number", "null"]},
+    "current_form_score": {"type": ["number", "null"]},
+    "market_value_score": {"type": ["number", "null"]},
+    "motivation_context_score": {"type": ["number", "null"]},
+    "historical_pattern_score": {"type": ["number", "null"]},
+    "trap_deduction": {"type": ["number", "null"]},
+    "final_score": {"type": ["number", "null"]},
+    "grade": {"type": "string"},
+    "recommendation": {"type": "string"},
+    "notes": {"type": "string"}
+  }
+}
