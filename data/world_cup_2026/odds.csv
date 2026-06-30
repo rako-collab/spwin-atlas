@@ -1,16 +1,29 @@
 match_id,market,selection,line,opening_odds,current_odds,closing_odds,source,captured_at_sgt,notes
-WC2026-R32-001,1X2,Canada,,1.67,1.60,1.75,SGOdds/Singapore Pools,2026-06-29,User bought Canada 90-min win around 1.60; SGOdds movement noted 1.67 to 1.75
+WC2026-GA-005,1X2,Czech Republic,,2.95,,4.40,SGOdds event 5860,2026-06-25,SGOdds Results and Past Odds page listed FT 0-3 and closing 1X2 home 4.40 draw 3.50 away 1.60
+WC2026-GA-005,1X2,Draw,,3.40,,3.50,SGOdds event 5860,2026-06-25,Draw closing moved to 3.50
+WC2026-GA-005,1X2,Mexico,,2.05,,1.60,SGOdds event 5860,2026-06-25,Mexico shortened strongly and won 3-0
+WC2026-GA-006,1X2,South Africa,,5.20,,5.80,SGOdds event 5814,2026-06-25,SGOdds Results and Past Odds page listed FT 1-0 and closing 1X2 home 5.80 draw 3.70 away 1.45
+WC2026-GA-006,1X2,Draw,,3.40,,3.70,SGOdds event 5814,2026-06-25,Draw closing moved to 3.70
+WC2026-GA-006,1X2,Korea Republic,,1.58,,1.45,SGOdds event 5814,2026-06-25,Korea Republic shortened but lost 1-0
+WC2026-R32-001,1X2,South Africa,,4.50,,4.50,SGOdds event 5809,2026-06-29,SGOdds Results and Past Odds page listed FT 0-1 and closing 1X2 home 4.50 draw 3.05 away 1.75
+WC2026-R32-001,1X2,Draw,,3.20,,3.05,SGOdds event 5809,2026-06-29,Draw shortened into close
+WC2026-R32-001,1X2,Canada,,1.67,1.60,1.75,SGOdds event 5809/Singapore Pools,2026-06-29,User bought Canada around 1.60; SGOdds listed close 1.75
 WC2026-R32-001,Asian Handicap,Canada,-0.50,,,1.75,SGOdds,2026-06-29,Closing AH noted as Canada -0.50 1.75
 WC2026-R32-001,Total Goals,Under 2.5,2.5,,,1.70,SGOdds,2026-06-29,Under profile landed
 WC2026-R32-001,BTTS,No,,,,1.80,SGOdds,2026-06-29,BTTS No landed
-WC2026-R32-002,1X2,Brazil,,1.60,1.53,,SGOdds,2026-06-29 19:50,Brazil shortened before kickoff
-WC2026-R32-002,Asian Handicap,Brazil,-0.75,1.87,1.82,,SGOdds,2026-06-29 19:50,Slight Brazil support
-WC2026-R32-002,Total Goals,Over 2.5,2.5,1.87,1.80,,SGOdds,2026-06-29 19:50,Over shortened
-WC2026-R32-002,BTTS,Yes,,1.85,1.75,,SGOdds,2026-06-29 19:50,BTTS Yes shortened
-WC2026-R32-003,1X2,Germany,,1.27,1.20,,SGOdds,2026-06-29 19:50,Germany price compressed before kickoff
-WC2026-R32-003,Asian Handicap,Germany,-1.25,1.75,1.70,,SGOdds,2026-06-29 19:50,Handicap support but value remained limited
-WC2026-R32-003,Total Goals,Over 2.5,2.5,1.65,1.60,,SGOdds,2026-06-29 19:50,Over shortened
-WC2026-R32-004,1X2,Netherlands,,1.85,1.92,,SGOdds,2026-06-29 19:50,Netherlands drifted before kickoff
-WC2026-R32-004,1X2,Draw,,3.10,2.95,,SGOdds,2026-06-29 19:50,Draw shortened before kickoff
-WC2026-R32-004,Asian Handicap,Morocco,+0.25,1.97,1.85,,SGOdds,2026-06-29 19:50,Morocco plus handicap strengthened
-WC2026-R32-004,Total Goals,Under 2.5,2.5,1.65,1.65,,SGOdds,2026-06-29 19:50,Under remained favoured
+WC2026-R32-002,1X2,Brazil,,1.60,1.53,1.67,SGOdds event 5825,2026-06-30,SGOdds Results and Past Odds page listed FT 2-1 and closing 1X2 home 1.67 draw 3.30 away 4.30
+WC2026-R32-002,1X2,Draw,,3.60,,3.30,SGOdds event 5825,2026-06-30,Draw shortened at close
+WC2026-R32-002,1X2,Japan,,4.30,,4.30,SGOdds event 5825,2026-06-30,Japan closing remained 4.30
+WC2026-R32-002,Asian Handicap,Brazil,-0.75,1.87,1.82,,SGOdds event 140179,2026-06-29 19:50,Slight Brazil support before kickoff
+WC2026-R32-002,Total Goals,Over 2.5,2.5,1.87,1.80,,SGOdds event 140179,2026-06-29 19:50,Over shortened and landed
+WC2026-R32-002,BTTS,Yes,,1.85,1.75,,SGOdds event 140179,2026-06-29 19:50,BTTS Yes shortened and landed
+WC2026-R32-003,1X2,Germany,,1.27,1.20,1.23,SGOdds event 5815,2026-06-30,SGOdds Results and Past Odds page listed FT 1-1 and closing 1X2 home 1.23 draw 5.00 away 9.50
+WC2026-R32-003,1X2,Draw,,4.50,,5.00,SGOdds event 5815,2026-06-30,Draw drifted but landed in 90 minutes
+WC2026-R32-003,1X2,Paraguay,,8.00,,9.50,SGOdds event 5815,2026-06-30,Paraguay drifted but advanced on penalties
+WC2026-R32-003,Asian Handicap,Germany,-1.25,1.75,1.70,,SGOdds event 140205,2026-06-29 19:50,Handicap support but value remained limited
+WC2026-R32-003,Total Goals,Over 2.5,2.5,1.65,1.60,,SGOdds event 140205,2026-06-29 19:50,Over shortened but match finished 1-1
+WC2026-R32-004,1X2,Netherlands,,1.85,1.92,1.85,SGOdds event 5842,2026-06-30,SGOdds Results and Past Odds page listed FT 1-1 and closing 1X2 home 1.85 draw 3.20 away 3.70
+WC2026-R32-004,1X2,Draw,,3.10,2.95,3.20,SGOdds event 5842,2026-06-30,Draw close 3.20 and 90-min draw landed
+WC2026-R32-004,1X2,Morocco,,3.60,,3.70,SGOdds event 5842,2026-06-30,Morocco advanced on penalties after 1-1
+WC2026-R32-004,Asian Handicap,Morocco,+0.25,1.97,1.85,,SGOdds event 140180,2026-06-29 19:50,Morocco plus handicap strengthened
+WC2026-R32-004,Total Goals,Under 2.5,2.5,1.65,1.65,,SGOdds event 140180,2026-06-29 19:50,Under remained favoured and landed
