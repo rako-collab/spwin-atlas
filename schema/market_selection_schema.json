@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SPWIN Market Selection Record",
+  "type": "object",
+  "required": [
+    "match_id",
+    "source_event_id",
+    "market_code",
+    "market_name",
+    "selection"
+  ],
+  "properties": {
+    "match_id": {"type": "string"},
+    "source_event_id": {"type": "string"},
+    "source_url": {"type": "string"},
+    "market_code": {"type": "string"},
+    "market_name": {"type": "string"},
+    "period": {"type": "string"},
+    "selection": {"type": "string"},
+    "team": {"type": "string"},
+    "line": {"type": "string"},
+    "opening_odds": {"type": ["number", "null"]},
+    "closing_odds": {"type": ["number", "null"]},
+    "current_odds": {"type": ["number", "null"]},
+    "result_status": {"type": "string"},
+    "settlement_rule": {"type": "string"},
+    "captured_at_sgt": {"type": "string"},
+    "data_quality": {"type": "integer", "minimum": 1, "maximum": 5},
+    "notes": {"type": "string"}
+  }
+}
