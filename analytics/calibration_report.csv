@@ -1,6 +1,6 @@
 confidence_band,total_predictions,expected_avg_probability,actual_hit_rate,calibration_error,notes
-50-59,0,,,,Template
-60-69,0,,,,Template
-70-79,0,,,,Template
-80-89,0,,,,Template
-90-100,0,,,,Template
+50-59,1,0.55,1.00,0.45,Canada 1X2 won but sample size too small
+60-69,1,0.69,1.00,0.31,Brazil -0.75 won but sample size too small
+70-79,1,0.70,0.00,-0.70,Germany -1.25 lost; illustrates overconfidence risk on short favourites
+80-89,0,,,,No records yet
+90-100,0,,,,No records yet
