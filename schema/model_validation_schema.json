@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SPWIN Model Validation Record",
+  "type": "object",
+  "required": [
+    "match_id",
+    "engine_version",
+    "market",
+    "selection",
+    "grade",
+    "result"
+  ],
+  "properties": {
+    "match_id": {"type": "string"},
+    "engine_version": {"type": "string"},
+    "market": {"type": "string"},
+    "selection": {"type": "string"},
+    "odds_taken": {"type": ["number", "null"]},
+    "closing_odds": {"type": ["number", "null"]},
+    "stake_units": {"type": ["number", "null"]},
+    "predicted_probability": {"type": ["number", "null"]},
+    "grade": {"type": "string"},
+    "confidence_band": {"type": "string"},
+    "result": {"type": "string"},
+    "profit_loss_units": {"type": ["number", "null"]},
+    "clv": {"type": ["number", "null"]},
+    "stage": {"type": "string"},
+    "favourite_closing_odds_band": {"type": "string"},
+    "pass_reason": {"type": "string"},
+    "notes": {"type": "string"}
+  }
+}
