@@ -1,6 +1,7 @@
 grade,total_recommendations,total_bets,wins,losses,pushes,total_staked_units,total_profit_loss_units,roi_pct,hit_rate_pct,notes
-A+,0,0,0,0,0,0,0,,,Template
-A,0,0,0,0,0,0,0,,,Template
-B,0,0,0,0,0,0,0,,,Template
-C,0,0,0,0,0,0,0,,,Template
-PASS,0,0,0,0,0,0,0,,,PASS accuracy tracked in pass_performance.csv
+A+,0,0,0,0,0,0,0,,,No A+ records yet
+A,0,0,0,0,0,0,0,,,No A records yet
+B,1,1,1,0,0,1,0.82,82.00,100.00,Brazil -0.75 won on Brazil 2-1 Japan
+B-/C+,2,2,1,1,0,2,-0.40,-20.00,50.00,Canada 1X2 won; Germany -1.25 lost
+PASS,1,0,0,0,0,0,0,,100.00,Pass effectiveness tracked separately; Holland/Morocco PASS correct
+N/A,1,0,0,0,0,0,0,,100.00,SPWIN-Live hold/no-new-bet record correct
