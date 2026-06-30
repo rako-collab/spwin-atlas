@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SPWIN Match Record",
+  "type": "object",
+  "required": ["match_id", "tournament", "stage", "date_sgt", "home_team", "away_team", "ft_score", "data_quality"],
+  "properties": {
+    "match_id": {"type": "string"},
+    "tournament": {"type": "string"},
+    "stage": {"type": "string"},
+    "date_sgt": {"type": "string", "format": "date"},
+    "home_team": {"type": "string"},
+    "away_team": {"type": "string"},
+    "ht_score": {"type": "string"},
+    "ft_score": {"type": "string"},
+    "winner": {"type": "string"},
+    "btts": {"type": "string", "enum": ["Yes", "No", "Unknown"]},
+    "total_goals": {"type": "integer"},
+    "over_2_5": {"type": "string", "enum": ["Yes", "No", "Unknown"]},
+    "odd_even": {"type": "string", "enum": ["Odd", "Even", "Unknown"]},
+    "data_quality": {"type": "integer", "minimum": 1, "maximum": 5},
+    "source_result": {"type": "string"},
+    "source_odds": {"type": "string"},
+    "source_stats": {"type": "string"}
+  }
+}
