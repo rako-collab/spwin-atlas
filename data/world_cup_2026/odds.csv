@@ -1,0 +1,9 @@
+match_id,market,selection,line,opening_odds,current_odds,closing_odds,source,captured_at_sgt,notes
+WC2026-R32-001,1X2,Canada,,1.67,1.60,1.75,SGOdds/Singapore Pools,2026-06-29,User bought Canada 90-min win around 1.60; SGOdds movement noted 1.67 to 1.75
+WC2026-R32-001,Asian Handicap,Canada,-0.50,,,1.75,SGOdds,2026-06-29,Closing AH noted as Canada -0.50 1.75
+WC2026-R32-001,Total Goals,Under 2.5,2.5,,,1.70,SGOdds,2026-06-29,Under profile landed
+WC2026-R32-001,BTTS,No,,,,1.80,SGOdds,2026-06-29,BTTS No landed
+WC2026-R32-002,1X2,Brazil,,1.60,1.53,,SGOdds,2026-06-29 19:50,Brazil shortened before kickoff
+WC2026-R32-002,Asian Handicap,Brazil,-0.75,1.87,1.82,,SGOdds,2026-06-29 19:50,Slight Brazil support
+WC2026-R32-002,Total Goals,Over 2.5,2.5,1.87,1.80,,SGOdds,2026-06-29 19:50,Over shortened
+WC2026-R32-002,BTTS,Yes,,1.85,1.75,,SGOdds,2026-06-29 19:50,BTTS Yes shortened
