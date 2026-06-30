@@ -2,6 +2,20 @@
 
 This file records the public sources used for Phase 1 SPWIN Atlas backfill.
 
+## WC2026-GA-005 Czechia vs Mexico
+
+- Result: Czechia 0-3 Mexico.
+- Main source: Guardian live report, Czechia 0-3 Mexico: World Cup 2026 as it happened.
+- Supporting source: The Sun match report.
+- Notes: Mexico completed Group A with 9 points and no goals conceded.
+
+## WC2026-GA-006 South Africa vs South Korea
+
+- Result: South Africa 1-0 South Korea.
+- Main source: Guardian live report summary from Czechia vs Mexico article.
+- Supporting source: The Sun match report.
+- Notes: South Africa finished second in Group A and advanced to the Round of 32.
+
 ## WC2026-R32-001 South Africa vs Canada
 
 - Result: Canada 1-0 South Africa.
