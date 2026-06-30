@@ -1,0 +1,74 @@
+name: SPWIN Backtest
+
+on:
+  workflow_dispatch:
+    inputs:
+      competition:
+        description: Competition dataset to backtest
+        required: true
+        default: world_cup_2026
+        type: choice
+        options:
+          - world_cup_2026
+      engine:
+        description: SPWIN engine version
+        required: true
+        default: v2.5
+        type: choice
+        options:
+          - v2.5
+      markets:
+        description: Market set
+        required: true
+        default: 1x2
+        type: choice
+        options:
+          - 1x2
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/**'
+      - 'tools/backtest/**'
+      - 'tools/validator/**'
+      - '.github/workflows/spwin-backtest.yml'
+
+jobs:
+  backtest:
+    name: Run SPWIN Backtest
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate CSV headers
+        run: |
+          python tools/validator/validate_csv_headers.py
+
+      - name: Run SPWIN backtest
+        run: |
+          python tools/backtest/run_backtest.py \
+            --competition "${{ github.event.inputs.competition || 'world_cup_2026' }}" \
+            --engine "${{ github.event.inputs.engine || 'v2.5' }}" \
+            --markets "${{ github.event.inputs.markets || '1x2' }}"
+
+      - name: Enforce Capital Preservation Gate
+        run: |
+          python tools/backtest/validate_capital_preservation.py \
+            --summary backtests/world_cup_2026/v2_5_baseline_2026_1/backtest_summary.csv \
+            --allow-negative-roi false
+
+      - name: Upload backtest reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: spwin-backtest-reports
+          path: |
+            backtests/world_cup_2026/v2_5_baseline_2026_1/*.csv
+          if-no-files-found: error
