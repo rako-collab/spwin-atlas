@@ -1,0 +1,5 @@
+odds_band,recommendations,bets,passes,wins,losses,staked_units,profit_loss_units,roi_pct,hit_rate_pct
+heavy_1.01_1.20,18,18,0,13,5,18,-3.69,-20.5,72.22
+light_2.01_plus,8,0,8,0,0,0,0.0,,
+medium_1.51_2.00,22,22,0,12,10,22,-1.59,-7.23,54.55
+strong_1.21_1.50,28,27,1,20,7,54,-0.08,-0.15,74.07
