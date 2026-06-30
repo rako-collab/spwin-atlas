@@ -1,0 +1,6 @@
+match_id,engine_version,market,selection,odds_taken,closing_odds,stake_units,predicted_probability,grade,confidence_band,result,profit_loss_units,clv,stage,favourite_closing_odds_band,pass_reason,notes
+WC2026-R32-001,SPWIN v2.4 Platinum Pro,1X2,Canada,1.60,1.75,1,0.55,B-/C+,50-59,Win,0.60,-0.15,Round of 32,medium_1.51_2.00,,User already bought Canada 90-min win; SPWIN advised hold and no top-up
+WC2026-R32-001,SPWIN-Live v2.4,Live Management,Hold existing Canada ticket,,,,,N/A,N/A,Correct,0,,Round of 32,medium_1.51_2.00,,82-minute live decision was hold existing ticket no new bet
+WC2026-R32-002,SPWIN v2.4 Platinum Pro,Asian Handicap,Brazil -0.75,1.82,,1,0.69,B,60-69,Win,0.82,,Round of 32,medium_1.51_2.00,,Brazil won 2-1; AH -0.75 treated as win for first validation pass
+WC2026-R32-003,SPWIN v2.4 Platinum Pro,Asian Handicap,Germany -1.25,1.70,,1,0.70,B-/C+,70-79,Loss,-1.00,,Round of 32,heavy_1.21_1.50,,Germany drew 1-1; caution against A-grade upgrade validated
+WC2026-R32-004,SPWIN v2.4 Platinum Pro,PASS,No pre-match bet,,,,,PASS,N/A,Correct,0,,Round of 32,medium_1.51_2.00,Trap profile and balanced knockout match,Match finished 1-1 and Morocco advanced on penalties
