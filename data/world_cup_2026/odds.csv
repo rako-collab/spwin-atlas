@@ -1,29 +1,229 @@
 match_id,market,selection,line,opening_odds,current_odds,closing_odds,source,captured_at_sgt,notes
-WC2026-GA-005,1X2,Czech Republic,,2.95,,4.40,SGOdds event 5860,2026-06-25,SGOdds Results and Past Odds page listed FT 0-3 and closing 1X2 home 4.40 draw 3.50 away 1.60
-WC2026-GA-005,1X2,Draw,,3.40,,3.50,SGOdds event 5860,2026-06-25,Draw closing moved to 3.50
-WC2026-GA-005,1X2,Mexico,,2.05,,1.60,SGOdds event 5860,2026-06-25,Mexico shortened strongly and won 3-0
-WC2026-GA-006,1X2,South Africa,,5.20,,5.80,SGOdds event 5814,2026-06-25,SGOdds Results and Past Odds page listed FT 1-0 and closing 1X2 home 5.80 draw 3.70 away 1.45
-WC2026-GA-006,1X2,Draw,,3.40,,3.70,SGOdds event 5814,2026-06-25,Draw closing moved to 3.70
-WC2026-GA-006,1X2,Korea Republic,,1.58,,1.45,SGOdds event 5814,2026-06-25,Korea Republic shortened but lost 1-0
-WC2026-R32-001,1X2,South Africa,,4.50,,4.50,SGOdds event 5809,2026-06-29,SGOdds Results and Past Odds page listed FT 0-1 and closing 1X2 home 4.50 draw 3.05 away 1.75
-WC2026-R32-001,1X2,Draw,,3.20,,3.05,SGOdds event 5809,2026-06-29,Draw shortened into close
-WC2026-R32-001,1X2,Canada,,1.67,1.60,1.75,SGOdds event 5809/Singapore Pools,2026-06-29,User bought Canada around 1.60; SGOdds listed close 1.75
-WC2026-R32-001,Asian Handicap,Canada,-0.50,,,1.75,SGOdds,2026-06-29,Closing AH noted as Canada -0.50 1.75
-WC2026-R32-001,Total Goals,Under 2.5,2.5,,,1.70,SGOdds,2026-06-29,Under profile landed
-WC2026-R32-001,BTTS,No,,,,1.80,SGOdds,2026-06-29,BTTS No landed
-WC2026-R32-002,1X2,Brazil,,1.60,1.53,1.67,SGOdds event 5825,2026-06-30,SGOdds Results and Past Odds page listed FT 2-1 and closing 1X2 home 1.67 draw 3.30 away 4.30
-WC2026-R32-002,1X2,Draw,,3.60,,3.30,SGOdds event 5825,2026-06-30,Draw shortened at close
-WC2026-R32-002,1X2,Japan,,4.30,,4.30,SGOdds event 5825,2026-06-30,Japan closing remained 4.30
-WC2026-R32-002,Asian Handicap,Brazil,-0.75,1.87,1.82,,SGOdds event 140179,2026-06-29 19:50,Slight Brazil support before kickoff
-WC2026-R32-002,Total Goals,Over 2.5,2.5,1.87,1.80,,SGOdds event 140179,2026-06-29 19:50,Over shortened and landed
-WC2026-R32-002,BTTS,Yes,,1.85,1.75,,SGOdds event 140179,2026-06-29 19:50,BTTS Yes shortened and landed
-WC2026-R32-003,1X2,Germany,,1.27,1.20,1.23,SGOdds event 5815,2026-06-30,SGOdds Results and Past Odds page listed FT 1-1 and closing 1X2 home 1.23 draw 5.00 away 9.50
-WC2026-R32-003,1X2,Draw,,4.50,,5.00,SGOdds event 5815,2026-06-30,Draw drifted but landed in 90 minutes
-WC2026-R32-003,1X2,Paraguay,,8.00,,9.50,SGOdds event 5815,2026-06-30,Paraguay drifted but advanced on penalties
-WC2026-R32-003,Asian Handicap,Germany,-1.25,1.75,1.70,,SGOdds event 140205,2026-06-29 19:50,Handicap support but value remained limited
-WC2026-R32-003,Total Goals,Over 2.5,2.5,1.65,1.60,,SGOdds event 140205,2026-06-29 19:50,Over shortened but match finished 1-1
-WC2026-R32-004,1X2,Netherlands,,1.85,1.92,1.85,SGOdds event 5842,2026-06-30,SGOdds Results and Past Odds page listed FT 1-1 and closing 1X2 home 1.85 draw 3.20 away 3.70
-WC2026-R32-004,1X2,Draw,,3.10,2.95,3.20,SGOdds event 5842,2026-06-30,Draw close 3.20 and 90-min draw landed
-WC2026-R32-004,1X2,Morocco,,3.60,,3.70,SGOdds event 5842,2026-06-30,Morocco advanced on penalties after 1-1
-WC2026-R32-004,Asian Handicap,Morocco,+0.25,1.97,1.85,,SGOdds event 140180,2026-06-29 19:50,Morocco plus handicap strengthened
-WC2026-R32-004,Total Goals,Under 2.5,2.5,1.65,1.65,,SGOdds event 140180,2026-06-29 19:50,Under remained favoured and landed
+WC2026-E5822,1X2,Jordan,,,,21.00,SGOdds results-past-odds,2026-06-28,Closed 1X2 odds from SGOdds event 5822
+WC2026-E5822,1X2,Draw,,,,8.50,SGOdds results-past-odds,2026-06-28,Closed 1X2 odds from SGOdds event 5822
+WC2026-E5822,1X2,Argentina,,,,1.05,SGOdds results-past-odds,2026-06-28,Closed 1X2 odds from SGOdds event 5822
+WC2026-E5810,1X2,Algeria,,,,3.30,SGOdds results-past-odds,2026-06-28,Closed 1X2 odds from SGOdds event 5810
+WC2026-E5810,1X2,Draw,,,,1.97,SGOdds results-past-odds,2026-06-28,Closed 1X2 odds from SGOdds event 5810
+WC2026-E5810,1X2,Austria,,,,3.10,SGOdds results-past-odds,2026-06-28,Closed 1X2 odds from SGOdds event 5810
+WC2026-E5805,1X2,Congo DR,,,,1.45,SGOdds results-past-odds,2026-06-28,Closed 1X2 odds from SGOdds event 5805
+WC2026-E5805,1X2,Draw,,,,3.70,SGOdds results-past-odds,2026-06-28,Closed 1X2 odds from SGOdds event 5805
+WC2026-E5805,1X2,Uzbekistan,,,,5.80,SGOdds results-past-odds,2026-06-28,Closed 1X2 odds from SGOdds event 5805
+WC2026-E5813,1X2,Colombia,,,,3.80,SGOdds results-past-odds,2026-06-28,Closed 1X2 odds from SGOdds event 5813
+WC2026-E5813,1X2,Draw,,,,3.70,SGOdds results-past-odds,2026-06-28,Closed 1X2 odds from SGOdds event 5813
+WC2026-E5813,1X2,Portugal,,,,1.67,SGOdds results-past-odds,2026-06-28,Closed 1X2 odds from SGOdds event 5813
+WC2026-E5897,1X2,Croatia,,,,1.70,SGOdds results-past-odds,2026-06-28,Closed 1X2 odds from SGOdds event 5897
+WC2026-E5897,1X2,Draw,,,,3.00,SGOdds results-past-odds,2026-06-28,Closed 1X2 odds from SGOdds event 5897
+WC2026-E5897,1X2,Ghana,,,,5.20,SGOdds results-past-odds,2026-06-28,Closed 1X2 odds from SGOdds event 5897
+WC2026-E5801,1X2,Panama,,,,17.00,SGOdds results-past-odds,2026-06-28,Closed 1X2 odds from SGOdds event 5801
+WC2026-E5801,1X2,Draw,,,,8.00,SGOdds results-past-odds,2026-06-28,Closed 1X2 odds from SGOdds event 5801
+WC2026-E5801,1X2,England,,,,1.05,SGOdds results-past-odds,2026-06-28,Closed 1X2 odds from SGOdds event 5801
+WC2026-E5890,1X2,Egypt,,,,2.55,SGOdds results-past-odds,2026-06-27,Closed 1X2 odds from SGOdds event 5890
+WC2026-E5890,1X2,Draw,,,,2.50,SGOdds results-past-odds,2026-06-27,Closed 1X2 odds from SGOdds event 5890
+WC2026-E5890,1X2,Iran,,,,3.05,SGOdds results-past-odds,2026-06-27,Closed 1X2 odds from SGOdds event 5890
+WC2026-E5840,1X2,New Zealand,,,,9.50,SGOdds results-past-odds,2026-06-27,Closed 1X2 odds from SGOdds event 5840
+WC2026-E5840,1X2,Draw,,,,7.50,SGOdds results-past-odds,2026-06-27,Closed 1X2 odds from SGOdds event 5840
+WC2026-E5840,1X2,Belgium,,,,1.12,SGOdds results-past-odds,2026-06-27,Closed 1X2 odds from SGOdds event 5840
+WC2026-E5804,1X2,Uruguay,,,,6.00,SGOdds results-past-odds,2026-06-27,Closed 1X2 odds from SGOdds event 5804
+WC2026-E5804,1X2,Draw,,,,3.80,SGOdds results-past-odds,2026-06-27,Closed 1X2 odds from SGOdds event 5804
+WC2026-E5804,1X2,Spain,,,,1.42,SGOdds results-past-odds,2026-06-27,Closed 1X2 odds from SGOdds event 5804
+WC2026-E5892,1X2,Cape Verde,,,,2.40,SGOdds results-past-odds,2026-06-27,Closed 1X2 odds from SGOdds event 5892
+WC2026-E5892,1X2,Draw,,,,3.05,SGOdds results-past-odds,2026-06-27,Closed 1X2 odds from SGOdds event 5892
+WC2026-E5892,1X2,Saudi Arabia,,,,2.55,SGOdds results-past-odds,2026-06-27,Closed 1X2 odds from SGOdds event 5892
+WC2026-E5817,1X2,Senegal,,,,1.20,SGOdds results-past-odds,2026-06-27,Closed 1X2 odds from SGOdds event 5817
+WC2026-E5817,1X2,Draw,,,,5.50,SGOdds results-past-odds,2026-06-27,Closed 1X2 odds from SGOdds event 5817
+WC2026-E5817,1X2,Iraq,,,,9.50,SGOdds results-past-odds,2026-06-27,Closed 1X2 odds from SGOdds event 5817
+WC2026-E5811,1X2,Norway,,,,5.00,SGOdds results-past-odds,2026-06-27,Closed 1X2 odds from SGOdds event 5811
+WC2026-E5811,1X2,Draw,,,,4.80,SGOdds results-past-odds,2026-06-27,Closed 1X2 odds from SGOdds event 5811
+WC2026-E5811,1X2,France,,,,1.37,SGOdds results-past-odds,2026-06-27,Closed 1X2 odds from SGOdds event 5811
+WC2026-E5867,1X2,Turkey,,,,3.20,SGOdds results-past-odds,2026-06-26,Closed 1X2 odds from SGOdds event 5867
+WC2026-E5867,1X2,Draw,,,,4.40,SGOdds results-past-odds,2026-06-26,Closed 1X2 odds from SGOdds event 5867
+WC2026-E5867,1X2,USA,,,,1.70,SGOdds results-past-odds,2026-06-26,Closed 1X2 odds from SGOdds event 5867
+WC2026-E5807,1X2,Paraguay,,,,2.00,SGOdds results-past-odds,2026-06-26,Closed 1X2 odds from SGOdds event 5807
+WC2026-E5807,1X2,Draw,,,,2.60,SGOdds results-past-odds,2026-06-26,Closed 1X2 odds from SGOdds event 5807
+WC2026-E5807,1X2,Australia,,,,4.00,SGOdds results-past-odds,2026-06-26,Closed 1X2 odds from SGOdds event 5807
+WC2026-E5887,1X2,Tunisia,,,,13.00,SGOdds results-past-odds,2026-06-26,Closed 1X2 odds from SGOdds event 5887
+WC2026-E5887,1X2,Draw,,,,8.00,SGOdds results-past-odds,2026-06-26,Closed 1X2 odds from SGOdds event 5887
+WC2026-E5887,1X2,Holland,,,,1.07,SGOdds results-past-odds,2026-06-26,Closed 1X2 odds from SGOdds event 5887
+WC2026-E5886,1X2,Japan,,,,2.10,SGOdds results-past-odds,2026-06-26,Closed 1X2 odds from SGOdds event 5886
+WC2026-E5886,1X2,Draw,,,,3.10,SGOdds results-past-odds,2026-06-26,Closed 1X2 odds from SGOdds event 5886
+WC2026-E5886,1X2,Sweden,,,,3.00,SGOdds results-past-odds,2026-06-26,Closed 1X2 odds from SGOdds event 5886
+WC2026-E5893,1X2,Curacao,,,,12.00,SGOdds results-past-odds,2026-06-26,Closed 1X2 odds from SGOdds event 5893
+WC2026-E5893,1X2,Draw,,,,4.80,SGOdds results-past-odds,2026-06-26,Closed 1X2 odds from SGOdds event 5893
+WC2026-E5893,1X2,Ivory Coast,,,,1.18,SGOdds results-past-odds,2026-06-26,Closed 1X2 odds from SGOdds event 5893
+WC2026-E5808,1X2,Ecuador,,,,4.20,SGOdds results-past-odds,2026-06-26,Closed 1X2 odds from SGOdds event 5808
+WC2026-E5808,1X2,Draw,,,,4.40,SGOdds results-past-odds,2026-06-26,Closed 1X2 odds from SGOdds event 5808
+WC2026-E5808,1X2,Germany,,,,1.53,SGOdds results-past-odds,2026-06-26,Closed 1X2 odds from SGOdds event 5808
+WC2026-E5860,1X2,Czech Republic,,,,4.40,SGOdds results-past-odds,2026-06-25,Closed 1X2 odds from SGOdds event 5860
+WC2026-E5860,1X2,Draw,,,,3.50,SGOdds results-past-odds,2026-06-25,Closed 1X2 odds from SGOdds event 5860
+WC2026-E5860,1X2,Mexico,,,,1.60,SGOdds results-past-odds,2026-06-25,Closed 1X2 odds from SGOdds event 5860
+WC2026-E5814,1X2,South Africa,,,,5.80,SGOdds results-past-odds,2026-06-25,Closed 1X2 odds from SGOdds event 5814
+WC2026-E5814,1X2,Draw,,,,3.70,SGOdds results-past-odds,2026-06-25,Closed 1X2 odds from SGOdds event 5814
+WC2026-E5814,1X2,Korea Republic,,,,1.45,SGOdds results-past-odds,2026-06-25,Closed 1X2 odds from SGOdds event 5814
+WC2026-E5899,1X2,Morocco,,,,1.25,SGOdds results-past-odds,2026-06-25,Closed 1X2 odds from SGOdds event 5899
+WC2026-E5899,1X2,Draw,,,,4.80,SGOdds results-past-odds,2026-06-25,Closed 1X2 odds from SGOdds event 5899
+WC2026-E5899,1X2,Haiti,,,,9.00,SGOdds results-past-odds,2026-06-25,Closed 1X2 odds from SGOdds event 5899
+WC2026-E5888,1X2,Scotland,,,,9.50,SGOdds results-past-odds,2026-06-25,Closed 1X2 odds from SGOdds event 5888
+WC2026-E5888,1X2,Draw,,,,5.50,SGOdds results-past-odds,2026-06-25,Closed 1X2 odds from SGOdds event 5888
+WC2026-E5888,1X2,Brazil,,,,1.20,SGOdds results-past-odds,2026-06-25,Closed 1X2 odds from SGOdds event 5888
+WC2026-E5889,1X2,Bosnia,,,,1.35,SGOdds results-past-odds,2026-06-25,Closed 1X2 odds from SGOdds event 5889
+WC2026-E5889,1X2,Draw,,,,4.50,SGOdds results-past-odds,2026-06-25,Closed 1X2 odds from SGOdds event 5889
+WC2026-E5889,1X2,Qatar,,,,6.50,SGOdds results-past-odds,2026-06-25,Closed 1X2 odds from SGOdds event 5889
+WC2026-E5884,1X2,Switzerland,,,,2.50,SGOdds results-past-odds,2026-06-25,Closed 1X2 odds from SGOdds event 5884
+WC2026-E5884,1X2,Draw,,,,2.40,SGOdds results-past-odds,2026-06-25,Closed 1X2 odds from SGOdds event 5884
+WC2026-E5884,1X2,Canada,,,,3.10,SGOdds results-past-odds,2026-06-25,Closed 1X2 odds from SGOdds event 5884
+WC2026-E5891,1X2,Colombia,,,,1.45,SGOdds results-past-odds,2026-06-24,Closed 1X2 odds from SGOdds event 5891
+WC2026-E5891,1X2,Draw,,,,3.40,SGOdds results-past-odds,2026-06-24,Closed 1X2 odds from SGOdds event 5891
+WC2026-E5891,1X2,Congo DR,,,,7.50,SGOdds results-past-odds,2026-06-24,Closed 1X2 odds from SGOdds event 5891
+WC2026-E5896,1X2,Panama,,,,8.50,SGOdds results-past-odds,2026-06-24,Closed 1X2 odds from SGOdds event 5896
+WC2026-E5896,1X2,Draw,,,,4.40,SGOdds results-past-odds,2026-06-24,Closed 1X2 odds from SGOdds event 5896
+WC2026-E5896,1X2,Croatia,,,,1.27,SGOdds results-past-odds,2026-06-24,Closed 1X2 odds from SGOdds event 5896
+WC2026-E5894,1X2,England,,,,1.15,SGOdds results-past-odds,2026-06-24,Closed 1X2 odds from SGOdds event 5894
+WC2026-E5894,1X2,Draw,,,,5.80,SGOdds results-past-odds,2026-06-24,Closed 1X2 odds from SGOdds event 5894
+WC2026-E5894,1X2,Ghana,,,,12.00,SGOdds results-past-odds,2026-06-24,Closed 1X2 odds from SGOdds event 5894
+WC2026-E5859,1X2,Portugal,,,,1.10,SGOdds results-past-odds,2026-06-24,Closed 1X2 odds from SGOdds event 5859
+WC2026-E5859,1X2,Draw,,,,5.80,SGOdds results-past-odds,2026-06-24,Closed 1X2 odds from SGOdds event 5859
+WC2026-E5859,1X2,Uzbekistan,,,,15.00,SGOdds results-past-odds,2026-06-24,Closed 1X2 odds from SGOdds event 5859
+WC2026-E5880,1X2,Jordan,,,,7.50,SGOdds results-past-odds,2026-06-23,Closed 1X2 odds from SGOdds event 5880
+WC2026-E5880,1X2,Draw,,,,3.60,SGOdds results-past-odds,2026-06-23,Closed 1X2 odds from SGOdds event 5880
+WC2026-E5880,1X2,Algeria,,,,1.40,SGOdds results-past-odds,2026-06-23,Closed 1X2 odds from SGOdds event 5880
+WC2026-E5869,1X2,Norway,,,,1.95,SGOdds results-past-odds,2026-06-23,Closed 1X2 odds from SGOdds event 5869
+WC2026-E5869,1X2,Draw,,,,3.30,SGOdds results-past-odds,2026-06-23,Closed 1X2 odds from SGOdds event 5869
+WC2026-E5869,1X2,Senegal,,,,3.10,SGOdds results-past-odds,2026-06-23,Closed 1X2 odds from SGOdds event 5869
+WC2026-E5871,1X2,France,,,,1.05,SGOdds results-past-odds,2026-06-23,Closed 1X2 odds from SGOdds event 5871
+WC2026-E5871,1X2,Draw,,,,8.50,SGOdds results-past-odds,2026-06-23,Closed 1X2 odds from SGOdds event 5871
+WC2026-E5871,1X2,Iraq,,,,17.00,SGOdds results-past-odds,2026-06-23,Closed 1X2 odds from SGOdds event 5871
+WC2026-E5882,1X2,Argentina,,,,1.18,SGOdds results-past-odds,2026-06-23,Closed 1X2 odds from SGOdds event 5882
+WC2026-E5882,1X2,Draw,,,,5.20,SGOdds results-past-odds,2026-06-23,Closed 1X2 odds from SGOdds event 5882
+WC2026-E5882,1X2,Austria,,,,9.50,SGOdds results-past-odds,2026-06-23,Closed 1X2 odds from SGOdds event 5882
+WC2026-E5898,1X2,New Zealand,,,,6.00,SGOdds results-past-odds,2026-06-22,Closed 1X2 odds from SGOdds event 5898
+WC2026-E5898,1X2,Draw,,,,4.10,SGOdds results-past-odds,2026-06-22,Closed 1X2 odds from SGOdds event 5898
+WC2026-E5898,1X2,Egypt,,,,1.37,SGOdds results-past-odds,2026-06-22,Closed 1X2 odds from SGOdds event 5898
+WC2026-E5849,1X2,Uruguay,,,,1.30,SGOdds results-past-odds,2026-06-22,Closed 1X2 odds from SGOdds event 5849
+WC2026-E5849,1X2,Draw,,,,4.20,SGOdds results-past-odds,2026-06-22,Closed 1X2 odds from SGOdds event 5849
+WC2026-E5849,1X2,Cape Verde,,,,7.50,SGOdds results-past-odds,2026-06-22,Closed 1X2 odds from SGOdds event 5849
+WC2026-E5874,1X2,Belgium,,,,1.40,SGOdds results-past-odds,2026-06-22,Closed 1X2 odds from SGOdds event 5874
+WC2026-E5874,1X2,Draw,,,,4.10,SGOdds results-past-odds,2026-06-22,Closed 1X2 odds from SGOdds event 5874
+WC2026-E5874,1X2,Iran,,,,6.50,SGOdds results-past-odds,2026-06-22,Closed 1X2 odds from SGOdds event 5874
+WC2026-E5895,1X2,Spain,,,,1.05,SGOdds results-past-odds,2026-06-22,Closed 1X2 odds from SGOdds event 5895
+WC2026-E5895,1X2,Draw,,,,9.50,SGOdds results-past-odds,2026-06-22,Closed 1X2 odds from SGOdds event 5895
+WC2026-E5895,1X2,Saudi Arabia,,,,13.00,SGOdds results-past-odds,2026-06-22,Closed 1X2 odds from SGOdds event 5895
+WC2026-E5878,1X2,Tunisia,,,,10.00,SGOdds results-past-odds,2026-06-21,Closed 1X2 odds from SGOdds event 5878
+WC2026-E5878,1X2,Draw,,,,4.20,SGOdds results-past-odds,2026-06-21,Closed 1X2 odds from SGOdds event 5878
+WC2026-E5878,1X2,Japan,,,,1.25,SGOdds results-past-odds,2026-06-21,Closed 1X2 odds from SGOdds event 5878
+WC2026-E5870,1X2,Ecuador,,,,1.13,SGOdds results-past-odds,2026-06-21,Closed 1X2 odds from SGOdds event 5870
+WC2026-E5870,1X2,Draw,,,,5.20,SGOdds results-past-odds,2026-06-21,Closed 1X2 odds from SGOdds event 5870
+WC2026-E5870,1X2,Curacao,,,,15.00,SGOdds results-past-odds,2026-06-21,Closed 1X2 odds from SGOdds event 5870
+WC2026-E5868,1X2,Germany,,,,1.33,SGOdds results-past-odds,2026-06-21,Closed 1X2 odds from SGOdds event 5868
+WC2026-E5868,1X2,Draw,,,,4.40,SGOdds results-past-odds,2026-06-21,Closed 1X2 odds from SGOdds event 5868
+WC2026-E5868,1X2,Ivory Coast,,,,6.50,SGOdds results-past-odds,2026-06-21,Closed 1X2 odds from SGOdds event 5868
+WC2026-E5875,1X2,Holland,,,,1.67,SGOdds results-past-odds,2026-06-21,Closed 1X2 odds from SGOdds event 5875
+WC2026-E5875,1X2,Draw,,,,3.20,SGOdds results-past-odds,2026-06-21,Closed 1X2 odds from SGOdds event 5875
+WC2026-E5875,1X2,Sweden,,,,4.50,SGOdds results-past-odds,2026-06-21,Closed 1X2 odds from SGOdds event 5875
+WC2026-E5885,1X2,Turkey,,,,1.70,SGOdds results-past-odds,2026-06-20,Closed 1X2 odds from SGOdds event 5885
+WC2026-E5885,1X2,Draw,,,,3.10,SGOdds results-past-odds,2026-06-20,Closed 1X2 odds from SGOdds event 5885
+WC2026-E5885,1X2,Paraguay,,,,4.40,SGOdds results-past-odds,2026-06-20,Closed 1X2 odds from SGOdds event 5885
+WC2026-E5862,1X2,Brazil,,,,1.03,SGOdds results-past-odds,2026-06-20,Closed 1X2 odds from SGOdds event 5862
+WC2026-E5862,1X2,Draw,,,,9.50,SGOdds results-past-odds,2026-06-20,Closed 1X2 odds from SGOdds event 5862
+WC2026-E5862,1X2,Haiti,,,,19.00,SGOdds results-past-odds,2026-06-20,Closed 1X2 odds from SGOdds event 5862
+WC2026-E5834,1X2,Scotland,,,,5.80,SGOdds results-past-odds,2026-06-20,Closed 1X2 odds from SGOdds event 5834
+WC2026-E5834,1X2,Draw,,,,3.60,SGOdds results-past-odds,2026-06-20,Closed 1X2 odds from SGOdds event 5834
+WC2026-E5834,1X2,Morocco,,,,1.48,SGOdds results-past-odds,2026-06-20,Closed 1X2 odds from SGOdds event 5834
+WC2026-E5806,1X2,USA,,,,1.53,SGOdds results-past-odds,2026-06-20,Closed 1X2 odds from SGOdds event 5806
+WC2026-E5806,1X2,Draw,,,,3.70,SGOdds results-past-odds,2026-06-20,Closed 1X2 odds from SGOdds event 5806
+WC2026-E5806,1X2,Australia,,,,5.20,SGOdds results-past-odds,2026-06-20,Closed 1X2 odds from SGOdds event 5806
+WC2026-E5877,1X2,Mexico,,,,1.92,SGOdds results-past-odds,2026-06-19,Closed 1X2 odds from SGOdds event 5877
+WC2026-E5877,1X2,Draw,,,,3.00,SGOdds results-past-odds,2026-06-19,Closed 1X2 odds from SGOdds event 5877
+WC2026-E5877,1X2,Korea Republic,,,,3.80,SGOdds results-past-odds,2026-06-19,Closed 1X2 odds from SGOdds event 5877
+WC2026-E5865,1X2,Canada,,,,1.23,SGOdds results-past-odds,2026-06-19,Closed 1X2 odds from SGOdds event 5865
+WC2026-E5865,1X2,Draw,,,,4.20,SGOdds results-past-odds,2026-06-19,Closed 1X2 odds from SGOdds event 5865
+WC2026-E5865,1X2,Qatar,,,,12.00,SGOdds results-past-odds,2026-06-19,Closed 1X2 odds from SGOdds event 5865
+WC2026-E5879,1X2,Switzerland,,,,1.55,SGOdds results-past-odds,2026-06-19,Closed 1X2 odds from SGOdds event 5879
+WC2026-E5879,1X2,Draw,,,,3.10,SGOdds results-past-odds,2026-06-19,Closed 1X2 odds from SGOdds event 5879
+WC2026-E5879,1X2,Bosnia,,,,6.00,SGOdds results-past-odds,2026-06-19,Closed 1X2 odds from SGOdds event 5879
+WC2026-E5827,1X2,Czech Republic,,,,1.75,SGOdds results-past-odds,2026-06-19,Closed 1X2 odds from SGOdds event 5827
+WC2026-E5827,1X2,Draw,,,,3.20,SGOdds results-past-odds,2026-06-19,Closed 1X2 odds from SGOdds event 5827
+WC2026-E5827,1X2,South Africa,,,,4.10,SGOdds results-past-odds,2026-06-19,Closed 1X2 odds from SGOdds event 5827
+WC2026-E5866,1X2,Uzbekistan,,,,9.50,SGOdds results-past-odds,2026-06-18,Closed 1X2 odds from SGOdds event 5866
+WC2026-E5866,1X2,Draw,,,,4.70,SGOdds results-past-odds,2026-06-18,Closed 1X2 odds from SGOdds event 5866
+WC2026-E5866,1X2,Colombia,,,,1.25,SGOdds results-past-odds,2026-06-18,Closed 1X2 odds from SGOdds event 5866
+WC2026-E5854,1X2,Ghana,,,,2.20,SGOdds results-past-odds,2026-06-18,Closed 1X2 odds from SGOdds event 5854
+WC2026-E5854,1X2,Draw,,,,2.90,SGOdds results-past-odds,2026-06-18,Closed 1X2 odds from SGOdds event 5854
+WC2026-E5854,1X2,Panama,,,,2.95,SGOdds results-past-odds,2026-06-18,Closed 1X2 odds from SGOdds event 5854
+WC2026-E5839,1X2,England,,,,1.60,SGOdds results-past-odds,2026-06-18,Closed 1X2 odds from SGOdds event 5839
+WC2026-E5839,1X2,Draw,,,,3.10,SGOdds results-past-odds,2026-06-18,Closed 1X2 odds from SGOdds event 5839
+WC2026-E5839,1X2,Croatia,,,,5.50,SGOdds results-past-odds,2026-06-18,Closed 1X2 odds from SGOdds event 5839
+WC2026-E5861,1X2,Portugal,,,,1.18,SGOdds results-past-odds,2026-06-18,Closed 1X2 odds from SGOdds event 5861
+WC2026-E5861,1X2,Draw,,,,5.20,SGOdds results-past-odds,2026-06-18,Closed 1X2 odds from SGOdds event 5861
+WC2026-E5861,1X2,Congo DR,,,,12.00,SGOdds results-past-odds,2026-06-18,Closed 1X2 odds from SGOdds event 5861
+WC2026-E5855,1X2,Austria,,,,1.35,SGOdds results-past-odds,2026-06-17,Closed 1X2 odds from SGOdds event 5855
+WC2026-E5855,1X2,Draw,,,,4.10,SGOdds results-past-odds,2026-06-17,Closed 1X2 odds from SGOdds event 5855
+WC2026-E5855,1X2,Jordan,,,,7.50,SGOdds results-past-odds,2026-06-17,Closed 1X2 odds from SGOdds event 5855
+WC2026-E5848,1X2,Argentina,,,,1.45,SGOdds results-past-odds,2026-06-17,Closed 1X2 odds from SGOdds event 5848
+WC2026-E5848,1X2,Draw,,,,3.70,SGOdds results-past-odds,2026-06-17,Closed 1X2 odds from SGOdds event 5848
+WC2026-E5848,1X2,Algeria,,,,6.50,SGOdds results-past-odds,2026-06-17,Closed 1X2 odds from SGOdds event 5848
+WC2026-E5856,1X2,Iraq,,,,11.00,SGOdds results-past-odds,2026-06-17,Closed 1X2 odds from SGOdds event 5856
+WC2026-E5856,1X2,Draw,,,,4.80,SGOdds results-past-odds,2026-06-17,Closed 1X2 odds from SGOdds event 5856
+WC2026-E5856,1X2,Norway,,,,1.22,SGOdds results-past-odds,2026-06-17,Closed 1X2 odds from SGOdds event 5856
+WC2026-E5864,1X2,France,,,,1.42,SGOdds results-past-odds,2026-06-17,Closed 1X2 odds from SGOdds event 5864
+WC2026-E5864,1X2,Draw,,,,4.10,SGOdds results-past-odds,2026-06-17,Closed 1X2 odds from SGOdds event 5864
+WC2026-E5864,1X2,Senegal,,,,6.00,SGOdds results-past-odds,2026-06-17,Closed 1X2 odds from SGOdds event 5864
+WC2026-E5881,1X2,Iran,,,,1.67,SGOdds results-past-odds,2026-06-16,Closed 1X2 odds from SGOdds event 5881
+WC2026-E5881,1X2,Draw,,,,3.30,SGOdds results-past-odds,2026-06-16,Closed 1X2 odds from SGOdds event 5881
+WC2026-E5881,1X2,New Zealand,,,,4.50,SGOdds results-past-odds,2026-06-16,Closed 1X2 odds from SGOdds event 5881
+WC2026-E5876,1X2,Saudi Arabia,,,,6.00,SGOdds results-past-odds,2026-06-16,Closed 1X2 odds from SGOdds event 5876
+WC2026-E5876,1X2,Draw,,,,3.80,SGOdds results-past-odds,2026-06-16,Closed 1X2 odds from SGOdds event 5876
+WC2026-E5876,1X2,Uruguay,,,,1.42,SGOdds results-past-odds,2026-06-16,Closed 1X2 odds from SGOdds event 5876
+WC2026-E5872,1X2,Belgium,,,,1.35,SGOdds results-past-odds,2026-06-16,Closed 1X2 odds from SGOdds event 5872
+WC2026-E5872,1X2,Draw,,,,4.10,SGOdds results-past-odds,2026-06-16,Closed 1X2 odds from SGOdds event 5872
+WC2026-E5872,1X2,Egypt,,,,7.50,SGOdds results-past-odds,2026-06-16,Closed 1X2 odds from SGOdds event 5872
+WC2026-E5873,1X2,Spain,,,,1.03,SGOdds results-past-odds,2026-06-16,Closed 1X2 odds from SGOdds event 5873
+WC2026-E5873,1X2,Draw,,,,9.50,SGOdds results-past-odds,2026-06-16,Closed 1X2 odds from SGOdds event 5873
+WC2026-E5873,1X2,Cape Verde,,,,17.00,SGOdds results-past-odds,2026-06-16,Closed 1X2 odds from SGOdds event 5873
+WC2026-E5863,1X2,Sweden,,,,1.67,SGOdds results-past-odds,2026-06-15,Closed 1X2 odds from SGOdds event 5863
+WC2026-E5863,1X2,Draw,,,,3.30,SGOdds results-past-odds,2026-06-15,Closed 1X2 odds from SGOdds event 5863
+WC2026-E5863,1X2,Tunisia,,,,4.40,SGOdds results-past-odds,2026-06-15,Closed 1X2 odds from SGOdds event 5863
+WC2026-E5837,1X2,Ivory Coast,,,,3.00,SGOdds results-past-odds,2026-06-15,Closed 1X2 odds from SGOdds event 5837
+WC2026-E5837,1X2,Draw,,,,2.70,SGOdds results-past-odds,2026-06-15,Closed 1X2 odds from SGOdds event 5837
+WC2026-E5837,1X2,Ecuador,,,,2.35,SGOdds results-past-odds,2026-06-15,Closed 1X2 odds from SGOdds event 5837
+WC2026-E5850,1X2,Holland,,,,1.87,SGOdds results-past-odds,2026-06-15,Closed 1X2 odds from SGOdds event 5850
+WC2026-E5850,1X2,Draw,,,,3.40,SGOdds results-past-odds,2026-06-15,Closed 1X2 odds from SGOdds event 5850
+WC2026-E5850,1X2,Japan,,,,3.30,SGOdds results-past-odds,2026-06-15,Closed 1X2 odds from SGOdds event 5850
+WC2026-E5832,1X2,Germany,,,,1.03,SGOdds results-past-odds,2026-06-15,Closed 1X2 odds from SGOdds event 5832
+WC2026-E5832,1X2,Draw,,,,9.00,SGOdds results-past-odds,2026-06-15,Closed 1X2 odds from SGOdds event 5832
+WC2026-E5832,1X2,Curacao,,,,17.00,SGOdds results-past-odds,2026-06-15,Closed 1X2 odds from SGOdds event 5832
+WC2026-E5852,1X2,Australia,,,,5.20,SGOdds results-past-odds,2026-06-14,Closed 1X2 odds from SGOdds event 5852
+WC2026-E5852,1X2,Draw,,,,3.60,SGOdds results-past-odds,2026-06-14,Closed 1X2 odds from SGOdds event 5852
+WC2026-E5852,1X2,Turkey,,,,1.50,SGOdds results-past-odds,2026-06-14,Closed 1X2 odds from SGOdds event 5852
+WC2026-E5828,1X2,Haiti,,,,6.00,SGOdds results-past-odds,2026-06-14,Closed 1X2 odds from SGOdds event 5828
+WC2026-E5828,1X2,Draw,,,,4.20,SGOdds results-past-odds,2026-06-14,Closed 1X2 odds from SGOdds event 5828
+WC2026-E5828,1X2,Scotland,,,,1.37,SGOdds results-past-odds,2026-06-14,Closed 1X2 odds from SGOdds event 5828
+WC2026-E5847,1X2,Brazil,,,,1.48,SGOdds results-past-odds,2026-06-14,Closed 1X2 odds from SGOdds event 5847
+WC2026-E5847,1X2,Draw,,,,3.80,SGOdds results-past-odds,2026-06-14,Closed 1X2 odds from SGOdds event 5847
+WC2026-E5847,1X2,Morocco,,,,5.50,SGOdds results-past-odds,2026-06-14,Closed 1X2 odds from SGOdds event 5847
+WC2026-E5841,1X2,Qatar,,,,12.00,SGOdds results-past-odds,2026-06-14,Closed 1X2 odds from SGOdds event 5841
+WC2026-E5841,1X2,Draw,,,,6.50,SGOdds results-past-odds,2026-06-14,Closed 1X2 odds from SGOdds event 5841
+WC2026-E5841,1X2,Switzerland,,,,1.13,SGOdds results-past-odds,2026-06-14,Closed 1X2 odds from SGOdds event 5841
+WC2026-E5853,1X2,USA,,,,1.80,SGOdds results-past-odds,2026-06-13,Closed 1X2 odds from SGOdds event 5853
+WC2026-E5853,1X2,Draw,,,,3.05,SGOdds results-past-odds,2026-06-13,Closed 1X2 odds from SGOdds event 5853
+WC2026-E5853,1X2,Paraguay,,,,4.00,SGOdds results-past-odds,2026-06-13,Closed 1X2 odds from SGOdds event 5853
+WC2026-E5857,1X2,Canada,,,,1.77,SGOdds results-past-odds,2026-06-13,Closed 1X2 odds from SGOdds event 5857
+WC2026-E5857,1X2,Draw,,,,3.10,SGOdds results-past-odds,2026-06-13,Closed 1X2 odds from SGOdds event 5857
+WC2026-E5857,1X2,Bosnia,,,,4.10,SGOdds results-past-odds,2026-06-13,Closed 1X2 odds from SGOdds event 5857
+WC2026-E5845,1X2,Korea Republic,,,,2.35,SGOdds results-past-odds,2026-06-12,Closed 1X2 odds from SGOdds event 5845
+WC2026-E5845,1X2,Draw,,,,2.70,SGOdds results-past-odds,2026-06-12,Closed 1X2 odds from SGOdds event 5845
+WC2026-E5845,1X2,Czech Republic,,,,3.00,SGOdds results-past-odds,2026-06-12,Closed 1X2 odds from SGOdds event 5845
+WC2026-E5818,1X2,Mexico,,,,1.28,SGOdds results-past-odds,2026-06-12,Closed 1X2 odds from SGOdds event 5818
+WC2026-E5818,1X2,Draw,,,,4.40,SGOdds results-past-odds,2026-06-12,Closed 1X2 odds from SGOdds event 5818
+WC2026-E5818,1X2,South Africa,,,,8.00,SGOdds results-past-odds,2026-06-12,Closed 1X2 odds from SGOdds event 5818
+WC2026-R32-001,1X2,South Africa,,,,4.50,SGOdds results-past-odds,2026-06-29,Closed 1X2 odds from SGOdds event 5809
+WC2026-R32-001,1X2,Draw,,,,3.05,SGOdds results-past-odds,2026-06-29,Closed 1X2 odds from SGOdds event 5809
+WC2026-R32-001,1X2,Canada,,,,1.75,SGOdds results-past-odds,2026-06-29,Closed 1X2 odds from SGOdds event 5809
+WC2026-R32-002,1X2,Brazil,,,,1.67,SGOdds results-past-odds,2026-06-30,Closed 1X2 odds from SGOdds event 5825
+WC2026-R32-002,1X2,Draw,,,,3.30,SGOdds results-past-odds,2026-06-30,Closed 1X2 odds from SGOdds event 5825
+WC2026-R32-002,1X2,Japan,,,,4.30,SGOdds results-past-odds,2026-06-30,Closed 1X2 odds from SGOdds event 5825
+WC2026-R32-003,1X2,Germany,,,,1.23,SGOdds results-past-odds,2026-06-30,Closed 1X2 odds from SGOdds event 5815
+WC2026-R32-003,1X2,Draw,,,,5.00,SGOdds results-past-odds,2026-06-30,Closed 1X2 odds from SGOdds event 5815
+WC2026-R32-003,1X2,Paraguay,,,,9.50,SGOdds results-past-odds,2026-06-30,Closed 1X2 odds from SGOdds event 5815
+WC2026-R32-004,1X2,Holland,,,,1.85,SGOdds results-past-odds,2026-06-30,Closed 1X2 odds from SGOdds event 5842
+WC2026-R32-004,1X2,Draw,,,,3.20,SGOdds results-past-odds,2026-06-30,Closed 1X2 odds from SGOdds event 5842
+WC2026-R32-004,1X2,Morocco,,,,3.70,SGOdds results-past-odds,2026-06-30,Closed 1X2 odds from SGOdds event 5842
