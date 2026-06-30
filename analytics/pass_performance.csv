@@ -1,0 +1,2 @@
+match_id,engine_version,match,pass_reason,actual_result,pass_correct,notes
+WC2026-R32-004,SPWIN v2.4 Platinum Pro,Holland vs Morocco,Trap profile and balanced knockout match,1-1 after 90 minutes Morocco advanced on penalties,Yes,PASS avoided volatile match where favourite did not win in 90 minutes
