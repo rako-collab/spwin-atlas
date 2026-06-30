@@ -1,0 +1,77 @@
+match_id,stage,home_team,away_team,favourite,favourite_closing_odds,favourite_implied_probability,ht_score,ft_score,total_goals,btts,over_2_5,odd_even,data_quality
+WC2026-E5822,Group Stage,Jordan,Argentina,Argentina,1.05,0.9524,0-2,1-3,4,Yes,Yes,Even,4
+WC2026-E5810,Group Stage,Algeria,Austria,Austria,3.1,0.3226,1-1,3-3,6,Yes,Yes,Even,4
+WC2026-E5805,Group Stage,Congo DR,Uzbekistan,Congo DR,1.45,0.6897,0-1,3-1,4,Yes,Yes,Even,4
+WC2026-E5813,Group Stage,Colombia,Portugal,Portugal,1.67,0.5988,0-0,0-0,0,No,No,Even,4
+WC2026-E5897,Group Stage,Croatia,Ghana,Croatia,1.7,0.5882,1-0,2-1,3,Yes,Yes,Odd,4
+WC2026-E5801,Group Stage,Panama,England,England,1.05,0.9524,0-0,0-2,2,No,No,Even,4
+WC2026-E5890,Group Stage,Egypt,Iran,Egypt,2.55,0.3922,1-1,1-1,2,Yes,No,Even,4
+WC2026-E5840,Group Stage,New Zealand,Belgium,Belgium,1.12,0.8929,0-1,1-5,6,Yes,Yes,Even,4
+WC2026-E5804,Group Stage,Uruguay,Spain,Spain,1.42,0.7042,0-1,0-1,1,No,No,Odd,4
+WC2026-E5892,Group Stage,Cape Verde,Saudi Arabia,Cape Verde,2.4,0.4167,0-0,0-0,0,No,No,Even,4
+WC2026-E5817,Group Stage,Senegal,Iraq,Senegal,1.2,0.8333,1-0,5-0,5,No,Yes,Odd,4
+WC2026-E5811,Group Stage,Norway,France,France,1.37,0.7299,1-3,1-4,5,Yes,Yes,Odd,4
+WC2026-E5867,Group Stage,Turkey,USA,USA,1.7,0.5882,2-1,3-2,5,Yes,Yes,Odd,4
+WC2026-E5807,Group Stage,Paraguay,Australia,Paraguay,2.0,0.5,0-0,0-0,0,No,No,Even,4
+WC2026-E5887,Group Stage,Tunisia,Holland,Holland,1.07,0.9346,0-2,1-3,4,Yes,Yes,Even,4
+WC2026-E5886,Group Stage,Japan,Sweden,Japan,2.1,0.4762,0-0,1-1,2,Yes,No,Even,4
+WC2026-E5893,Group Stage,Curacao,Ivory Coast,Ivory Coast,1.18,0.8475,0-1,0-2,2,No,No,Even,4
+WC2026-E5808,Group Stage,Ecuador,Germany,Germany,1.53,0.6536,1-1,2-1,3,Yes,Yes,Odd,4
+WC2026-E5860,Group Stage,Czech Republic,Mexico,Mexico,1.6,0.625,0-0,0-3,3,No,Yes,Odd,4
+WC2026-E5814,Group Stage,South Africa,Korea Republic,Korea Republic,1.45,0.6897,0-0,1-0,1,No,No,Odd,4
+WC2026-E5899,Group Stage,Morocco,Haiti,Morocco,1.25,0.8,2-2,4-2,6,Yes,Yes,Even,4
+WC2026-E5888,Group Stage,Scotland,Brazil,Brazil,1.2,0.8333,0-2,0-3,3,No,Yes,Odd,4
+WC2026-E5889,Group Stage,Bosnia,Qatar,Bosnia,1.35,0.7407,2-1,3-1,4,Yes,Yes,Even,4
+WC2026-E5884,Group Stage,Switzerland,Canada,Switzerland,2.5,0.4,0-0,2-1,3,Yes,Yes,Odd,4
+WC2026-E5891,Group Stage,Colombia,Congo DR,Colombia,1.45,0.6897,0-0,1-0,1,No,No,Odd,4
+WC2026-E5896,Group Stage,Panama,Croatia,Croatia,1.27,0.7874,0-0,0-1,1,No,No,Odd,4
+WC2026-E5894,Group Stage,England,Ghana,England,1.15,0.8696,0-0,0-0,0,No,No,Even,4
+WC2026-E5859,Group Stage,Portugal,Uzbekistan,Portugal,1.1,0.9091,3-0,5-0,5,No,Yes,Odd,4
+WC2026-E5880,Group Stage,Jordan,Algeria,Algeria,1.4,0.7143,1-0,1-2,3,Yes,Yes,Odd,4
+WC2026-E5869,Group Stage,Norway,Senegal,Norway,1.95,0.5128,1-0,3-2,5,Yes,Yes,Odd,4
+WC2026-E5871,Group Stage,France,Iraq,France,1.05,0.9524,1-0,3-0,3,No,Yes,Odd,4
+WC2026-E5882,Group Stage,Argentina,Austria,Argentina,1.18,0.8475,1-0,2-0,2,No,No,Even,4
+WC2026-E5898,Group Stage,New Zealand,Egypt,Egypt,1.37,0.7299,1-0,1-3,4,Yes,Yes,Even,4
+WC2026-E5849,Group Stage,Uruguay,Cape Verde,Uruguay,1.3,0.7692,2-1,2-2,4,Yes,Yes,Even,4
+WC2026-E5874,Group Stage,Belgium,Iran,Belgium,1.4,0.7143,0-0,0-0,0,No,No,Even,4
+WC2026-E5895,Group Stage,Spain,Saudi Arabia,Spain,1.05,0.9524,3-0,4-0,4,No,Yes,Even,4
+WC2026-E5878,Group Stage,Tunisia,Japan,Japan,1.25,0.8,0-2,0-4,4,No,Yes,Even,4
+WC2026-E5870,Group Stage,Ecuador,Curacao,Ecuador,1.13,0.885,0-0,0-0,0,No,No,Even,4
+WC2026-E5868,Group Stage,Germany,Ivory Coast,Germany,1.33,0.7519,0-1,2-1,3,Yes,Yes,Odd,4
+WC2026-E5875,Group Stage,Holland,Sweden,Holland,1.67,0.5988,2-0,5-1,6,Yes,Yes,Even,4
+WC2026-E5885,Group Stage,Turkey,Paraguay,Turkey,1.7,0.5882,0-1,0-1,1,No,No,Odd,4
+WC2026-E5862,Group Stage,Brazil,Haiti,Brazil,1.03,0.9709,3-0,3-0,3,No,Yes,Odd,4
+WC2026-E5834,Group Stage,Scotland,Morocco,Morocco,1.48,0.6757,0-1,0-1,1,No,No,Odd,4
+WC2026-E5806,Group Stage,USA,Australia,USA,1.53,0.6536,2-0,2-0,2,No,No,Even,4
+WC2026-E5877,Group Stage,Mexico,Korea Republic,Mexico,1.92,0.5208,0-0,1-0,1,No,No,Odd,4
+WC2026-E5865,Group Stage,Canada,Qatar,Canada,1.23,0.813,3-0,6-0,6,No,Yes,Even,4
+WC2026-E5879,Group Stage,Switzerland,Bosnia,Switzerland,1.55,0.6452,0-0,4-1,5,Yes,Yes,Odd,4
+WC2026-E5827,Group Stage,Czech Republic,South Africa,Czech Republic,1.75,0.5714,1-0,1-1,2,Yes,No,Even,4
+WC2026-E5866,Group Stage,Uzbekistan,Colombia,Colombia,1.25,0.8,0-1,1-3,4,Yes,Yes,Even,4
+WC2026-E5854,Group Stage,Ghana,Panama,Ghana,2.2,0.4545,0-0,1-0,1,No,No,Odd,4
+WC2026-E5839,Group Stage,England,Croatia,England,1.6,0.625,2-2,4-2,6,Yes,Yes,Even,4
+WC2026-E5861,Group Stage,Portugal,Congo DR,Portugal,1.18,0.8475,1-1,1-1,2,Yes,No,Even,4
+WC2026-E5855,Group Stage,Austria,Jordan,Austria,1.35,0.7407,1-0,3-1,4,Yes,Yes,Even,4
+WC2026-E5848,Group Stage,Argentina,Algeria,Argentina,1.45,0.6897,1-0,3-0,3,No,Yes,Odd,4
+WC2026-E5856,Group Stage,Iraq,Norway,Norway,1.22,0.8197,1-2,1-4,5,Yes,Yes,Odd,4
+WC2026-E5864,Group Stage,France,Senegal,France,1.42,0.7042,0-0,3-1,4,Yes,Yes,Even,4
+WC2026-E5881,Group Stage,Iran,New Zealand,Iran,1.67,0.5988,1-1,2-2,4,Yes,Yes,Even,4
+WC2026-E5876,Group Stage,Saudi Arabia,Uruguay,Uruguay,1.42,0.7042,1-0,1-1,2,Yes,No,Even,4
+WC2026-E5872,Group Stage,Belgium,Egypt,Belgium,1.35,0.7407,0-1,1-1,2,Yes,No,Even,4
+WC2026-E5873,Group Stage,Spain,Cape Verde,Spain,1.03,0.9709,0-0,0-0,0,No,No,Even,4
+WC2026-E5863,Group Stage,Sweden,Tunisia,Sweden,1.67,0.5988,2-1,5-1,6,Yes,Yes,Even,4
+WC2026-E5837,Group Stage,Ivory Coast,Ecuador,Ecuador,2.35,0.4255,0-0,1-0,1,No,No,Odd,4
+WC2026-E5850,Group Stage,Holland,Japan,Holland,1.87,0.5348,0-0,2-2,4,Yes,Yes,Even,4
+WC2026-E5832,Group Stage,Germany,Curacao,Germany,1.03,0.9709,3-1,7-1,8,Yes,Yes,Even,4
+WC2026-E5852,Group Stage,Australia,Turkey,Turkey,1.5,0.6667,1-0,2-0,2,No,No,Even,4
+WC2026-E5828,Group Stage,Haiti,Scotland,Scotland,1.37,0.7299,0-1,0-1,1,No,No,Odd,4
+WC2026-E5847,Group Stage,Brazil,Morocco,Brazil,1.48,0.6757,1-1,1-1,2,Yes,No,Even,4
+WC2026-E5841,Group Stage,Qatar,Switzerland,Switzerland,1.13,0.885,0-1,1-1,2,Yes,No,Even,4
+WC2026-E5853,Group Stage,USA,Paraguay,USA,1.8,0.5556,3-0,4-1,5,Yes,Yes,Odd,4
+WC2026-E5857,Group Stage,Canada,Bosnia,Canada,1.77,0.565,0-1,1-1,2,Yes,No,Even,4
+WC2026-E5845,Group Stage,Korea Republic,Czech Republic,Korea Republic,2.35,0.4255,0-0,2-1,3,Yes,Yes,Odd,4
+WC2026-E5818,Group Stage,Mexico,South Africa,Mexico,1.28,0.7812,1-0,2-0,2,No,No,Even,4
+WC2026-R32-001,Round of 32,South Africa,Canada,Canada,1.75,0.5714,0-0,0-1,1,No,No,Odd,4
+WC2026-R32-002,Round of 32,Brazil,Japan,Brazil,1.67,0.5988,0-1,2-1,3,Yes,Yes,Odd,4
+WC2026-R32-003,Round of 32,Germany,Paraguay,Germany,1.23,0.813,0-1,1-1,2,Yes,No,Even,4
+WC2026-R32-004,Round of 32,Holland,Morocco,Holland,1.85,0.5405,0-0,1-1,2,Yes,No,Even,4
