@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SPWIN Odds Record",
+  "type": "object",
+  "required": ["match_id", "market", "selection"],
+  "properties": {
+    "match_id": {"type": "string"},
+    "market": {"type": "string"},
+    "selection": {"type": "string"},
+    "opening_odds": {"type": ["number", "null"]},
+    "closing_odds": {"type": ["number", "null"]},
+    "current_odds": {"type": ["number", "null"]},
+    "line": {"type": ["string", "null"]},
+    "source": {"type": "string"},
+    "captured_at_sgt": {"type": "string"}
+  }
+}
