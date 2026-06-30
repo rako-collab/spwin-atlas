@@ -1,1 +1,4 @@
 match_id,engine_version,market,selection,odds_taken,closing_odds,clv,clv_status,notes
+WC2026-R32-001,SPWIN v2.4 Platinum Pro,1X2,Canada,1.60,1.75,-0.15,Negative,User bought before close; market drifted against Canada but bet won
+WC2026-R32-002,SPWIN v2.4 Platinum Pro,Asian Handicap,Brazil -0.75,1.82,,,Unknown,Closing AH odds not yet captured from SGOdds past odds detail page
+WC2026-R32-003,SPWIN v2.4 Platinum Pro,Asian Handicap,Germany -1.25,1.70,,,Unknown,Closing AH odds not yet captured from SGOdds past odds detail page
