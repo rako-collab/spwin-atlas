@@ -1,0 +1,19 @@
+match_id,source_event_id,match,date,ht_score,ft_score,market,selection,team,line,opening_odds,closing_odds,movement_pct,result,notes
+WC2026-R32-002,140179,Brazil vs Japan,2026-06-30,0-1,2-1,AH,Brazil -0.50,Brazil,-0.50,1.67,1.67,0.0,Win,User-provided SGOdds past odds text
+WC2026-R32-002,140179,Brazil vs Japan,2026-06-30,0-1,2-1,AH,Japan +0.50,Japan,+0.50,1.97,2.10,6.6,Loss,User-provided SGOdds past odds text
+WC2026-R32-002,140179,Brazil vs Japan,2026-06-30,0-1,2-1,HT_AH,Brazil -0.25,Brazil,-0.25,1.88,1.87,-0.5,Loss,User-provided SGOdds past odds text
+WC2026-R32-002,140179,Brazil vs Japan,2026-06-30,0-1,2-1,HT_AH,Japan +0.25,Japan,+0.25,1.93,1.85,-4.1,Win,User-provided SGOdds past odds text
+WC2026-R32-002,140179,Brazil vs Japan,2026-06-30,0-1,2-1,1X2,Brazil,Brazil,,1.60,1.67,4.4,Win,User-provided SGOdds past odds text
+WC2026-R32-002,140179,Brazil vs Japan,2026-06-30,0-1,2-1,1X2,Draw,Draw,,3.60,3.30,-8.3,Loss,User-provided SGOdds past odds text
+WC2026-R32-002,140179,Brazil vs Japan,2026-06-30,0-1,2-1,1X2,Japan,Japan,,4.30,4.30,0.0,Loss,User-provided SGOdds past odds text
+WC2026-R32-002,140179,Brazil vs Japan,2026-06-30,0-1,2-1,AH,Brazil -1.5,Brazil,-1.5,3.15,2.70,-14.3,Loss,User-provided SGOdds past odds text
+WC2026-R32-002,140179,Brazil vs Japan,2026-06-30,0-1,2-1,AH,Japan +1.5,Japan,+1.5,1.28,1.37,7.0,Win,User-provided SGOdds past odds text
+WC2026-R32-002,140179,Brazil vs Japan,2026-06-30,0-1,2-1,OU,Over 2.5,,2.5,1.87,1.93,3.2,Win,User-provided SGOdds past odds text
+WC2026-R32-002,140179,Brazil vs Japan,2026-06-30,0-1,2-1,OU,Under 2.5,,2.5,1.80,1.75,-2.8,Loss,User-provided SGOdds past odds text
+WC2026-R32-002,140179,Brazil vs Japan,2026-06-30,0-1,2-1,BTTS,Yes,,,1.85,1.83,-1.1,Win,User-provided SGOdds past odds text
+WC2026-R32-002,140179,Brazil vs Japan,2026-06-30,0-1,2-1,BTTS,No,,,1.80,1.83,1.7,Loss,User-provided SGOdds past odds text
+WC2026-R32-002,140179,Brazil vs Japan,2026-06-30,0-1,2-1,HT_1X2,Brazil,Brazil,,2.20,2.25,2.3,Loss,User-provided SGOdds past odds text
+WC2026-R32-002,140179,Brazil vs Japan,2026-06-30,0-1,2-1,HT_1X2,Draw,Draw,,2.25,2.15,-4.4,Loss,User-provided SGOdds past odds text
+WC2026-R32-002,140179,Brazil vs Japan,2026-06-30,0-1,2-1,HT_1X2,Japan,Japan,,4.50,4.70,4.4,Win,User-provided SGOdds past odds text
+WC2026-R32-002,140179,Brazil vs Japan,2026-06-30,0-1,2-1,HT_OU,Over 0.5,,0.5,1.35,1.40,3.7,Win,User-provided SGOdds past odds text
+WC2026-R32-002,140179,Brazil vs Japan,2026-06-30,0-1,2-1,HT_OU,Under 0.5,,0.5,2.85,2.65,-7.0,Loss,User-provided SGOdds past odds text
