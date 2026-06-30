@@ -1,0 +1,11 @@
+metric,value,notes
+engine,SPWIN v2.5 Platinum Pro Baseline 2026.1,1X2-only reproducible baseline
+total_replayed_matches,76,Rows with available closing 1X2 odds
+total_bets,67,Non-PASS recommendations
+total_passes,9,Filtered recommendations
+wins,45,Winning bets
+losses,22,Losing bets
+hit_rate_pct,67.16,Wins / bets
+total_staked_units,94.0,Grade-based units
+total_profit_loss_units,-5.36,Decimal odds settlement
+roi_pct,-5.70,Profit / staked
