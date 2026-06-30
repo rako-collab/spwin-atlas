@@ -1,0 +1,4 @@
+grade,recommendations,bets,passes,wins,losses,staked_units,profit_loss_units,roi_pct,hit_rate_pct
+A,27,27,0,20,7,54,-0.08,-0.15,74.07
+B,40,40,0,25,15,40,-5.28,-13.2,62.5
+PASS,9,0,9,0,0,0,0.0,,
