@@ -1,2 +1,3 @@
 source_event_id,source_url,input_file,import_status,markets_detected,rows_written,warnings,captured_at_sgt,notes
 140174,https://sgodds.com/football/results-past-odds/South-Africa-vs-Canada-140174,web.run:turn956562view1,partial_verified_import,20,50,manual_web_extraction_only_for_single_match,2026-06-30T23:59:00+08:00,Verified key markets from SGOdds detail page; full archive not yet batch-imported
+140180,https://sgodds.com/football/results-past-odds/Holland-vs-Morocco-140180,user_pasted_sgodds_text,partial_verified_import,7,21,user_provided_text_partial_page,2026-07-01T00:10:00+08:00,Imported AH HT_AH 1X2 handicap OU BTTS and HTFT from pasted SGOdds text
