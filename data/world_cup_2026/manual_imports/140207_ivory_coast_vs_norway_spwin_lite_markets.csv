@@ -1,0 +1,17 @@
+match_id,source_event_id,match,date,status,ht_score,ft_score,market,selection,team,line,opening_odds,closing_odds,movement_pct,result,notes
+WC2026-R32-CIV-NOR,140207,Ivory Coast vs Norway,2026-07-01,COMPLETED,0-1,1-2,AH,Ivory Coast +0.25,Ivory Coast,+0.25,1.97,2.10,6.6,Loss,User-provided SGOdds past odds text
+WC2026-R32-CIV-NOR,140207,Ivory Coast vs Norway,2026-07-01,COMPLETED,0-1,1-2,AH,Norway -0.25,Norway,-0.25,1.75,1.67,-4.6,Win,User-provided SGOdds past odds text
+WC2026-R32-CIV-NOR,140207,Ivory Coast vs Norway,2026-07-01,COMPLETED,0-1,1-2,HT_AH,Ivory Coast +0.25,Ivory Coast,+0.25,1.75,1.77,1.1,Loss,User-provided SGOdds past odds text
+WC2026-R32-CIV-NOR,140207,Ivory Coast vs Norway,2026-07-01,COMPLETED,0-1,1-2,HT_AH,Norway -0.25,Norway,-0.25,1.97,1.95,-1.0,Win,User-provided SGOdds past odds text
+WC2026-R32-CIV-NOR,140207,Ivory Coast vs Norway,2026-07-01,COMPLETED,0-1,1-2,1X2,Ivory Coast,Ivory Coast,,3.40,3.80,11.8,Loss,User-provided SGOdds past odds text
+WC2026-R32-CIV-NOR,140207,Ivory Coast vs Norway,2026-07-01,COMPLETED,0-1,1-2,1X2,Draw,Draw,,3.30,3.40,3.0,Loss,User-provided SGOdds past odds text
+WC2026-R32-CIV-NOR,140207,Ivory Coast vs Norway,2026-07-01,COMPLETED,0-1,1-2,1X2,Norway,Norway,,1.90,1.75,-7.9,Win,User-provided SGOdds past odds text
+WC2026-R32-CIV-NOR,140207,Ivory Coast vs Norway,2026-07-01,COMPLETED,0-1,1-2,AH,Ivory Coast +1.5,Ivory Coast,+1.5,1.23,1.30,5.7,Win,User-provided SGOdds past odds text
+WC2026-R32-CIV-NOR,140207,Ivory Coast vs Norway,2026-07-01,COMPLETED,0-1,1-2,AH,Norway -1.5,Norway,-1.5,3.50,3.05,-12.9,Loss,User-provided SGOdds past odds text
+WC2026-R32-CIV-NOR,140207,Ivory Coast vs Norway,2026-07-01,COMPLETED,0-1,1-2,OU,Over 2.5,,2.5,1.83,1.67,-8.7,Win,User-provided SGOdds past odds text
+WC2026-R32-CIV-NOR,140207,Ivory Coast vs Norway,2026-07-01,COMPLETED,0-1,1-2,OU,Under 2.5,,2.5,1.83,2.00,9.3,Loss,User-provided SGOdds past odds text
+WC2026-R32-CIV-NOR,140207,Ivory Coast vs Norway,2026-07-01,COMPLETED,0-1,1-2,BTTS,Yes,,,1.77,1.53,-13.6,Win,User-provided SGOdds past odds text
+WC2026-R32-CIV-NOR,140207,Ivory Coast vs Norway,2026-07-01,COMPLETED,0-1,1-2,BTTS,No,,,1.87,2.25,20.3,Loss,User-provided SGOdds past odds text
+WC2026-R32-CIV-NOR,140207,Ivory Coast vs Norway,2026-07-01,COMPLETED,0-1,1-2,HT_1X2,Ivory Coast,Ivory Coast,,4.00,4.00,0.0,Loss,User-provided SGOdds past odds text
+WC2026-R32-CIV-NOR,140207,Ivory Coast vs Norway,2026-07-01,COMPLETED,0-1,1-2,HT_1X2,Draw,Draw,,2.10,2.20,4.8,Loss,User-provided SGOdds past odds text
+WC2026-R32-CIV-NOR,140207,Ivory Coast vs Norway,2026-07-01,COMPLETED,0-1,1-2,HT_1X2,Norway,Norway,,2.50,2.35,-6.0,Win,User-provided SGOdds past odds text
