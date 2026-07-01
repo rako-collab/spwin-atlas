@@ -1,0 +1,23 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-GRP-NZL-BEL",
+  "match":"New Zealand vs Belgium",
+  "date":"2026-06-27",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Group Stage",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"0-1","ft":"1-5"},
+  "markets":[
+    {"market_code":"1X2","selection":"Belgium","team":"Belgium","opening_odds":1.20,"closing_odds":1.12,"movement_pct":-6.7,"result":"Win"},
+    {"market_code":"AH","selection":"Belgium -2.5","team":"Belgium","line":-2.5,"opening_odds":2.25,"closing_odds":1.75,"movement_pct":-22.2,"result":"Win"},
+    {"market_code":"BTTS","selection":"Yes","opening_odds":2.20,"closing_odds":1.60,"movement_pct":-27.3,"result":"Win"},
+    {"market_code":"HTFT","selection":"A-A","opening_odds":1.55,"closing_odds":1.30,"movement_pct":-16.1,"result":"Win"},
+    {"market_code":"HT_1X2","selection":"Belgium","team":"Belgium","opening_odds":1.60,"closing_odds":1.30,"movement_pct":-18.8,"result":"Win"},
+    {"market_code":"TG","selection":"6","line":6,"opening_odds":13.00,"closing_odds":6.00,"movement_pct":-53.8,"result":"Win"},
+    {"market_code":"PTS","selection":"1-5","opening_odds":35.00,"closing_odds":12.00,"movement_pct":-65.7,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"Belgium","winner_market_signal":"Belgium","handicap_signal":"Belgium -2.5","actual_winner":"Belgium","actual_first_half_winner":"Belgium","actual_total_goals":6,"actual_btts":true,"market_conflict":false,"spwin_training_notes":"Elite favourite goal explosion. Winner, AH, BTTS, HT/FT and high-goal clusters all validated."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archive_policy":"Rule 7 immutable historical data","version":"v1.0"}
+}
