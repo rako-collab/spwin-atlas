@@ -1,0 +1,32 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-R32-GER-PAR",
+  "source_event_id":"140205",
+  "match":"Germany vs Paraguay",
+  "date":"2026-06-30",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Round of 32",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"0-1","ft":"1-1"},
+  "markets":[
+    {"market_code":"HT_AH","market_name":"Half Time Asian Handicap","selection":"Germany -0.50","team":"Germany","line":-0.5,"opening_odds":1.80,"closing_odds":1.65,"movement_pct":-8.3,"result":"Loss"},
+    {"market_code":"HT_AH","market_name":"Half Time Asian Handicap","selection":"Paraguay +0.50","team":"Paraguay","line":0.5,"opening_odds":1.92,"closing_odds":2.15,"movement_pct":12.0,"result":"Win"},
+    {"market_code":"1X2","market_name":"Full Time 1X2","selection":"Germany","team":"Germany","line":null,"opening_odds":1.27,"closing_odds":1.23,"movement_pct":-3.1,"result":"Loss"},
+    {"market_code":"1X2","market_name":"Full Time 1X2","selection":"Draw","team":null,"line":null,"opening_odds":4.50,"closing_odds":5.00,"movement_pct":11.1,"result":"Win"},
+    {"market_code":"1X2","market_name":"Full Time 1X2","selection":"Paraguay","team":"Paraguay","line":null,"opening_odds":8.00,"closing_odds":9.50,"movement_pct":18.8,"result":"Loss"},
+    {"market_code":"AH","market_name":"Asian Handicap","selection":"Germany -1.5","team":"Germany","line":-1.5,"opening_odds":1.90,"closing_odds":1.75,"movement_pct":-7.9,"result":"Loss"},
+    {"market_code":"AH","market_name":"Asian Handicap","selection":"Paraguay +1.5","team":"Paraguay","line":1.5,"opening_odds":1.75,"closing_odds":1.90,"movement_pct":8.6,"result":"Win"},
+    {"market_code":"OU","market_name":"Total Goals Over/Under 2.5","selection":"Over 2.5","team":null,"line":2.5,"opening_odds":1.65,"closing_odds":1.58,"movement_pct":-4.2,"result":"Loss"},
+    {"market_code":"OU","market_name":"Total Goals Over/Under 2.5","selection":"Under 2.5","team":null,"line":2.5,"opening_odds":2.07,"closing_odds":2.20,"movement_pct":6.3,"result":"Win"},
+    {"market_code":"BTTS","market_name":"Will Both Teams Score","selection":"Yes","team":null,"line":null,"opening_odds":1.87,"closing_odds":1.87,"movement_pct":0.0,"result":"Win"},
+    {"market_code":"BTTS","market_name":"Will Both Teams Score","selection":"No","team":null,"line":null,"opening_odds":1.77,"closing_odds":1.77,"movement_pct":0.0,"result":"Loss"},
+    {"market_code":"HTFT","market_name":"Halftime-Fulltime","selection":"A-D","team":null,"line":null,"opening_odds":19.00,"closing_odds":21.00,"movement_pct":10.5,"result":"Win"},
+    {"market_code":"PTS","market_name":"Pick The Score","selection":"1-1","team":null,"line":null,"opening_odds":8.50,"closing_odds":9.00,"movement_pct":5.9,"result":"Win"},
+    {"market_code":"HT_1X2","market_name":"Half Time 1X2","selection":"Paraguay","team":"Paraguay","line":null,"opening_odds":7.00,"closing_odds":8.00,"movement_pct":14.3,"result":"Win"},
+    {"market_code":"HT_PTS","market_name":"Half Time Pick The Score","selection":"0-1","team":null,"line":null,"opening_odds":9.50,"closing_odds":10.00,"movement_pct":5.3,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"Germany","winner_market_signal":"Germany","handicap_signal":"Germany -1.5","goals_market_signal":"Over 2.5","actual_winner":"Draw","actual_first_half_winner":"Paraguay","actual_total_goals":2,"actual_btts":true,"market_conflict":false,"market_failure_type":"Over-compressed false favourite","spwin_training_notes":"Critical negative sample. Germany shortened across 1X2, handicap, HT and goals markets but failed to win. Supports over-compression filter and Capital Shield PASS logic."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archived_by":"ChatGPT","archive_policy":"Rule 7 immutable historical data","created_from":"Chat conversation odds paste","version":"v1.0"}
+}
