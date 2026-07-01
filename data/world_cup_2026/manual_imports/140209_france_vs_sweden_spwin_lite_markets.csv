@@ -1,0 +1,15 @@
+match_id,source_event_id,match,date,status,ht_score,ft_score,market,selection,team,line,opening_odds,closing_odds,movement_pct,result,notes
+WC2026-R32-FRA-SWE,140209,France vs Sweden,2026-07-01,COMPLETED,1-0,3-0,HT_AH,France -0.75,France,-0.75,1.97,1.82,-7.6,Win,User-provided SGOdds past odds text
+WC2026-R32-FRA-SWE,140209,France vs Sweden,2026-07-01,COMPLETED,1-0,3-0,HT_AH,Sweden +0.75,Sweden,+0.75,1.75,1.90,8.6,Loss,User-provided SGOdds past odds text
+WC2026-R32-FRA-SWE,140209,France vs Sweden,2026-07-01,COMPLETED,1-0,3-0,1X2,France,France,,1.25,1.17,-6.4,Win,User-provided SGOdds past odds text
+WC2026-R32-FRA-SWE,140209,France vs Sweden,2026-07-01,COMPLETED,1-0,3-0,1X2,Draw,Draw,,4.50,5.80,28.9,Loss,User-provided SGOdds past odds text
+WC2026-R32-FRA-SWE,140209,France vs Sweden,2026-07-01,COMPLETED,1-0,3-0,1X2,Sweden,Sweden,,9.50,10.00,5.3,Loss,User-provided SGOdds past odds text
+WC2026-R32-FRA-SWE,140209,France vs Sweden,2026-07-01,COMPLETED,1-0,3-0,AH,France -1.5,France,-1.5,1.82,1.63,-10.4,Win,User-provided SGOdds past odds text
+WC2026-R32-FRA-SWE,140209,France vs Sweden,2026-07-01,COMPLETED,1-0,3-0,AH,Sweden +1.5,Sweden,+1.5,1.82,2.05,12.6,Loss,User-provided SGOdds past odds text
+WC2026-R32-FRA-SWE,140209,France vs Sweden,2026-07-01,COMPLETED,1-0,3-0,OU,Over 3.5,,3.5,2.35,1.87,-20.4,Loss,User-provided SGOdds past odds text
+WC2026-R32-FRA-SWE,140209,France vs Sweden,2026-07-01,COMPLETED,1-0,3-0,OU,Under 3.5,,3.5,1.50,1.80,20.0,Win,User-provided SGOdds past odds text
+WC2026-R32-FRA-SWE,140209,France vs Sweden,2026-07-01,COMPLETED,1-0,3-0,BTTS,Yes,,,1.90,1.60,-15.8,Loss,User-provided SGOdds past odds text
+WC2026-R32-FRA-SWE,140209,France vs Sweden,2026-07-01,COMPLETED,1-0,3-0,BTTS,No,,,1.75,2.10,20.0,Win,User-provided SGOdds past odds text
+WC2026-R32-FRA-SWE,140209,France vs Sweden,2026-07-01,COMPLETED,1-0,3-0,HT_1X2,France,France,,1.63,1.58,-3.1,Win,User-provided SGOdds past odds text
+WC2026-R32-FRA-SWE,140209,France vs Sweden,2026-07-01,COMPLETED,1-0,3-0,HT_1X2,Draw,Draw,,2.50,2.90,16.0,Loss,User-provided SGOdds past odds text
+WC2026-R32-FRA-SWE,140209,France vs Sweden,2026-07-01,COMPLETED,1-0,3-0,HT_1X2,Sweden,Sweden,,8.00,7.00,-12.5,Loss,User-provided SGOdds past odds text
