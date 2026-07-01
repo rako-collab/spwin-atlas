@@ -1,0 +1,23 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-GRP-PAN-ENG",
+  "match":"Panama vs England",
+  "date":"2026-06-28",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Group Stage",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"0-0","ft":"0-2"},
+  "markets":[
+    {"market_code":"1X2","selection":"England","team":"England","opening_odds":1.13,"closing_odds":1.05,"movement_pct":-7.1,"result":"Win"},
+    {"market_code":"AH","selection":"England -2.5","team":"England","line":-2.5,"opening_odds":2.10,"closing_odds":1.70,"movement_pct":-19.0,"result":"Loss"},
+    {"market_code":"BTTS","selection":"No","opening_odds":1.60,"closing_odds":1.63,"movement_pct":1.9,"result":"Win"},
+    {"market_code":"HTFT","selection":"D-A","opening_odds":3.80,"closing_odds":4.10,"movement_pct":7.9,"result":"Win"},
+    {"market_code":"PTS","selection":"0-2","opening_odds":5.50,"closing_odds":6.00,"movement_pct":9.1,"result":"Win"},
+    {"market_code":"HT_1X2","selection":"Draw","opening_odds":3.00,"closing_odds":3.40,"movement_pct":13.3,"result":"Win"},
+    {"market_code":"HT_PTS","selection":"0-0","opening_odds":3.90,"closing_odds":4.40,"movement_pct":12.8,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"England","winner_market_signal":"England","handicap_signal":"England -2.5 failed","actual_winner":"England","actual_first_half_winner":"Draw","actual_total_goals":2,"actual_btts":false,"market_conflict":true,"spwin_training_notes":"Strong favourite won but failed large handicap and failed to lead HT. Useful D-A favourite-control sample."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archive_policy":"Rule 7 immutable historical data","version":"v1.0"}
+}
