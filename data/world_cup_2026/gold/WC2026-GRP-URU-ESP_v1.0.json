@@ -1,0 +1,23 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-GRP-URU-ESP",
+  "match":"Uruguay vs Spain",
+  "date":"2026-06-27",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Group Stage",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"0-1","ft":"0-1"},
+  "markets":[
+    {"market_code":"AH","selection":"Spain -0.75","team":"Spain","line":-0.75,"opening_odds":1.75,"closing_odds":1.72,"movement_pct":-1.7,"result":"Win"},
+    {"market_code":"1X2","selection":"Spain","team":"Spain","opening_odds":1.42,"closing_odds":1.42,"movement_pct":0.0,"result":"Win"},
+    {"market_code":"OU","selection":"Under 2.5","line":2.5,"opening_odds":1.87,"closing_odds":1.87,"movement_pct":0.0,"result":"Win"},
+    {"market_code":"BTTS","selection":"No","opening_odds":1.77,"closing_odds":1.87,"movement_pct":5.6,"result":"Win"},
+    {"market_code":"HT_1X2","selection":"Spain","team":"Spain","opening_odds":1.95,"closing_odds":1.95,"movement_pct":0.0,"result":"Win"},
+    {"market_code":"HTFT","selection":"A-A","opening_odds":2.10,"closing_odds":2.25,"movement_pct":7.1,"result":"Win"},
+    {"market_code":"PTS","selection":"0-1","opening_odds":5.50,"closing_odds":8.50,"movement_pct":54.5,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"Spain","winner_market_signal":"Spain stable favourite","actual_winner":"Spain","actual_first_half_winner":"Spain","actual_total_goals":1,"actual_btts":false,"market_conflict":true,"spwin_training_notes":"Controlled favourite win. Spain won 1-0 despite noisy BTTS/score markets. Useful elite-control sample."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archive_policy":"Rule 7 immutable historical data","version":"v1.0"}
+}
