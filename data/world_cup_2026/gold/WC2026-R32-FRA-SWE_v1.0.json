@@ -1,0 +1,27 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-R32-FRA-SWE",
+  "source_event_id":"140209",
+  "match":"France vs Sweden",
+  "date":"2026-07-01",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Round of 32",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"1-0","ft":"3-0"},
+  "markets":[
+    {"market_code":"HT_AH","market_name":"Half Time Asian Handicap","selection":"France -0.75","team":"France","line":-0.75,"opening_odds":1.97,"closing_odds":1.82,"movement_pct":-7.6,"result":"Win"},
+    {"market_code":"1X2","market_name":"Full Time 1X2","selection":"France","team":"France","line":null,"opening_odds":1.25,"closing_odds":1.17,"movement_pct":-6.4,"result":"Win"},
+    {"market_code":"AH","market_name":"Asian Handicap","selection":"France -1.5","team":"France","line":-1.5,"opening_odds":1.82,"closing_odds":1.63,"movement_pct":-10.4,"result":"Win"},
+    {"market_code":"OU","market_name":"Total Goals Over/Under 3.5","selection":"Over 3.5","team":null,"line":3.5,"opening_odds":2.35,"closing_odds":1.87,"movement_pct":-20.4,"result":"Loss"},
+    {"market_code":"OU","market_name":"Total Goals Over/Under 3.5","selection":"Under 3.5","team":null,"line":3.5,"opening_odds":1.50,"closing_odds":1.80,"movement_pct":20.0,"result":"Win"},
+    {"market_code":"BTTS","market_name":"Will Both Teams Score","selection":"Yes","team":null,"line":null,"opening_odds":1.90,"closing_odds":1.60,"movement_pct":-15.8,"result":"Loss"},
+    {"market_code":"BTTS","market_name":"Will Both Teams Score","selection":"No","team":null,"line":null,"opening_odds":1.75,"closing_odds":2.10,"movement_pct":20.0,"result":"Win"},
+    {"market_code":"HTFT","market_name":"Halftime-Fulltime","selection":"H-H","team":null,"line":null,"opening_odds":1.75,"closing_odds":1.60,"movement_pct":-8.6,"result":"Win"},
+    {"market_code":"PTS","market_name":"Pick The Score","selection":"3-0","team":null,"line":null,"opening_odds":7.00,"closing_odds":8.00,"movement_pct":14.3,"result":"Win"},
+    {"market_code":"HT_1X2","market_name":"Half Time 1X2","selection":"France","team":"France","line":null,"opening_odds":1.63,"closing_odds":1.58,"movement_pct":-3.1,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"France","winner_market_signal":"France","handicap_signal":"France -1.5","goals_market_signal":"Over 3.5","btts_signal":"Yes","actual_winner":"France","actual_first_half_winner":"France","actual_total_goals":3,"actual_btts":false,"market_conflict":true,"spwin_training_notes":"Winner/handicap markets were correct. Goals markets were over-aggressive: Over 3.5 and BTTS Yes failed in a 3-0. Supports winner-vs-goals separation."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archived_by":"ChatGPT","archive_policy":"Rule 7 immutable historical data","created_from":"Chat conversation odds paste","version":"v1.0"}
+}
