@@ -1,0 +1,23 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-GRP-CPV-KSA",
+  "match":"Cape Verde vs Saudi Arabia",
+  "date":"2026-06-27",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Group Stage",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"0-0","ft":"0-0"},
+  "markets":[
+    {"market_code":"1X2","selection":"Draw","opening_odds":3.10,"closing_odds":3.05,"movement_pct":-1.6,"result":"Win"},
+    {"market_code":"OU","selection":"Under 2.5","line":2.5,"opening_odds":1.68,"closing_odds":1.60,"movement_pct":-4.8,"result":"Win"},
+    {"market_code":"BTTS","selection":"No","opening_odds":1.88,"closing_odds":1.82,"movement_pct":-3.2,"result":"Win"},
+    {"market_code":"HTFT","selection":"D-D","opening_odds":5.00,"closing_odds":4.50,"movement_pct":-10.0,"result":"Win"},
+    {"market_code":"PTS","selection":"0-0","opening_odds":9.50,"closing_odds":9.00,"movement_pct":-5.3,"result":"Win"},
+    {"market_code":"HT_1X2","selection":"Draw","opening_odds":2.05,"closing_odds":2.05,"movement_pct":0.0,"result":"Win"},
+    {"market_code":"HT_PTS","selection":"0-0","opening_odds":2.75,"closing_odds":2.50,"movement_pct":-9.1,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"Balanced / Saudi slight close","winner_market_signal":"Draw/low-event","actual_winner":"Draw","actual_first_half_winner":"Draw","actual_total_goals":0,"actual_btts":false,"market_conflict":false,"spwin_training_notes":"Defensive deadlock. Draw, Under, BTTS No, HT 0-0 and D-D all validated."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archive_policy":"Rule 7 immutable historical data","version":"v1.0"}
+}
