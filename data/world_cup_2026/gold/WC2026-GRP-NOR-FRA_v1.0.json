@@ -1,0 +1,25 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-GRP-NOR-FRA",
+  "match":"Norway vs France",
+  "date":"2026-06-27",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Group Stage",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"1-3","ft":"1-4"},
+  "markets":[
+    {"market_code":"AH","selection":"France -1.25","team":"France","line":-1.25,"opening_odds":2.03,"closing_odds":1.85,"movement_pct":-8.9,"result":"Win"},
+    {"market_code":"1X2","selection":"France","team":"France","opening_odds":1.65,"closing_odds":1.37,"movement_pct":-17.0,"result":"Win"},
+    {"market_code":"AH","selection":"France -1.5","team":"France","line":-1.5,"opening_odds":2.80,"closing_odds":2.00,"movement_pct":-28.6,"result":"Win"},
+    {"market_code":"OU","selection":"Over 3.5","line":3.5,"opening_odds":2.35,"closing_odds":1.97,"movement_pct":-16.2,"result":"Win"},
+    {"market_code":"BTTS","selection":"Yes","opening_odds":1.58,"closing_odds":1.53,"movement_pct":-3.2,"result":"Win"},
+    {"market_code":"HT_1X2","selection":"France","team":"France","opening_odds":2.20,"closing_odds":1.77,"movement_pct":-19.5,"result":"Win"},
+    {"market_code":"HTFT","selection":"A-A","opening_odds":2.40,"closing_odds":1.87,"movement_pct":-22.1,"result":"Win"},
+    {"market_code":"HT_OU","selection":"Over 1.5","line":1.5,"opening_odds":2.40,"closing_odds":1.83,"movement_pct":-23.8,"result":"Win"},
+    {"market_code":"PTS","selection":"1-4","opening_odds":23.00,"closing_odds":15.00,"movement_pct":-34.8,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"France","winner_market_signal":"France","handicap_signal":"France -1.25/-1.5","actual_winner":"France","actual_first_half_winner":"France","actual_total_goals":5,"actual_btts":true,"market_conflict":false,"spwin_training_notes":"Elite favourite goal explosion. France steam, AH, HT, HT/FT, HT goals and high-goal cluster all validated."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archive_policy":"Rule 7 immutable historical data","version":"v1.0"}
+}
