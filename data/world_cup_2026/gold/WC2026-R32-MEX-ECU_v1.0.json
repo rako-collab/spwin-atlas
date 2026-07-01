@@ -1,0 +1,27 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-R32-MEX-ECU",
+  "source_event_id":"140217",
+  "match":"Mexico vs Ecuador",
+  "date":"2026-07-01",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Round of 32",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"2-0","ft":"2-0"},
+  "markets":[
+    {"market_code":"AH","market_name":"Asian Handicap","selection":"Mexico -0.25","team":"Mexico","line":-0.25,"opening_odds":1.75,"closing_odds":1.75,"movement_pct":0.0,"result":"Win"},
+    {"market_code":"AH","market_name":"Asian Handicap","selection":"Ecuador +0.25","team":"Ecuador","line":0.25,"opening_odds":1.97,"closing_odds":2.00,"movement_pct":1.5,"result":"Loss"},
+    {"market_code":"1X2","market_name":"Full Time 1X2","selection":"Mexico","team":"Mexico","line":null,"opening_odds":2.10,"closing_odds":1.80,"movement_pct":-14.3,"result":"Win"},
+    {"market_code":"1X2","market_name":"Full Time 1X2","selection":"Draw","team":null,"line":null,"opening_odds":2.85,"closing_odds":2.60,"movement_pct":-8.8,"result":"Loss"},
+    {"market_code":"1X2","market_name":"Full Time 1X2","selection":"Ecuador","team":"Ecuador","line":null,"opening_odds":3.40,"closing_odds":5.20,"movement_pct":52.9,"result":"Loss"},
+    {"market_code":"AH","market_name":"Asian Handicap","selection":"Mexico -1.5","team":"Mexico","line":-1.5,"opening_odds":4.40,"closing_odds":3.55,"movement_pct":-19.3,"result":"Win"},
+    {"market_code":"OU","market_name":"Total Goals Over/Under 1.5","selection":"Over 1.5","team":null,"line":1.5,"opening_odds":1.50,"closing_odds":1.53,"movement_pct":2.0,"result":"Win"},
+    {"market_code":"BTTS","market_name":"Will Both Teams Score","selection":"No","team":null,"line":null,"opening_odds":1.60,"closing_odds":1.53,"movement_pct":-4.4,"result":"Win"},
+    {"market_code":"HT_1X2","market_name":"Half Time 1X2","selection":"Mexico","team":"Mexico","line":null,"opening_odds":2.85,"closing_odds":2.95,"movement_pct":3.5,"result":"Win"},
+    {"market_code":"PTS","market_name":"Pick The Score","selection":"2-0","team":null,"line":null,"opening_odds":8.00,"closing_odds":8.50,"movement_pct":6.3,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"Mexico","winner_market_signal":"Mexico","handicap_signal":"Mexico -0.25 / -1.5","goals_market_signal":"Over 1.5 only","btts_signal":"No","actual_winner":"Mexico","actual_first_half_winner":"Mexico","actual_total_goals":2,"actual_btts":false,"market_conflict":false,"spwin_training_notes":"Strong Mexico winner signal and Ecuador drift. Mexico won 2-0; winner, AH and BTTS No validated. Useful positive sample for v2.5.1."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archived_by":"ChatGPT","archive_policy":"Rule 7 immutable historical data","created_from":"Chat conversation odds paste","version":"v1.0"}
+}
