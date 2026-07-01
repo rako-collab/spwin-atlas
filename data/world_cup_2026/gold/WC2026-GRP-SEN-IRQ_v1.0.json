@@ -1,0 +1,23 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-GRP-SEN-IRQ",
+  "match":"Senegal vs Iraq",
+  "date":"2026-06-27",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Group Stage",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"1-0","ft":"5-0"},
+  "markets":[
+    {"market_code":"1X2","selection":"Senegal","team":"Senegal","opening_odds":1.22,"closing_odds":1.20,"movement_pct":-1.6,"result":"Win"},
+    {"market_code":"AH","selection":"Senegal -1.5","team":"Senegal","line":-1.5,"opening_odds":1.63,"closing_odds":1.43,"movement_pct":-12.3,"result":"Win"},
+    {"market_code":"BTTS","selection":"No","opening_odds":1.60,"closing_odds":1.75,"movement_pct":9.4,"result":"Win"},
+    {"market_code":"HTFT","selection":"H-H","opening_odds":1.55,"closing_odds":1.42,"movement_pct":-8.4,"result":"Win"},
+    {"market_code":"HT_1X2","selection":"Senegal","team":"Senegal","opening_odds":1.60,"closing_odds":1.42,"movement_pct":-11.3,"result":"Win"},
+    {"market_code":"TG","selection":"5","line":5,"opening_odds":7.00,"closing_odds":6.00,"movement_pct":-14.3,"result":"Win"},
+    {"market_code":"PTS","selection":"5-0","opening_odds":19.00,"closing_odds":15.00,"movement_pct":-21.1,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"Senegal","winner_market_signal":"Senegal","handicap_signal":"Senegal -1.5","actual_winner":"Senegal","actual_first_half_winner":"Senegal","actual_total_goals":5,"actual_btts":false,"market_conflict":true,"spwin_training_notes":"Favourite goal explosion with clean sheet. Refines Rule 8 by separating blowout from BTTS assumptions."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archive_policy":"Rule 7 immutable historical data","version":"v1.0"}
+}
