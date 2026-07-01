@@ -1,0 +1,27 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-R32-NED-MAR",
+  "source_event_id":"140180",
+  "match":"Holland vs Morocco",
+  "date":"2026-06-30",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Round of 32",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"0-0","ft":"1-1"},
+  "markets":[
+    {"market_code":"AH","market_name":"Asian Handicap","selection":"Holland -0.25","team":"Holland","line":-0.25,"opening_odds":1.75,"closing_odds":1.77,"movement_pct":1.1,"result":"Loss"},
+    {"market_code":"AH","market_name":"Asian Handicap","selection":"Morocco +0.25","team":"Morocco","line":0.25,"opening_odds":1.97,"closing_odds":1.95,"movement_pct":-1.0,"result":"Win"},
+    {"market_code":"1X2","market_name":"Full Time 1X2","selection":"Holland","team":"Holland","line":null,"opening_odds":1.92,"closing_odds":1.85,"movement_pct":-3.6,"result":"Loss"},
+    {"market_code":"1X2","market_name":"Full Time 1X2","selection":"Draw","team":null,"line":null,"opening_odds":3.10,"closing_odds":3.20,"movement_pct":3.2,"result":"Win"},
+    {"market_code":"1X2","market_name":"Full Time 1X2","selection":"Morocco","team":"Morocco","line":null,"opening_odds":3.50,"closing_odds":3.70,"movement_pct":5.7,"result":"Loss"},
+    {"market_code":"OU","market_name":"Total Goals Over/Under 2.5","selection":"Over 2.5","team":null,"line":2.5,"opening_odds":2.07,"closing_odds":1.87,"movement_pct":-9.7,"result":"Loss"},
+    {"market_code":"OU","market_name":"Total Goals Over/Under 2.5","selection":"Under 2.5","team":null,"line":2.5,"opening_odds":1.65,"closing_odds":1.80,"movement_pct":9.1,"result":"Win"},
+    {"market_code":"BTTS","market_name":"Will Both Teams Score","selection":"Yes","team":null,"line":null,"opening_odds":1.90,"closing_odds":1.60,"movement_pct":-15.8,"result":"Win"},
+    {"market_code":"BTTS","market_name":"Will Both Teams Score","selection":"No","team":null,"line":null,"opening_odds":1.75,"closing_odds":2.10,"movement_pct":20.0,"result":"Loss"},
+    {"market_code":"HTFT","market_name":"Halftime-Fulltime","selection":"D-D","team":null,"line":null,"opening_odds":4.70,"closing_odds":6.50,"movement_pct":38.3,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"Holland","winner_market_signal":"Weak Holland","goals_market_signal":"Over 2.5 / BTTS Yes","actual_winner":"Draw","actual_first_half_winner":"Draw","actual_total_goals":2,"actual_btts":true,"market_conflict":true,"spwin_training_notes":"Balanced knockout match with weak favourite signal and draw outcome. Supports PASS on conflicted/low-edge matches."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archived_by":"ChatGPT","archive_policy":"Rule 7 immutable historical data","created_from":"Chat conversation odds paste","version":"v1.0"}
+}
