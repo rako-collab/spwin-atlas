@@ -1,0 +1,24 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-GRP-EGY-IRN",
+  "match":"Egypt vs IRN",
+  "date":"2026-06-27",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Group Stage",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"1-1","ft":"1-1"},
+  "markets":[
+    {"market_code":"AH","selection":"Egypt 0.00","team":"Egypt","line":0.0,"opening_odds":1.72,"closing_odds":1.72,"movement_pct":0.0,"result":"Push"},
+    {"market_code":"1X2","selection":"Draw","opening_odds":2.65,"closing_odds":2.50,"movement_pct":-5.7,"result":"Win"},
+    {"market_code":"OU","selection":"Over 1.5","line":1.5,"opening_odds":1.47,"closing_odds":1.53,"movement_pct":4.1,"result":"Win"},
+    {"market_code":"BTTS","selection":"Yes","opening_odds":2.00,"closing_odds":2.10,"movement_pct":5.0,"result":"Win"},
+    {"market_code":"HTFT","selection":"D-D","opening_odds":4.00,"closing_odds":3.20,"movement_pct":-20.0,"result":"Win"},
+    {"market_code":"PTS","selection":"1-1","opening_odds":5.00,"closing_odds":4.70,"movement_pct":-6.0,"result":"Win"},
+    {"market_code":"HT_1X2","selection":"Draw","opening_odds":1.82,"closing_odds":1.80,"movement_pct":-1.1,"result":"Win"},
+    {"market_code":"HT_PTS","selection":"1-1","opening_odds":8.50,"closing_odds":8.50,"movement_pct":0.0,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"Egypt opening favourite; market shifted away","winner_market_signal":"Draw","actual_winner":"Draw","actual_first_half_winner":"Draw","actual_total_goals":2,"actual_btts":true,"market_conflict":true,"spwin_training_notes":"Balanced draw case. D-D and 1-1 score cluster validated; useful draw-compression sample."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archive_policy":"Rule 7 immutable historical data","version":"v1.0"}
+}
