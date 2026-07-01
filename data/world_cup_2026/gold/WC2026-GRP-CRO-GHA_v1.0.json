@@ -1,0 +1,23 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-GRP-CRO-GHA",
+  "match":"Croatia vs Ghana",
+  "date":"2026-06-28",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Group Stage",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"1-0","ft":"2-1"},
+  "markets":[
+    {"market_code":"AH","selection":"Croatia -0.50","team":"Croatia","line":-0.5,"opening_odds":1.77,"closing_odds":1.70,"movement_pct":-4.0,"result":"Win"},
+    {"market_code":"1X2","selection":"Croatia","team":"Croatia","opening_odds":1.72,"closing_odds":1.70,"movement_pct":-1.2,"result":"Win"},
+    {"market_code":"OU","selection":"Over 2.5","line":2.5,"opening_odds":2.00,"closing_odds":2.15,"movement_pct":7.5,"result":"Win"},
+    {"market_code":"BTTS","selection":"Yes","opening_odds":1.87,"closing_odds":1.95,"movement_pct":4.3,"result":"Win"},
+    {"market_code":"HT_1X2","selection":"Croatia","team":"Croatia","opening_odds":2.35,"closing_odds":2.45,"movement_pct":4.3,"result":"Win"},
+    {"market_code":"HTFT","selection":"H-H","opening_odds":2.60,"closing_odds":2.85,"movement_pct":9.6,"result":"Win"},
+    {"market_code":"PTS","selection":"2-1","opening_odds":7.50,"closing_odds":8.00,"movement_pct":6.7,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"Croatia","winner_market_signal":"Croatia","actual_winner":"Croatia","actual_first_half_winner":"Croatia","actual_total_goals":3,"actual_btts":true,"market_conflict":true,"spwin_training_notes":"Winner/AH correct while Under and BTTS No market lean failed. Good winner-vs-goals separation sample."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archive_policy":"Rule 7 immutable historical data","version":"v1.0"}
+}
