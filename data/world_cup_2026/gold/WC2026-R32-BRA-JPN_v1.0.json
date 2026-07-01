@@ -1,0 +1,31 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-R32-BRA-JPN",
+  "source_event_id":"140179",
+  "match":"Brazil vs Japan",
+  "date":"2026-06-30",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Round of 32",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"0-1","ft":"2-1"},
+  "markets":[
+    {"market_code":"AH","market_name":"Asian Handicap","selection":"Brazil -0.50","team":"Brazil","line":-0.5,"opening_odds":1.67,"closing_odds":1.67,"movement_pct":0.0,"result":"Win"},
+    {"market_code":"AH","market_name":"Asian Handicap","selection":"Japan +0.50","team":"Japan","line":0.5,"opening_odds":1.97,"closing_odds":2.10,"movement_pct":6.6,"result":"Loss"},
+    {"market_code":"1X2","market_name":"Full Time 1X2","selection":"Brazil","team":"Brazil","line":null,"opening_odds":1.60,"closing_odds":1.67,"movement_pct":4.4,"result":"Win"},
+    {"market_code":"1X2","market_name":"Full Time 1X2","selection":"Draw","team":null,"line":null,"opening_odds":3.60,"closing_odds":3.30,"movement_pct":-8.3,"result":"Loss"},
+    {"market_code":"1X2","market_name":"Full Time 1X2","selection":"Japan","team":"Japan","line":null,"opening_odds":4.30,"closing_odds":4.30,"movement_pct":0.0,"result":"Loss"},
+    {"market_code":"AH","market_name":"Asian Handicap","selection":"Brazil -1.5","team":"Brazil","line":-1.5,"opening_odds":3.15,"closing_odds":2.70,"movement_pct":-14.3,"result":"Loss"},
+    {"market_code":"AH","market_name":"Asian Handicap","selection":"Japan +1.5","team":"Japan","line":1.5,"opening_odds":1.28,"closing_odds":1.37,"movement_pct":7.0,"result":"Win"},
+    {"market_code":"OU","market_name":"Total Goals Over/Under 2.5","selection":"Over 2.5","team":null,"line":2.5,"opening_odds":1.87,"closing_odds":1.93,"movement_pct":3.2,"result":"Win"},
+    {"market_code":"OU","market_name":"Total Goals Over/Under 2.5","selection":"Under 2.5","team":null,"line":2.5,"opening_odds":1.80,"closing_odds":1.75,"movement_pct":-2.8,"result":"Loss"},
+    {"market_code":"BTTS","market_name":"Will Both Teams Score","selection":"Yes","team":null,"line":null,"opening_odds":1.85,"closing_odds":1.83,"movement_pct":-1.1,"result":"Win"},
+    {"market_code":"BTTS","market_name":"Will Both Teams Score","selection":"No","team":null,"line":null,"opening_odds":1.80,"closing_odds":1.83,"movement_pct":1.7,"result":"Loss"},
+    {"market_code":"HT_1X2","market_name":"Half Time 1X2","selection":"Japan","team":"Japan","line":null,"opening_odds":4.50,"closing_odds":4.70,"movement_pct":4.4,"result":"Win"},
+    {"market_code":"HT_PTS","market_name":"Half Time Pick The Score","selection":"0-1","team":null,"line":null,"opening_odds":6.50,"closing_odds":7.50,"movement_pct":15.4,"result":"Win"},
+    {"market_code":"HT_BTTS","market_name":"Half Time Will Both Teams Score","selection":"No","team":null,"line":null,"opening_odds":1.10,"closing_odds":1.20,"movement_pct":9.1,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"Brazil","winner_market_signal":"Weak / Brazil drifted","handicap_signal":"Brazil -1.5 shortened but failed","goals_market_signal":"Under 2.5 slight","actual_winner":"Brazil","actual_first_half_winner":"Japan","actual_total_goals":3,"actual_btts":true,"market_conflict":true,"spwin_training_notes":"Brazil won despite drifting in 1X2. Weak consensus; favourite comeback after trailing at HT. Useful for PASS validation and comeback model."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archived_by":"ChatGPT","archive_policy":"Rule 7 immutable historical data","created_from":"Chat conversation odds paste","version":"v1.0"}
+}
