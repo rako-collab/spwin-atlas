@@ -1,0 +1,28 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-GRP-TUN-NED",
+  "match":"Tunisia vs Holland",
+  "date":"2026-06-26",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Group Stage",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"0-2","ft":"1-3"},
+  "markets":[
+    {"market_code":"1X2","selection":"Tunisia","team":"Tunisia","opening_odds":13.00,"closing_odds":13.00,"movement_pct":0.0,"result":"Loss"},
+    {"market_code":"1X2","selection":"Draw","opening_odds":6.50,"closing_odds":8.00,"movement_pct":23.1,"result":"Loss"},
+    {"market_code":"1X2","selection":"Holland","team":"Holland","opening_odds":1.12,"closing_odds":1.07,"movement_pct":-4.5,"result":"Win"},
+    {"market_code":"AH","selection":"Holland -2.5","team":"Holland","line":-2.5,"opening_odds":2.15,"closing_odds":2.05,"movement_pct":-4.7,"result":"Win"},
+    {"market_code":"BTTS","selection":"Yes","opening_odds":2.15,"closing_odds":1.90,"movement_pct":-11.6,"result":"Win"},
+    {"market_code":"HTFT","selection":"A-A","opening_odds":1.45,"closing_odds":1.37,"movement_pct":-5.5,"result":"Win"},
+    {"market_code":"PTS","selection":"1-3","opening_odds":9.00,"closing_odds":9.00,"movement_pct":0.0,"result":"Win"},
+    {"market_code":"TG","selection":"4","line":4,"opening_odds":4.10,"closing_odds":3.90,"movement_pct":-4.9,"result":"Win"},
+    {"market_code":"FG","selection":"Holland","team":"Holland","opening_odds":1.13,"closing_odds":1.13,"movement_pct":0.0,"result":"Win"},
+    {"market_code":"HT_1X2","selection":"Holland","team":"Holland","opening_odds":1.42,"closing_odds":1.35,"movement_pct":-4.9,"result":"Win"},
+    {"market_code":"HT_PTS","selection":"0-2","opening_odds":4.30,"closing_odds":3.90,"movement_pct":-9.3,"result":"Win"},
+    {"market_code":"HT_BTTS","selection":"No","opening_odds":1.09,"closing_odds":1.15,"movement_pct":5.5,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"Holland","winner_market_signal":"Holland elite favourite","actual_winner":"Holland","actual_first_half_winner":"Holland","actual_total_goals":4,"actual_btts":true,"market_conflict":false,"pattern":"ELITE_FAVOURITE_CONCEDES","spwin_training_notes":"Holland winner, handicap, HT/FT and BTTS Yes all validated. Useful dominant favourite with concession profile."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archive_policy":"Rule 7 immutable historical data","version":"v1.0"}
+}
