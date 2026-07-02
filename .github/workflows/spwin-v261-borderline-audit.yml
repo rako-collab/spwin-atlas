@@ -7,6 +7,7 @@ on:
       - "tools/run_spwin_v261_borderline_audit.py"
       - ".github/workflows/spwin-v261-borderline-audit.yml"
       - "spwin_engine/**"
+      - "tests/**"
       - "data/world_cup_2026/gold/**"
   workflow_dispatch:
 
@@ -32,6 +33,9 @@ jobs:
             spwin_engine/v260.py \
             spwin_engine/v261.py \
             tools/run_spwin_v261_borderline_audit.py
+
+      - name: Run replay integrity regression tests
+        run: python -m unittest discover -s tests -v
 
       - name: Run authoritative 82-match replay and audit
         run: |
