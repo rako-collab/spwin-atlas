@@ -1,0 +1,38 @@
+name: World Cup 82 Match Pattern Audit
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "tools/run_82_match_pattern_audit.py"
+      - ".github/workflows/world-cup-82-pattern-audit.yml"
+      - "spwin_engine/**"
+      - "data/world_cup_2026/gold/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile audit
+        run: python -m py_compile tools/run_82_match_pattern_audit.py
+      - name: Run regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Run pattern audit
+        run: |
+          python tools/run_82_match_pattern_audit.py \
+            --gold-dir data/world_cup_2026/gold \
+            --out-dir reports/analysis/world_cup_82_patterns
+      - name: Upload pattern reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: world-cup-82-pattern-audit
+          path: reports/analysis/world_cup_82_patterns/
+          if-no-files-found: error
