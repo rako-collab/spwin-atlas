@@ -40,3 +40,15 @@ data/
 analytics/
 tools/
 ```
+
+## Replay integrity validation
+
+Run the integrity checks before accepting any experimental replay:
+
+```bash
+python3 -m unittest discover -s tests -v
+python3 tools/validate_gold_replay_integrity.py
+python3 tools/run_spwin_v261_gold_replay.py
+```
+
+A staked bet with unresolved settlement now fails closed instead of being silently treated as PASS. See `docs/SPWIN_V261_REPLAY_INTEGRITY_PATCH.md`.
