@@ -6,6 +6,7 @@ on:
     paths:
       - "tools/run_spwin_v261_borderline_audit.py"
       - "tools/run_spwin_v261_incomplete_data_audit.py"
+      - "tools/run_spwin_v261_a1_robustness.py"
       - ".github/workflows/spwin-v261-borderline-audit.yml"
       - "spwin_engine/**"
       - "tests/**"
@@ -34,7 +35,8 @@ jobs:
             spwin_engine/v260.py \
             spwin_engine/v261.py \
             tools/run_spwin_v261_borderline_audit.py \
-            tools/run_spwin_v261_incomplete_data_audit.py
+            tools/run_spwin_v261_incomplete_data_audit.py \
+            tools/run_spwin_v261_a1_robustness.py
 
       - name: Run replay integrity regression tests
         run: python -m unittest discover -s tests -v
@@ -52,6 +54,12 @@ jobs:
             --gold-dir data/world_cup_2026/gold \
             --out-dir reports/analysis/spwin_v261_incomplete_data
 
+      - name: Run Experiment A1 robustness audit
+        run: |
+          python tools/run_spwin_v261_a1_robustness.py \
+            --gold-dir data/world_cup_2026/gold \
+            --out-dir reports/analysis/spwin_v261_a1_robustness
+
       - name: Upload borderline audit reports
         uses: actions/upload-artifact@v4
         with:
@@ -64,4 +72,11 @@ jobs:
         with:
           name: spwin-v261-incomplete-data-audit
           path: reports/analysis/spwin_v261_incomplete_data/
+          if-no-files-found: error
+
+      - name: Upload Experiment A1 robustness reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: spwin-v261-a1-robustness
+          path: reports/analysis/spwin_v261_a1_robustness/
           if-no-files-found: error
