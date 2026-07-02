@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+from collections import Counter
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -10,9 +11,12 @@ import argparse
 import csv
 import json
 
+from spwin_engine import observation_labels
+
 ALLOWED_A1_STATUS = {"BET", "PASS"}
 ALLOWED_OUTCOMES = {"", "Win", "Loss", "Push", "Void"}
 EXPECTED_A1_STAKE_PCT = 0.0025
+MOVEMENT_TOLERANCE_PCT = 0.20
 
 
 def _present(value: Any) -> bool:
@@ -24,6 +28,12 @@ def _float(value: Any, field: str, row_number: int) -> float:
         return float(str(value).strip())
     except (TypeError, ValueError) as exc:
         raise ValueError(f"row {row_number}: {field} must be numeric") from exc
+
+
+def _optional_float(value: Any, field: str, row_number: int) -> float | None:
+    if not _present(value):
+        return None
+    return _float(value, field, row_number)
 
 
 def _timestamp(value: Any, field: str, row_number: int) -> datetime:
@@ -41,11 +51,125 @@ def _timestamp(value: Any, field: str, row_number: int) -> datetime:
     return parsed
 
 
+def _validate_move_consistency(
+    row: dict[str, str],
+    row_number: int,
+    *,
+    opening_field: str,
+    final_field: str,
+    move_field: str,
+    errors: list[str],
+) -> None:
+    supplied = [_present(row.get(field)) for field in (opening_field, final_field, move_field)]
+    if not any(supplied):
+        return
+    if not all(supplied):
+        errors.append(
+            f"row {row_number}: {opening_field}, {final_field}, and {move_field} "
+            "must be supplied together"
+        )
+        return
+    try:
+        opening = _float(row.get(opening_field), opening_field, row_number)
+        final = _float(row.get(final_field), final_field, row_number)
+        recorded = _float(row.get(move_field), move_field, row_number)
+        if opening <= 0 or final <= 0:
+            errors.append(f"row {row_number}: odds must be greater than zero")
+            return
+        calculated = (final / opening - 1.0) * 100.0
+        if abs(calculated - recorded) > MOVEMENT_TOLERANCE_PCT:
+            errors.append(
+                f"row {row_number}: {move_field}={recorded:.2f}% does not match "
+                f"opening/final calculation {calculated:.2f}%"
+            )
+    except ValueError as exc:
+        errors.append(str(exc))
+
+
+def _validate_observation_labels(
+    row: dict[str, str],
+    row_number: int,
+    errors: list[str],
+    counts: dict[str, Counter[str]],
+) -> None:
+    actual_price = str(row.get("price_zone_label", "")).strip()
+    actual_steam = str(row.get("controlled_steam_label", "")).strip()
+    actual_draw = str(row.get("draw_structure_label", "")).strip()
+
+    for field, value in (
+        ("price_zone_label", actual_price),
+        ("controlled_steam_label", actual_steam),
+        ("draw_structure_label", actual_draw),
+    ):
+        if not value:
+            errors.append(f"row {row_number}: {field} is required for every match")
+
+    try:
+        favourite_odds = _optional_float(
+            row.get("one_x_two_final"), "one_x_two_final", row_number
+        )
+        one_x_two_move = _optional_float(
+            row.get("one_x_two_move_pct"), "one_x_two_move_pct", row_number
+        )
+        ah_move = _optional_float(row.get("ah_move_pct"), "ah_move_pct", row_number)
+        draw_move = _optional_float(
+            row.get("draw_move_pct"), "draw_move_pct", row_number
+        )
+    except ValueError as exc:
+        errors.append(str(exc))
+        return
+
+    expected = observation_labels.derive_from_values(
+        favourite_odds=favourite_odds,
+        one_x_two_move_pct=one_x_two_move,
+        ah_move_pct=ah_move,
+        draw_move_pct=draw_move,
+    )
+
+    comparisons = (
+        ("price_zone_label", actual_price, expected.price_zone),
+        ("controlled_steam_label", actual_steam, expected.controlled_steam),
+        ("draw_structure_label", actual_draw, expected.draw_structure),
+    )
+    for field, actual, required in comparisons:
+        if actual and actual != required:
+            errors.append(
+                f"row {row_number}: {field} must be {required!r} for the captured values, "
+                f"not {actual!r}"
+            )
+
+    if actual_price and actual_price != observation_labels.PRICE_UNAVAILABLE and favourite_odds is None:
+        errors.append(f"row {row_number}: a price-zone label requires one_x_two_final")
+    if actual_steam and actual_steam != observation_labels.STEAM_UNAVAILABLE:
+        if one_x_two_move is None and ah_move is None:
+            errors.append(
+                f"row {row_number}: a controlled-steam label requires 1X2 or AH movement"
+            )
+    if actual_draw and actual_draw != observation_labels.DRAW_UNAVAILABLE:
+        for field in ("draw_opening", "draw_final", "draw_move_pct"):
+            if not _present(row.get(field)):
+                errors.append(
+                    f"row {row_number}: {field} is required when draw structure is available"
+                )
+
+    if actual_price:
+        counts["price_zone_label"][actual_price] += 1
+    if actual_steam:
+        counts["controlled_steam_label"][actual_steam] += 1
+    if actual_draw:
+        counts["draw_structure_label"][actual_draw] += 1
+
+
 def validate_rows(rows: list[dict[str, str]]) -> dict[str, Any]:
     errors: list[str] = []
     seen_trial_ids: set[str] = set()
     seen_match_ids: set[str] = set()
     bets = passes = settled = 0
+    observation_counts: dict[str, Counter[str]] = {
+        "price_zone_label": Counter(),
+        "controlled_steam_label": Counter(),
+        "draw_structure_label": Counter(),
+    }
 
     for row_number, row in enumerate(rows, start=2):
         trial_id = str(row.get("trial_id", "")).strip()
@@ -94,6 +218,32 @@ def validate_rows(rows: list[dict[str, str]]) -> dict[str, Any]:
             errors.append(f"row {row_number}: data_source is required")
         if not _present(row.get("decision_reasons")):
             errors.append(f"row {row_number}: decision_reasons is required")
+
+        _validate_move_consistency(
+            row,
+            row_number,
+            opening_field="one_x_two_opening",
+            final_field="one_x_two_final",
+            move_field="one_x_two_move_pct",
+            errors=errors,
+        )
+        _validate_move_consistency(
+            row,
+            row_number,
+            opening_field="ah_opening",
+            final_field="ah_final",
+            move_field="ah_move_pct",
+            errors=errors,
+        )
+        _validate_move_consistency(
+            row,
+            row_number,
+            opening_field="draw_opening",
+            final_field="draw_final",
+            move_field="draw_move_pct",
+            errors=errors,
+        )
+        _validate_observation_labels(row, row_number, errors, observation_counts)
 
         if a1_status == "BET":
             bets += 1
@@ -167,6 +317,9 @@ def validate_rows(rows: list[dict[str, str]]) -> dict[str, Any]:
         "bets": bets,
         "passes": passes,
         "settled": settled,
+        "observation_label_counts": {
+            field: dict(counter) for field, counter in observation_counts.items()
+        },
         "errors": errors,
     }
 
