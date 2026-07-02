@@ -210,7 +210,7 @@ def compute_cpi(record: dict[str, Any], fav: dict[str, Any] | None, consensus: i
     elif 1.20 <= fav_odds < 1.35 or 1.80 < fav_odds <= 2.00:
         cpi += 14
         reasons.append("acceptable price")
-    elif fav_odds < 1.20:
+    elif fav_odds < 1.15:
         cpi += 6
         reasons.append("too short")
     else:
