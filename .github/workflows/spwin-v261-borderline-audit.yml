@@ -1,0 +1,48 @@
+name: SPWIN v2.6.1 Borderline Audit
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "tools/run_spwin_v261_borderline_audit.py"
+      - ".github/workflows/spwin-v261-borderline-audit.yml"
+      - "spwin_engine/**"
+      - "data/world_cup_2026/gold/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compile audit code
+        run: |
+          python -m py_compile \
+            spwin_engine/integrity.py \
+            spwin_engine/v260.py \
+            spwin_engine/v261.py \
+            tools/run_spwin_v261_borderline_audit.py
+
+      - name: Run authoritative 82-match replay and audit
+        run: |
+          python tools/run_spwin_v261_borderline_audit.py \
+            --gold-dir data/world_cup_2026/gold \
+            --bankroll 1000 \
+            --out-dir reports/analysis/spwin_v261_borderline_82
+
+      - name: Upload audit reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: spwin-v261-borderline-audit-82
+          path: reports/analysis/spwin_v261_borderline_82/
+          if-no-files-found: error
