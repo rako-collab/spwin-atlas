@@ -1,0 +1,26 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-GRP-ECU-GER",
+  "match":"Ecuador vs Germany",
+  "date":"2026-06-26",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Group Stage",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"1-1","ft":"2-1"},
+  "markets":[
+    {"market_code":"AH","selection":"Ecuador +0.75","opening_odds":1.80,"closing_odds":1.92,"movement_pct":6.7},
+    {"market_code":"AH","selection":"Germany -0.75","opening_odds":2.00,"closing_odds":1.85,"movement_pct":-7.5},
+    {"market_code":"1X2","selection":"Ecuador","opening_odds":3.50,"closing_odds":4.20,"movement_pct":20.0,"result":"Win"},
+    {"market_code":"1X2","selection":"Draw","opening_odds":3.30,"closing_odds":4.40,"movement_pct":33.3,"result":"Loss"},
+    {"market_code":"1X2","selection":"Germany","opening_odds":1.87,"closing_odds":1.53,"movement_pct":-18.2,"result":"Loss"},
+    {"market_code":"OU","selection":"Over 2.5","opening_odds":1.67,"closing_odds":1.58,"movement_pct":-5.4,"result":"Win"},
+    {"market_code":"BTTS","selection":"Yes","opening_odds":1.63,"closing_odds":1.55,"movement_pct":-4.9,"result":"Win"},
+    {"market_code":"PTS","selection":"2-1","opening_odds":11.00,"closing_odds":15.00,"movement_pct":36.4,"result":"Win"},
+    {"market_code":"HT_1X2","selection":"Draw","opening_odds":2.15,"closing_odds":2.50,"movement_pct":16.3,"result":"Win"},
+    {"market_code":"HT_PTS","selection":"1-1","opening_odds":7.00,"closing_odds":7.50,"movement_pct":7.1,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"Germany","actual_winner":"Ecuador","actual_first_half_winner":"Draw","actual_total_goals":3,"actual_btts":true,"market_conflict":true,"pattern":"FALSE_FAVOURITE_MARKET_TRAP","spwin_training_notes":"Generated with Gold Record Builder v1.0 reference workflow. Germany received strong late steam but Ecuador won 2-1."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archive_policy":"Rule 7 immutable historical data","builder":"gold_record_builder.py v1.0","version":"v1.0"}
+}
