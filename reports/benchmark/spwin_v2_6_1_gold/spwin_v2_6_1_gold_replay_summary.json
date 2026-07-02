@@ -1,0 +1,26 @@
+{
+  "engine_version": "SPWIN v2.6.1 Calibrated Capital Preservation",
+  "starting_bankroll": 1000.0,
+  "final_bankroll": 1006.01,
+  "net_profit": 6.01,
+  "roi_pct": 0.6,
+  "records": 57,
+  "bets": 3,
+  "passes": 54,
+  "wins": 3,
+  "losses": 0,
+  "pushes": 0,
+  "hit_rate_pct": 100.0,
+  "max_drawdown_pct": 0.0,
+  "decision_status_counts": {
+    "PASS_INCOMPLETE_DATA": 32,
+    "PASS_RED_FLAG": 11,
+    "PASS_MODEL": 11,
+    "BET": 3
+  },
+  "data_status_counts": {
+    "PARTIAL": 33,
+    "COMPLETE": 24
+  },
+  "replay_integrity_patch": "2026-07-02"
+}
