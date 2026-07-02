@@ -1,10 +1,11 @@
-name: SPWIN v2.6.1 Borderline Audit
+name: SPWIN v2.6.1 Research Audits
 
 on:
   pull_request:
     branches: [main]
     paths:
       - "tools/run_spwin_v261_borderline_audit.py"
+      - "tools/run_spwin_v261_incomplete_data_audit.py"
       - ".github/workflows/spwin-v261-borderline-audit.yml"
       - "spwin_engine/**"
       - "tests/**"
@@ -32,7 +33,8 @@ jobs:
             spwin_engine/integrity.py \
             spwin_engine/v260.py \
             spwin_engine/v261.py \
-            tools/run_spwin_v261_borderline_audit.py
+            tools/run_spwin_v261_borderline_audit.py \
+            tools/run_spwin_v261_incomplete_data_audit.py
 
       - name: Run replay integrity regression tests
         run: python -m unittest discover -s tests -v
@@ -44,9 +46,22 @@ jobs:
             --bankroll 1000 \
             --out-dir reports/analysis/spwin_v261_borderline_82
 
-      - name: Upload audit reports
+      - name: Run incomplete-data signal audit
+        run: |
+          python tools/run_spwin_v261_incomplete_data_audit.py \
+            --gold-dir data/world_cup_2026/gold \
+            --out-dir reports/analysis/spwin_v261_incomplete_data
+
+      - name: Upload borderline audit reports
         uses: actions/upload-artifact@v4
         with:
           name: spwin-v261-borderline-audit-82
           path: reports/analysis/spwin_v261_borderline_82/
+          if-no-files-found: error
+
+      - name: Upload incomplete-data audit reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: spwin-v261-incomplete-data-audit
+          path: reports/analysis/spwin_v261_incomplete_data/
           if-no-files-found: error
