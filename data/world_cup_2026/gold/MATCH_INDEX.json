@@ -8,7 +8,7 @@
   "archive_policy": "Rule 7 immutable historical data",
   "production_engine": "SPWIN v2.5.1",
   "sort_order": "date_desc",
-  "total_records": 32,
+  "total_records": 33,
   "records": [
     {"date":"2026-07-02","match_id":"WC2026-R32-BEL-SEN","match":"Belgium vs Senegal","stage":"Round of 32","score":{"ht":"0-1","ft_90":"2-2","aet":"3-2"},"qualifier":"Belgium","file":"WC2026-R32-BEL-SEN_v1.0.json"},
     {"date":"2026-07-02","match_id":"WC2026-R32-ENG-COD","match":"England vs Congo DR","stage":"Round of 32","score":{"ht":"0-1","ft":"2-1"},"file":"WC2026-R32-ENG-COD_v1.1_correction.json","correction_of":"WC2026-R32-ENG-COD_v1.0.json"},
@@ -22,6 +22,7 @@
     {"date":"2026-06-28","match_id":"WC2026-R32-ALG-AUT","match":"Algeria vs Austria","stage":"Round of 32","score":{"ht":"1-1","ft":"3-3"},"file":"WC2026-R32-ALG-AUT_v1.0.json"},
     {"date":"2026-06-28","match_id":"WC2026-R32-COD-UZB","match":"Congo DR vs Uzbekistan","stage":"Round of 32","score":{"ht":"0-1","ft":"3-1"},"file":"WC2026-R32-COD-UZB_v1.0.json"},
     {"date":"2026-06-28","match_id":"WC2026-R32-COL-POR","match":"Colombia vs Portugal","stage":"Round of 32","score":{"ht":"0-0","ft":"0-0"},"file":"WC2026-R32-COL-POR_v1.0.json"},
+    {"date":"2026-06-28","match_id":"WC2026-R32-JOR-ARG","match":"Jordan vs Argentina","stage":"Round of 32","score":{"ht":"0-2","ft":"1-3"},"file":"WC2026-R32-JOR-ARG_v1.0.json"},
     {"date":"2026-06-28","match_id":"WC2026-GRP-CRO-GHA","match":"Croatia vs Ghana","stage":"Group Stage","score":{"ht":"1-0","ft":"2-1"},"file":"WC2026-GRP-CRO-GHA_v1.0.json"},
     {"date":"2026-06-28","match_id":"WC2026-GRP-PAN-ENG","match":"Panama vs England","stage":"Group Stage","score":{"ht":"0-0","ft":"0-2"},"file":"WC2026-GRP-PAN-ENG_v1.0.json"},
     {"date":"2026-06-27","match_id":"WC2026-GRP-CPV-KSA","match":"Cape Verde vs Saudi Arabia","stage":"Group Stage","score":{"ht":"0-0","ft":"0-0"},"file":"WC2026-GRP-CPV-KSA_v1.0.json"},
