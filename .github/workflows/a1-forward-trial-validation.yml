@@ -5,8 +5,11 @@ on:
     branches: [main]
     paths:
       - "data/world_cup_2026/a1_forward_trial/**"
+      - "docs/SPWIN_V261_A1_FORWARD_TRIAL_PROTOCOL.md"
+      - "spwin_engine/observation_labels.py"
       - "tools/validate_a1_forward_trial.py"
       - "tests/test_a1_forward_trial.py"
+      - "tests/test_observation_labels.py"
       - ".github/workflows/a1-forward-trial-validation.yml"
   workflow_dispatch:
 
@@ -21,5 +24,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python -m unittest tests.test_a1_forward_trial -v
-      - run: python tools/validate_a1_forward_trial.py
+      - name: Compile observation and validation code
+        run: |
+          python -m py_compile \
+            spwin_engine/observation_labels.py \
+            tools/validate_a1_forward_trial.py
+      - name: Run forward-trial and firewall tests
+        run: |
+          python -m unittest \
+            tests.test_a1_forward_trial \
+            tests.test_observation_labels \
+            -v
+      - name: Validate live trial ledger
+        run: python tools/validate_a1_forward_trial.py
