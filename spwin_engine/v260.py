@@ -182,7 +182,7 @@ def red_flags(record: dict[str, Any], fav: dict[str, Any] | None) -> list[str]:
         flags.append("AH drift/disagreement")
     if ht and ht.get("selection") == "Draw" and move(ht) <= -4:
         flags.append("HT draw pressure")
-    if fav_odds < 1.20:
+    if fav_odds < 1.15:
         flags.append("ultra-short price risk")
     if fav_odds > 2.10:
         flags.append("weak favourite price")
