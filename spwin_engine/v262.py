@@ -34,7 +34,7 @@ import argparse
 import csv
 import json
 
-from spwin_engine import v260
+from spwin_engine import integrity, v260
 
 ENGINE_VERSION = "SPWIN v2.6.2 Experimental Tiered Capital Preservation"
 
@@ -167,7 +167,7 @@ def replay(records: list[dict[str, Any]], starting_bankroll: float = 1000.0) -> 
     for idx, record in enumerate(records, start=1):
         rec = make_recommendation(record)
         stake = round(bankroll * rec.stake_pct, 2)
-        outcome = "PASS" if stake <= 0 else v260.settle(record, "1X2", rec.selection)
+        outcome = "PASS" if stake <= 0 else integrity.require_settled(record, "1X2", rec.selection)
         pnl = 0.0
 
         if outcome == "Win":
