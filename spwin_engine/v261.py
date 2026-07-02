@@ -34,7 +34,7 @@ import argparse
 import csv
 import json
 
-from spwin_engine import v260
+from spwin_engine import integrity, v260
 
 ENGINE_VERSION = "SPWIN v2.6.1 Calibrated Capital Preservation"
 
@@ -112,7 +112,7 @@ def replay(records: list[dict[str, Any]], starting_bankroll: float = 1000.0) -> 
     for idx, record in enumerate(records, start=1):
         rec = make_recommendation(record)
         stake = round(bankroll * rec.stake_pct, 2)
-        outcome = "PASS" if stake <= 0 else v260.settle(record, "1X2", rec.selection)
+        outcome = "PASS" if stake <= 0 else integrity.require_settled(record, "1X2", rec.selection)
         pnl = 0.0
 
         if outcome == "Win":
@@ -134,6 +134,16 @@ def replay(records: list[dict[str, Any]], starting_bankroll: float = 1000.0) -> 
         dd = round((peak - bankroll) / peak * 100, 2) if peak else 0.0
         max_dd = max(max_dd, dd)
 
+        audit = integrity.audit_decision(
+            record,
+            rec.selection if rec.selection != "PASS" else (v260.closing_favourite(record) or {}).get("selection"),
+            cpi=rec.cpi,
+            consensus=rec.consensus_count,
+            flags=rec.red_flags,
+            stake_pct=rec.stake_pct,
+            cpi_threshold=80.0,
+        )
+
         rows.append({
             "#": idx,
             "date": rec.date,
@@ -144,6 +154,11 @@ def replay(records: list[dict[str, Any]], starting_bankroll: float = 1000.0) -> 
             "cpi": rec.cpi,
             "consensus": rec.consensus_count,
             "red_flags": "|".join(rec.red_flags),
+            "data_status": audit["data_status"],
+            "available_consensus_channels": audit["available_consensus_channels"],
+            "missing_channels": "|".join(audit["missing_channels"]),
+            "decision_status": audit["decision_status"],
+            "decision_reasons": "|".join(audit["decision_reasons"]),
             "pick_market": rec.market,
             "pick": rec.selection,
             "odds": rec.closing_odds,
@@ -166,6 +181,11 @@ def replay(records: list[dict[str, Any]], starting_bankroll: float = 1000.0) -> 
 
     bets = wins + losses + pushes
     net = round(bankroll - starting_bankroll, 2)
+    decision_status_counts: dict[str, int] = {}
+    data_status_counts: dict[str, int] = {}
+    for row in rows:
+        decision_status_counts[row["decision_status"]] = decision_status_counts.get(row["decision_status"], 0) + 1
+        data_status_counts[row["data_status"]] = data_status_counts.get(row["data_status"], 0) + 1
     return {
         "engine_version": ENGINE_VERSION,
         "starting_bankroll": starting_bankroll,
@@ -180,6 +200,9 @@ def replay(records: list[dict[str, Any]], starting_bankroll: float = 1000.0) -> 
         "pushes": pushes,
         "hit_rate_pct": round(wins / bets * 100, 2) if bets else 0.0,
         "max_drawdown_pct": round(max_dd, 2),
+        "decision_status_counts": decision_status_counts,
+        "data_status_counts": data_status_counts,
+        "replay_integrity_patch": "2026-07-02",
         "rows": rows,
     }
 
