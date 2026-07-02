@@ -1,0 +1,29 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-GRP-CUW-CIV",
+  "match":"Curacao vs Ivory Coast",
+  "date":"2026-06-26",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Group Stage",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"0-1","ft":"0-2"},
+  "markets":[
+    {"market_code":"1X2","selection":"Curacao","team":"Curacao","opening_odds":12.00,"closing_odds":12.00,"movement_pct":0.0,"result":"Loss"},
+    {"market_code":"1X2","selection":"Draw","opening_odds":7.00,"closing_odds":4.80,"movement_pct":-31.4,"result":"Loss"},
+    {"market_code":"1X2","selection":"Ivory Coast","team":"Ivory Coast","opening_odds":1.10,"closing_odds":1.18,"movement_pct":7.3,"result":"Win"},
+    {"market_code":"AH","selection":"Curacao +2.5","team":"Curacao","line":2.5,"opening_odds":1.58,"closing_odds":1.68,"movement_pct":6.3,"result":"Win"},
+    {"market_code":"AH","selection":"Ivory Coast -2.5","team":"Ivory Coast","line":-2.5,"opening_odds":2.05,"closing_odds":1.90,"movement_pct":-7.3,"result":"Loss"},
+    {"market_code":"BTTS","selection":"No","opening_odds":1.55,"closing_odds":1.48,"movement_pct":-4.5,"result":"Win"},
+    {"market_code":"HTFT","selection":"A-A","opening_odds":1.35,"closing_odds":1.37,"movement_pct":1.5,"result":"Win"},
+    {"market_code":"PTS","selection":"0-2","opening_odds":5.50,"closing_odds":6.00,"movement_pct":9.1,"result":"Win"},
+    {"market_code":"TG","selection":"2","line":2,"opening_odds":3.90,"closing_odds":4.00,"movement_pct":2.6,"result":"Win"},
+    {"market_code":"FG","selection":"Ivory Coast","team":"Ivory Coast","opening_odds":1.12,"closing_odds":1.17,"movement_pct":4.5,"result":"Win"},
+    {"market_code":"HT_1X2","selection":"Ivory Coast","team":"Ivory Coast","opening_odds":1.33,"closing_odds":1.35,"movement_pct":1.5,"result":"Win"},
+    {"market_code":"HT_PTS","selection":"0-1","opening_odds":2.65,"closing_odds":2.85,"movement_pct":7.5,"result":"Win"},
+    {"market_code":"HT_BTTS","selection":"No","opening_odds":1.12,"closing_odds":1.12,"movement_pct":0.0,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"Ivory Coast","winner_market_signal":"Ivory Coast favourite drift but still won","handicap_signal":"Ivory Coast -2.5 steam failed; Curacao +2.5 covered","actual_winner":"Ivory Coast","actual_first_half_winner":"Ivory Coast","actual_total_goals":2,"actual_btts":false,"market_conflict":true,"pattern":"CONTROLLED_FAVOURITE_NO_COVER","spwin_training_notes":"Ivory Coast won and led HT, but failed -2.5. Draw and 0-0 prices shortened unusually while favourite still delivered controlled 2-0. Useful for downgrade of large handicap despite strong favourite."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archive_policy":"Rule 7 immutable historical data","version":"v1.0"}
+}
