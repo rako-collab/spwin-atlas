@@ -1,0 +1,25 @@
+name: A1 Forward Trial Validation
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "data/world_cup_2026/a1_forward_trial/**"
+      - "tools/validate_a1_forward_trial.py"
+      - "tests/test_a1_forward_trial.py"
+      - ".github/workflows/a1-forward-trial-validation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m unittest tests.test_a1_forward_trial -v
+      - run: python tools/validate_a1_forward_trial.py
