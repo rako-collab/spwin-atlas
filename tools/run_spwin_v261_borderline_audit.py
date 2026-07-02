@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run the authoritative SPWIN v2.6.1 replay and Borderline Audit.
 
-The Gold directory preserves immutable superseded records. This runner follows
-MATCH_INDEX.json so each active match is loaded exactly once.
+The Gold directory preserves immutable superseded records. The shared Gold
+loader follows MATCH_INDEX.json so each active match is loaded exactly once.
 """
 
 from __future__ import annotations
@@ -20,57 +20,6 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from spwin_engine import integrity, v260, v261
-
-
-def load_indexed_gold_records(gold_dir: Path) -> tuple[list[dict[str, Any]], dict[str, Any]]:
-    index_path = gold_dir / "MATCH_INDEX.json"
-    if not index_path.exists():
-        raise FileNotFoundError(f"Missing authoritative index: {index_path}")
-
-    index = json.loads(index_path.read_text(encoding="utf-8"))
-    entries = index.get("records", [])
-    expected = int(index.get("total_records", len(entries)))
-    if expected != len(entries):
-        raise ValueError(
-            f"MATCH_INDEX total_records={expected}, but records contains {len(entries)} entries"
-        )
-
-    records: list[dict[str, Any]] = []
-    seen_files: set[str] = set()
-    seen_match_ids: set[str] = set()
-
-    for entry in entries:
-        filename = str(entry.get("file", "")).strip()
-        if not filename:
-            raise ValueError("MATCH_INDEX entry missing file")
-        if filename in seen_files:
-            raise ValueError(f"Duplicate indexed file: {filename}")
-        seen_files.add(filename)
-
-        path = gold_dir / filename
-        if not path.exists():
-            raise FileNotFoundError(f"Indexed Gold record missing: {path}")
-        record = json.loads(path.read_text(encoding="utf-8"))
-
-        if record.get("quality_grade") != "Gold" or record.get("status") != "COMPLETED":
-            raise ValueError(f"Indexed file is not completed Gold: {filename}")
-
-        indexed_match_id = str(entry.get("match_id", ""))
-        record_match_id = str(record.get("match_id", ""))
-        if indexed_match_id and indexed_match_id != record_match_id:
-            raise ValueError(
-                f"match_id mismatch for {filename}: index={indexed_match_id!r}, "
-                f"record={record_match_id!r}"
-            )
-        if record_match_id in seen_match_ids:
-            raise ValueError(f"Duplicate active match_id in MATCH_INDEX: {record_match_id}")
-        seen_match_ids.add(record_match_id)
-
-        record["_file"] = filename
-        records.append(record)
-
-    records.sort(key=lambda item: (item.get("date", ""), item.get("match_id", "")))
-    return records, index
 
 
 def raw_gold_file_count(gold_dir: Path) -> int:
@@ -164,10 +113,13 @@ def main() -> int:
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    records, index = load_indexed_gold_records(gold_dir)
+    index_path = gold_dir / "MATCH_INDEX.json"
+    index = json.loads(index_path.read_text(encoding="utf-8"))
+    records = v260.load_gold_records(gold_dir)
     replay = v261.replay(records, starting_bankroll=args.bankroll)
     rows, candidates = build_audit(records)
 
+    raw_count = raw_gold_file_count(gold_dir)
     decision_counts = Counter(row["decision_status"] for row in rows)
     data_counts = Counter(row["data_status"] for row in rows)
     candidate_outcomes = Counter(row["favourite_outcome"] for row in candidates)
@@ -176,8 +128,8 @@ def main() -> int:
         "engine_version": replay["engine_version"],
         "index_total_records": index.get("total_records"),
         "indexed_records_loaded": len(records),
-        "raw_completed_gold_files": raw_gold_file_count(gold_dir),
-        "superseded_files_excluded": raw_gold_file_count(gold_dir) - len(records),
+        "raw_completed_gold_files": raw_count,
+        "superseded_files_excluded": raw_count - len(records),
         "starting_bankroll": replay["starting_bankroll"],
         "final_bankroll": replay["final_bankroll"],
         "net_profit": replay["net_profit"],

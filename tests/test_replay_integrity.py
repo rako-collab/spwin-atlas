@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from copy import deepcopy
 from pathlib import Path
+import json
 import unittest
 
 from spwin_engine import integrity, v260, v261
@@ -48,10 +49,32 @@ class ReplayIntegrityTests(unittest.TestCase):
         fav = v260.closing_favourite(record)
         self.assertIn("ultra-short price risk", v260.red_flags(record, fav))
 
+    def test_gold_loader_follows_match_index(self) -> None:
+        index = json.loads((GOLD_DIR / "MATCH_INDEX.json").read_text(encoding="utf-8"))
+        records = v260.load_gold_records(GOLD_DIR)
+
+        self.assertEqual(len(records), index["total_records"])
+        self.assertEqual(len(records), 82)
+        self.assertEqual(len({record["match_id"] for record in records}), 82)
+
+        loaded_files = {record["_file"] for record in records}
+        indexed_files = {entry["file"] for entry in index["records"]}
+        self.assertEqual(loaded_files, indexed_files)
+
+        active_ids = {record["match_id"] for record in records}
+        self.assertIn("WC2026-GRP-ALG-AUT", active_ids)
+        self.assertIn("WC2026-GRP-COD-UZB", active_ids)
+        self.assertIn("WC2026-GRP-COL-POR", active_ids)
+        self.assertIn("WC2026-GRP-JOR-ARG", active_ids)
+        self.assertNotIn("WC2026-R32-ALG-AUT", active_ids)
+        self.assertNotIn("WC2026-R32-COD-UZB", active_ids)
+        self.assertNotIn("WC2026-R32-COL-POR", active_ids)
+        self.assertNotIn("WC2026-R32-JOR-ARG", active_ids)
+
     def test_v261_baseline_replay_is_unchanged(self) -> None:
         records = v260.load_gold_records(GOLD_DIR)
         result = v261.replay(records)
-        self.assertEqual(result["records"], 57)
+        self.assertEqual(result["records"], 82)
         self.assertEqual(result["bets"], 3)
         self.assertEqual(result["wins"], 3)
         self.assertEqual(result["losses"], 0)
