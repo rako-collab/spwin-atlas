@@ -24,6 +24,7 @@ A match qualifies only when all conditions are met:
 - A1 stake: 0.25% of current bankroll.
 - A1 performance is reported separately from production.
 - Combined reporting is provided for visibility.
+- Monetary calculations use the same Python two-decimal rounding convention as the existing replay engines.
 
 ## Historical 82-match replay
 
@@ -36,10 +37,10 @@ A match qualifies only when all conditions are met:
 | Losses | 1 |
 | Hit rate | 85.71% |
 | Starting bankroll | 1000.00 |
-| Final bankroll | 1004.63 |
-| Net profit | +4.63 |
+| Final bankroll | 1004.62 |
+| Net profit | +4.62 |
 | Bankroll ROI | +0.46% |
-| Return on stakes | +26.43% |
+| Return on stakes | +26.37% |
 | Maximum drawdown | 0.25% |
 
 ### Frozen v2.6.1 plus A1
@@ -51,9 +52,10 @@ A match qualifies only when all conditions are met:
 | Losses | 1 |
 | Hit rate | 90.00% |
 | Starting bankroll | 1000.00 |
-| Final bankroll | 1010.67 |
-| Net profit | +10.67 |
+| Final bankroll | 1010.66 |
+| Net profit | +10.66 |
 | Bankroll ROI | +1.07% |
+| Return on stakes | +26.54% |
 | Maximum drawdown | 0.25% |
 
 ## A1 historical selections
