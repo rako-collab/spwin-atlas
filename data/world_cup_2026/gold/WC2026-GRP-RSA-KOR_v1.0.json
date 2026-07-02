@@ -1,0 +1,26 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-GRP-RSA-KOR",
+  "match":"South Africa vs Korea Republic",
+  "date":"2026-06-25",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Group Stage",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"0-0","ft":"1-0"},
+  "markets":[
+    {"market_code":"AH","selection":"South Africa +0.75","opening_odds":2.02,"closing_odds":2.10,"movement_pct":4.0},
+    {"market_code":"AH","selection":"Korea Republic -0.75","opening_odds":1.80,"closing_odds":1.67,"movement_pct":-7.2},
+    {"market_code":"1X2","selection":"South Africa","opening_odds":5.20,"closing_odds":5.80,"movement_pct":11.5,"result":"Win"},
+    {"market_code":"1X2","selection":"Draw","opening_odds":3.40,"closing_odds":3.70,"movement_pct":8.8,"result":"Loss"},
+    {"market_code":"1X2","selection":"Korea Republic","opening_odds":1.58,"closing_odds":1.45,"movement_pct":-8.2,"result":"Loss"},
+    {"market_code":"OU","selection":"Under 2.5","opening_odds":1.67,"closing_odds":1.72,"movement_pct":3.0,"result":"Win"},
+    {"market_code":"BTTS","selection":"No","opening_odds":1.67,"closing_odds":1.60,"movement_pct":-4.2,"result":"Win"},
+    {"market_code":"PTS","selection":"1-0","opening_odds":11.00,"closing_odds":19.00,"movement_pct":72.7,"result":"Win"},
+    {"market_code":"HT_1X2","selection":"Draw","opening_odds":2.10,"closing_odds":2.10,"movement_pct":0.0,"result":"Win"},
+    {"market_code":"HT_PTS","selection":"0-0","opening_odds":2.65,"closing_odds":2.50,"movement_pct":-5.7,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"Korea Republic","actual_winner":"South Africa","actual_first_half_winner":"Draw","actual_total_goals":1,"actual_btts":false,"market_conflict":true,"pattern":"LOW_SCORING_FALSE_FAVOURITE","spwin_training_notes":"Generated with Gold Record Builder v1.0 reference workflow. Korea Republic favourite steam failed in a low-scoring upset."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archive_policy":"Rule 7 immutable historical data","builder":"gold_record_builder.py v1.0","version":"v1.0"}
+}
