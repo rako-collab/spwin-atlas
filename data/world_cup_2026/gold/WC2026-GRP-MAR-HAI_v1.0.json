@@ -1,0 +1,26 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-GRP-MAR-HAI",
+  "match":"Morocco vs Haiti",
+  "date":"2026-06-25",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Group Stage",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"2-2","ft":"4-2"},
+  "markets":[
+    {"market_code":"1X2","selection":"Morocco","opening_odds":1.18,"closing_odds":1.25,"movement_pct":5.9,"result":"Win"},
+    {"market_code":"1X2","selection":"Draw","opening_odds":5.20,"closing_odds":4.80,"movement_pct":-7.7,"result":"Loss"},
+    {"market_code":"1X2","selection":"Haiti","opening_odds":12.00,"closing_odds":9.00,"movement_pct":-25.0,"result":"Loss"},
+    {"market_code":"AH","selection":"Morocco -1.5","opening_odds":1.53,"closing_odds":1.75,"movement_pct":14.4},
+    {"market_code":"AH","selection":"Haiti +1.5","opening_odds":2.15,"closing_odds":1.82,"movement_pct":-15.3},
+    {"market_code":"BTTS","selection":"Yes","opening_odds":2.25,"closing_odds":1.90,"movement_pct":-15.6,"result":"Win"},
+    {"market_code":"PTS","selection":"4-2","opening_odds":50.00,"closing_odds":40.00,"movement_pct":-20.0,"result":"Win"},
+    {"market_code":"TG","selection":"6","opening_odds":11.00,"closing_odds":13.00,"movement_pct":18.2,"result":"Win"},
+    {"market_code":"HT_1X2","selection":"Draw","opening_odds":2.95,"closing_odds":2.65,"movement_pct":-10.2,"result":"Win"},
+    {"market_code":"HT_PTS","selection":"2-2","opening_odds":40.00,"closing_odds":40.00,"movement_pct":0.0,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"Morocco","actual_winner":"Morocco","actual_first_half_winner":"Draw","actual_total_goals":6,"actual_btts":true,"market_conflict":true,"pattern":"HIGH_EVENT_FAVOURITE_WITH_RESISTANCE","spwin_training_notes":"Generated with Gold Record Builder v1.0 reference workflow. Favourite won but underdog support and BTTS signal showed resistance."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archive_policy":"Rule 7 immutable historical data","builder":"gold_record_builder.py v1.0","version":"v1.0"}
+}
