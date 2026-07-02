@@ -54,6 +54,67 @@ class Recommendation:
 
 
 def load_gold_records(gold_dir: Path) -> list[dict[str, Any]]:
+    """Load the active completed Gold set.
+
+    When ``MATCH_INDEX.json`` exists it is authoritative. This prevents
+    immutable superseded correction files from being replayed alongside their
+    active replacements. A directory-scan fallback is retained for ad-hoc test
+    directories that do not have an index.
+    """
+    index_path = gold_dir / "MATCH_INDEX.json"
+    if index_path.exists():
+        index = json.loads(index_path.read_text(encoding="utf-8"))
+        entries = index.get("records")
+        if not isinstance(entries, list):
+            raise ValueError(f"MATCH_INDEX records must be a list: {index_path}")
+
+        expected = int(index.get("total_records", len(entries)))
+        if expected != len(entries):
+            raise ValueError(
+                f"MATCH_INDEX total_records={expected}, but records contains {len(entries)} entries"
+            )
+
+        records: list[dict[str, Any]] = []
+        seen_files: set[str] = set()
+        seen_match_ids: set[str] = set()
+
+        for entry in entries:
+            if not isinstance(entry, dict):
+                raise ValueError(f"MATCH_INDEX entry must be an object: {entry!r}")
+
+            filename = str(entry.get("file", "")).strip()
+            if not filename:
+                raise ValueError("MATCH_INDEX entry missing file")
+            if filename in seen_files:
+                raise ValueError(f"Duplicate indexed file: {filename}")
+            seen_files.add(filename)
+
+            path = gold_dir / filename
+            if not path.exists():
+                raise FileNotFoundError(f"Indexed Gold record missing: {path}")
+
+            rec = json.loads(path.read_text(encoding="utf-8"))
+            if rec.get("quality_grade") != "Gold" or rec.get("status") != "COMPLETED":
+                raise ValueError(f"Indexed file is not completed Gold: {filename}")
+
+            indexed_match_id = str(entry.get("match_id", "")).strip()
+            record_match_id = str(rec.get("match_id", "")).strip()
+            if indexed_match_id and indexed_match_id != record_match_id:
+                raise ValueError(
+                    f"match_id mismatch for {filename}: index={indexed_match_id!r}, "
+                    f"record={record_match_id!r}"
+                )
+            if not record_match_id:
+                raise ValueError(f"Indexed Gold record missing match_id: {filename}")
+            if record_match_id in seen_match_ids:
+                raise ValueError(f"Duplicate active match_id in MATCH_INDEX: {record_match_id}")
+            seen_match_ids.add(record_match_id)
+
+            rec["_file"] = filename
+            records.append(rec)
+
+        return sorted(records, key=lambda r: (r.get("date", ""), r.get("match_id", "")))
+
     records = []
     for path in sorted(gold_dir.glob("*.json")):
         if path.name == "MATCH_INDEX.json":
