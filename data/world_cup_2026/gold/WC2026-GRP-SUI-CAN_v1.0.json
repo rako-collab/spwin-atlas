@@ -1,0 +1,26 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-GRP-SUI-CAN",
+  "match":"Switzerland vs Canada",
+  "date":"2026-06-25",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Group Stage",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"0-0","ft":"2-1"},
+  "markets":[
+    {"market_code":"AH","selection":"Switzerland 0.00","opening_odds":1.72,"closing_odds":1.72,"movement_pct":0.0},
+    {"market_code":"AH","selection":"Canada +0.00","opening_odds":2.10,"closing_odds":2.10,"movement_pct":0.0},
+    {"market_code":"1X2","selection":"Switzerland","opening_odds":2.25,"closing_odds":2.50,"movement_pct":11.1,"result":"Win"},
+    {"market_code":"1X2","selection":"Draw","opening_odds":2.90,"closing_odds":2.40,"movement_pct":-17.2,"result":"Loss"},
+    {"market_code":"1X2","selection":"Canada","opening_odds":3.00,"closing_odds":3.10,"movement_pct":3.3,"result":"Loss"},
+    {"market_code":"OU","selection":"Over 2.5","opening_odds":1.93,"closing_odds":2.00,"movement_pct":3.6,"result":"Win"},
+    {"market_code":"BTTS","selection":"Yes","opening_odds":1.75,"closing_odds":1.77,"movement_pct":1.1,"result":"Win"},
+    {"market_code":"PTS","selection":"2-1","opening_odds":8.50,"closing_odds":9.00,"movement_pct":5.9,"result":"Win"},
+    {"market_code":"HT_1X2","selection":"Draw","opening_odds":1.97,"closing_odds":1.95,"movement_pct":-1.0,"result":"Win"},
+    {"market_code":"HT_PTS","selection":"0-0","opening_odds":2.60,"closing_odds":2.65,"movement_pct":1.9,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"Draw late support","actual_winner":"Switzerland","actual_first_half_winner":"Draw","actual_total_goals":3,"actual_btts":true,"market_conflict":true,"pattern":"BALANCED_MATCH_DRAW_BIAS","spwin_training_notes":"Generated with Gold Record Builder v1.0 reference workflow. Draw support was strong but Switzerland converted home edge after 0-0 HT."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archive_policy":"Rule 7 immutable historical data","builder":"gold_record_builder.py v1.0","version":"v1.0"}
+}
