@@ -26,6 +26,8 @@ import argparse
 import csv
 import json
 
+from spwin_engine import integrity
+
 ENGINE_VERSION = "SPWIN v2.6 Capital Preservation"
 
 
@@ -182,7 +184,7 @@ def red_flags(record: dict[str, Any], fav: dict[str, Any] | None) -> list[str]:
         flags.append("AH drift/disagreement")
     if ht and ht.get("selection") == "Draw" and move(ht) <= -4:
         flags.append("HT draw pressure")
-    if fav_odds < 1.15:
+    if fav_odds < 1.20:
         flags.append("ultra-short price risk")
     if fav_odds > 2.10:
         flags.append("weak favourite price")
@@ -210,7 +212,7 @@ def compute_cpi(record: dict[str, Any], fav: dict[str, Any] | None, consensus: i
     elif 1.20 <= fav_odds < 1.35 or 1.80 < fav_odds <= 2.00:
         cpi += 14
         reasons.append("acceptable price")
-    elif fav_odds < 1.15:
+    elif fav_odds < 1.20:
         cpi += 6
         reasons.append("too short")
     else:
@@ -358,11 +360,9 @@ def make_recommendation(record: dict[str, Any]) -> Recommendation:
     )
 
 
-def settle(record: dict[str, Any], code: str, selection: str) -> str:
-    for row in markets(record, code):
-        if row.get("selection") == selection:
-            return row.get("result", "Unknown")
-    return "Unknown"
+def settle(record: dict[str, Any], code: str, selection: str | None) -> str:
+    """Settle safely using normalized labels and score-derived fallbacks."""
+    return integrity.settle(record, code, selection)
 
 
 def replay(records: list[dict[str, Any]], starting_bankroll: float = 1000.0) -> dict[str, Any]:
@@ -375,7 +375,7 @@ def replay(records: list[dict[str, Any]], starting_bankroll: float = 1000.0) -> 
     for idx, record in enumerate(records, start=1):
         rec = make_recommendation(record)
         stake = round(bankroll * rec.stake_pct, 2)
-        outcome = "PASS" if stake <= 0 else settle(record, "1X2", rec.selection)
+        outcome = "PASS" if stake <= 0 else integrity.require_settled(record, "1X2", rec.selection)
         pnl = 0.0
 
         if outcome == "Win":
