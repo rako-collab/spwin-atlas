@@ -12,4 +12,7 @@
 - Added fail-closed replay settlement normalization and score-derived fallback handling.
 - Added explicit v2.6.1 PASS classifications for incomplete data, red flags, and model rejection.
 - Added Gold replay integrity validation and regression tests.
-- Confirmed v2.6.1 replay remains 3 bets, 3 wins, final bankroll 1006.01 on 57 Gold records.
+- Initial integrity validation confirmed 3 bets, 3 wins, and final bankroll 1006.01 on the then-current 57-record Gold set.
+- Updated the shared Gold loader to treat `MATCH_INDEX.json` as authoritative.
+- Excluded four immutable superseded correction files from normal engine replays.
+- Confirmed the authoritative 82-match v2.6.1 benchmark remains 3 bets, 3 wins, and final bankroll 1006.01.
