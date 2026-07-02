@@ -1,0 +1,31 @@
+{
+  "schema_version":"1.0",
+  "match_id":"WC2026-GRP-PAR-AUS",
+  "match":"Paraguay vs Australia",
+  "date":"2026-06-26",
+  "competition":"FIFA World Cup 2026",
+  "stage":"Group Stage",
+  "status":"COMPLETED",
+  "quality_grade":"Gold",
+  "immutable":true,
+  "score":{"ht":"0-0","ft":"0-0"},
+  "markets":[
+    {"market_code":"AH","selection":"Paraguay -0.25","team":"Paraguay","line":-0.25,"opening_odds":1.90,"closing_odds":1.90,"movement_pct":0.0,"result":"Loss"},
+    {"market_code":"AH","selection":"Australia +0.25","team":"Australia","line":0.25,"opening_odds":1.87,"closing_odds":1.82,"movement_pct":-2.7,"result":"Win"},
+    {"market_code":"HT_AH","selection":"Paraguay 0.00","team":"Paraguay","line":0.0,"opening_odds":1.75,"closing_odds":1.58,"movement_pct":-9.7,"result":"Push"},
+    {"market_code":"1X2","selection":"Paraguay","team":"Paraguay","opening_odds":2.75,"closing_odds":2.00,"movement_pct":-27.3,"result":"Loss"},
+    {"market_code":"1X2","selection":"Draw","opening_odds":2.20,"closing_odds":2.60,"movement_pct":18.2,"result":"Win"},
+    {"market_code":"1X2","selection":"Australia","team":"Australia","opening_odds":3.30,"closing_odds":4.00,"movement_pct":21.2,"result":"Loss"},
+    {"market_code":"OU","selection":"Under 1.5","line":1.5,"opening_odds":2.25,"closing_odds":2.00,"movement_pct":-11.1,"result":"Win"},
+    {"market_code":"BTTS","selection":"No","opening_odds":1.67,"closing_odds":1.50,"movement_pct":-10.2,"result":"Win"},
+    {"market_code":"HTFT","selection":"D-D","opening_odds":2.75,"closing_odds":2.95,"movement_pct":7.3,"result":"Win"},
+    {"market_code":"PTS","selection":"0-0","opening_odds":4.20,"closing_odds":3.70,"movement_pct":-11.9,"result":"Win"},
+    {"market_code":"TG","selection":"0","line":0,"opening_odds":4.20,"closing_odds":3.70,"movement_pct":-11.9,"result":"Win"},
+    {"market_code":"FG","selection":"No 1st Goal","opening_odds":4.20,"closing_odds":3.70,"movement_pct":-11.9,"result":"Win"},
+    {"market_code":"HT_1X2","selection":"Draw","opening_odds":1.65,"closing_odds":1.72,"movement_pct":4.2,"result":"Win"},
+    {"market_code":"HT_PTS","selection":"0-0","opening_odds":1.95,"closing_odds":2.05,"movement_pct":5.1,"result":"Win"},
+    {"market_code":"HT_BTTS","selection":"No","opening_odds":1.10,"closing_odds":1.15,"movement_pct":4.5,"result":"Win"}
+  ],
+  "derived_features":{"favorite":"Paraguay late steam","winner_market_signal":"Paraguay steam failed","actual_winner":"Draw","actual_first_half_winner":"Draw","actual_total_goals":0,"actual_btts":false,"market_conflict":true,"pattern":"LOW_EVENT_FALSE_FAVOURITE","spwin_training_notes":"Strong Paraguay 1X2 support failed, but low-goal and BTTS No signals were correct. Useful draw/deadlock calibration sample."},
+  "provenance":{"source":"User-provided SGOdds past odds text","archive_policy":"Rule 7 immutable historical data","version":"v1.0"}
+}
