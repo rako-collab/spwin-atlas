@@ -1,0 +1,48 @@
+{
+  "gold_records": 57,
+  "raw_result_labels": {
+    "<missing>": 17,
+    "Archived": 120,
+    "Half Loss": 1,
+    "Lose": 37,
+    "Loss": 104,
+    "Push": 8,
+    "Win": 339
+  },
+  "one_x_two_result_labels": {
+    "Archived": 48,
+    "Lose": 16,
+    "Loss": 46,
+    "Win": 41
+  },
+  "unresolved_1x2_rows": [],
+  "unresolved_1x2_count": 0,
+  "data_status_counts": {
+    "PARTIAL": 33,
+    "COMPLETE": 24
+  },
+  "decision_status_counts": {
+    "PASS_INCOMPLETE_DATA": 32,
+    "PASS_RED_FLAG": 11,
+    "PASS_MODEL": 11,
+    "BET": 3
+  },
+  "staked_bets": [
+    {
+      "match_id": "WC2026-GRP-SCO-BRA",
+      "selection": "Brazil",
+      "outcome": "Win"
+    },
+    {
+      "match_id": "WC2026-GRP-NOR-FRA",
+      "selection": "France",
+      "outcome": "Win"
+    },
+    {
+      "match_id": "WC2026-R32-USA-BIH",
+      "selection": "USA",
+      "outcome": "Win"
+    }
+  ],
+  "status": "PASS"
+}
