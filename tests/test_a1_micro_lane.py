@@ -37,8 +37,9 @@ class A1MicroLaneTests(unittest.TestCase):
         self.assertEqual(result["bets"], 7)
         self.assertEqual(result["wins"], 6)
         self.assertEqual(result["losses"], 1)
-        self.assertEqual(result["final_bankroll"], 1004.63)
-        self.assertEqual(result["net_profit"], 4.63)
+        self.assertEqual(result["final_bankroll"], 1004.62)
+        self.assertEqual(result["net_profit"], 4.62)
+        self.assertEqual(result["return_on_stakes_pct"], 26.37)
         self.assertEqual(result["max_drawdown_pct"], 0.25)
 
     def test_combined_historical_replay(self) -> None:
@@ -46,8 +47,9 @@ class A1MicroLaneTests(unittest.TestCase):
         self.assertEqual(result["bets"], 10)
         self.assertEqual(result["wins"], 9)
         self.assertEqual(result["losses"], 1)
-        self.assertEqual(result["final_bankroll"], 1010.67)
-        self.assertEqual(result["net_profit"], 10.67)
+        self.assertEqual(result["final_bankroll"], 1010.66)
+        self.assertEqual(result["net_profit"], 10.66)
+        self.assertEqual(result["return_on_stakes_pct"], 26.54)
         self.assertEqual(result["max_drawdown_pct"], 0.25)
 
 
