@@ -1,0 +1,31 @@
+name: Gold snapshot integrity
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/world_cup_2026/gold/**'
+      - 'tools/validate_gold_snapshot_integrity.py'
+      - '.github/workflows/gold-snapshot-integrity.yml'
+  pull_request:
+    paths:
+      - 'data/world_cup_2026/gold/**'
+      - 'tools/validate_gold_snapshot_integrity.py'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run Gold integrity checks
+        run: |
+          python3 -m unittest discover -s tests -v
+          python3 tools/validate_gold_snapshot_integrity.py
+          python3 tools/validate_gold_replay_integrity.py
+          python3 tools/run_spwin_v261_gold_replay.py
