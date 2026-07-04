@@ -209,3 +209,5 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
+# CI-only no-op marker for the 2026-07-04 Atlas handover validation.
