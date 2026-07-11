@@ -193,7 +193,7 @@ test_unresolved_staked_bet_fails_closed (test_replay_integrity.ReplayIntegrityTe
 test_v261_baseline_replay_is_unchanged (test_replay_integrity.ReplayIntegrityTests.test_v261_baseline_replay_is_unchanged) ... ok
 
 ----------------------------------------------------------------------
-Ran 18 tests in 0.039s
+Ran 18 tests in 0.070s
 
 OK
 === gold replay integrity ===
