@@ -180,7 +180,7 @@ test_unlocked_decision_fails (test_a1_forward_trial.A1ForwardTrialTests.test_unl
 test_valid_locked_bet (test_a1_forward_trial.A1ForwardTrialTests.test_valid_locked_bet) ... ok
 test_a1_historical_replay (test_a1_micro_lane.A1MicroLaneTests.test_a1_historical_replay) ... ok
 test_a1_historical_selection_set (test_a1_micro_lane.A1MicroLaneTests.test_a1_historical_selection_set) ... ok
-test_combined_historical_replay (test_a1_micro_lane.A1MicroLaneTests.test_combined_historical_replay) ... FAIL
+test_combined_historical_replay (test_a1_micro_lane.A1MicroLaneTests.test_combined_historical_replay) ... ok
 test_label_boundaries (test_observation_labels.ObservationLabelTests.test_label_boundaries) ... ok
 test_label_generation_does_not_mutate_record_or_engine_outputs (test_observation_labels.ObservationLabelTests.test_label_generation_does_not_mutate_record_or_engine_outputs) ... ok
 test_unavailable_labels_are_explicit (test_observation_labels.ObservationLabelTests.test_unavailable_labels_are_explicit) ... ok
@@ -192,18 +192,10 @@ test_recommendations_are_blind_to_results_and_scores (test_replay_integrity.Repl
 test_unresolved_staked_bet_fails_closed (test_replay_integrity.ReplayIntegrityTests.test_unresolved_staked_bet_fails_closed) ... ok
 test_v261_baseline_replay_is_unchanged (test_replay_integrity.ReplayIntegrityTests.test_v261_baseline_replay_is_unchanged) ... ok
 
-======================================================================
-FAIL: test_combined_historical_replay (test_a1_micro_lane.A1MicroLaneTests.test_combined_historical_replay)
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/home/runner/work/spwin-atlas/spwin-atlas/tests/test_a1_micro_lane.py", line 47, in test_combined_historical_replay
-    self.assertEqual(result["bets"], 10)
-AssertionError: 12 != 10
+Ran 18 tests in 0.039s
 
-----------------------------------------------------------------------
-Ran 18 tests in 0.081s
-
-FAILED (failures=1)
+OK
 === gold replay integrity ===
 {
   "gold_records": 98,
@@ -291,4 +283,4 @@ FAILED (failures=1)
   },
   "replay_integrity_patch": "2026-07-02"
 }
-statuses: unittest=1 integrity=0 replay=0
+statuses: unittest=0 integrity=0 replay=0
