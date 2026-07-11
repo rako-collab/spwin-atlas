@@ -41,15 +41,19 @@ jobs:
         id: validate
         continue-on-error: true
         run: |
-          set -o pipefail
-          {
-            echo '=== unittest ==='
-            python3 -m unittest discover -s tests -v
-            echo '=== gold replay integrity ==='
-            python3 tools/validate_gold_replay_integrity.py
-            echo '=== frozen v2.6.1 replay ==='
-            python3 tools/run_spwin_v261_gold_replay.py
-          } 2>&1 | tee repair_validation.log
+          set +e
+          : > repair_validation.log
+          echo '=== unittest ===' | tee -a repair_validation.log
+          python3 -m unittest discover -s tests -v 2>&1 | tee -a repair_validation.log
+          s1=${PIPESTATUS[0]}
+          echo '=== gold replay integrity ===' | tee -a repair_validation.log
+          python3 tools/validate_gold_replay_integrity.py 2>&1 | tee -a repair_validation.log
+          s2=${PIPESTATUS[0]}
+          echo '=== frozen v2.6.1 replay ===' | tee -a repair_validation.log
+          python3 tools/run_spwin_v261_gold_replay.py 2>&1 | tee -a repair_validation.log
+          s3=${PIPESTATUS[0]}
+          echo "statuses: unittest=$s1 integrity=$s2 replay=$s3" | tee -a repair_validation.log
+          test $s1 -eq 0 -a $s2 -eq 0 -a $s3 -eq 0
 
       - name: Commit validation report
         run: |
