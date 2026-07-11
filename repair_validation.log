@@ -1,0 +1,48 @@
+=== unittest ===
+test_empty_trial_ledger_is_valid (test_a1_forward_trial.A1ForwardTrialTests.test_empty_trial_ledger_is_valid) ... ok
+test_inconsistent_movement_fails (test_a1_forward_trial.A1ForwardTrialTests.test_inconsistent_movement_fails) ... ok
+test_incorrect_observation_label_fails (test_a1_forward_trial.A1ForwardTrialTests.test_incorrect_observation_label_fails) ... ok
+test_unlocked_decision_fails (test_a1_forward_trial.A1ForwardTrialTests.test_unlocked_decision_fails) ... ok
+test_valid_locked_bet (test_a1_forward_trial.A1ForwardTrialTests.test_valid_locked_bet) ... ok
+test_a1_historical_replay (test_a1_micro_lane.A1MicroLaneTests.test_a1_historical_replay) ... ok
+test_a1_historical_selection_set (test_a1_micro_lane.A1MicroLaneTests.test_a1_historical_selection_set) ... ok
+test_combined_historical_replay (test_a1_micro_lane.A1MicroLaneTests.test_combined_historical_replay) ... FAIL
+test_label_boundaries (test_observation_labels.ObservationLabelTests.test_label_boundaries) ... ok
+test_label_generation_does_not_mutate_record_or_engine_outputs (test_observation_labels.ObservationLabelTests.test_label_generation_does_not_mutate_record_or_engine_outputs) ... ok
+test_unavailable_labels_are_explicit (test_observation_labels.ObservationLabelTests.test_unavailable_labels_are_explicit) ... ok
+test_archived_1x2_falls_back_to_score (test_replay_integrity.ReplayIntegrityTests.test_archived_1x2_falls_back_to_score) ... ok
+test_frozen_ultra_short_threshold_is_restored (test_replay_integrity.ReplayIntegrityTests.test_frozen_ultra_short_threshold_is_restored) ... ok
+test_gold_loader_follows_match_index (test_replay_integrity.ReplayIntegrityTests.test_gold_loader_follows_match_index) ... FAIL
+test_lose_alias_is_normalized (test_replay_integrity.ReplayIntegrityTests.test_lose_alias_is_normalized) ... ok
+test_recommendations_are_blind_to_results_and_scores (test_replay_integrity.ReplayIntegrityTests.test_recommendations_are_blind_to_results_and_scores) ... ok
+test_unresolved_staked_bet_fails_closed (test_replay_integrity.ReplayIntegrityTests.test_unresolved_staked_bet_fails_closed) ... ok
+test_v261_baseline_replay_is_unchanged (test_replay_integrity.ReplayIntegrityTests.test_v261_baseline_replay_is_unchanged) ... FAIL
+
+======================================================================
+FAIL: test_combined_historical_replay (test_a1_micro_lane.A1MicroLaneTests.test_combined_historical_replay)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/runner/work/spwin-atlas/spwin-atlas/tests/test_a1_micro_lane.py", line 47, in test_combined_historical_replay
+    self.assertEqual(result["bets"], 10)
+AssertionError: 12 != 10
+
+======================================================================
+FAIL: test_gold_loader_follows_match_index (test_replay_integrity.ReplayIntegrityTests.test_gold_loader_follows_match_index)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/runner/work/spwin-atlas/spwin-atlas/tests/test_replay_integrity.py", line 57, in test_gold_loader_follows_match_index
+    self.assertEqual(len(records), 82)
+AssertionError: 98 != 82
+
+======================================================================
+FAIL: test_v261_baseline_replay_is_unchanged (test_replay_integrity.ReplayIntegrityTests.test_v261_baseline_replay_is_unchanged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/runner/work/spwin-atlas/spwin-atlas/tests/test_replay_integrity.py", line 77, in test_v261_baseline_replay_is_unchanged
+    self.assertEqual(result["records"], 82)
+AssertionError: 98 != 82
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.076s
+
+FAILED (failures=3)
