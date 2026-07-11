@@ -7,6 +7,7 @@ on:
     paths:
       - tools/repair_gold_index_98.py
       - .github/workflows/repair-gold-index-98.yml
+      - data/world_cup_2026/gold/MATCH_INDEX.json
 
 permissions:
   contents: write
@@ -24,20 +25,20 @@ jobs:
       - name: Repair authoritative Gold index
         run: python3 tools/repair_gold_index_98.py
 
+      - name: Commit repaired index to pull-request branch
+        run: |
+          if git diff --quiet -- data/world_cup_2026/gold/MATCH_INDEX.json; then
+            echo "MATCH_INDEX.json already repaired."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/world_cup_2026/gold/MATCH_INDEX.json
+            git commit -m "data(gold): index nine completed knockout records"
+            git push origin HEAD:${{ github.head_ref }}
+          fi
+
       - name: Run Gold integrity validation
         run: |
           python3 -m unittest discover -s tests -v
           python3 tools/validate_gold_replay_integrity.py
           python3 tools/run_spwin_v261_gold_replay.py
-
-      - name: Commit repaired index to pull-request branch
-        run: |
-          if git diff --quiet -- data/world_cup_2026/gold/MATCH_INDEX.json; then
-            echo "MATCH_INDEX.json already repaired."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/world_cup_2026/gold/MATCH_INDEX.json
-          git commit -m "data(gold): index nine completed knockout records"
-          git push origin HEAD:${{ github.head_ref }}
