@@ -37,8 +37,30 @@ jobs:
             git push origin HEAD:${{ github.head_ref }}
           fi
 
-      - name: Run Gold integrity validation
+      - name: Capture Gold integrity validation
+        id: validate
+        continue-on-error: true
         run: |
-          python3 -m unittest discover -s tests -v
-          python3 tools/validate_gold_replay_integrity.py
-          python3 tools/run_spwin_v261_gold_replay.py
+          set -o pipefail
+          {
+            echo '=== unittest ==='
+            python3 -m unittest discover -s tests -v
+            echo '=== gold replay integrity ==='
+            python3 tools/validate_gold_replay_integrity.py
+            echo '=== frozen v2.6.1 replay ==='
+            python3 tools/run_spwin_v261_gold_replay.py
+          } 2>&1 | tee repair_validation.log
+
+      - name: Commit validation report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add repair_validation.log
+          if ! git diff --cached --quiet; then
+            git commit -m "ci: capture Gold index validation output"
+            git push origin HEAD:${{ github.head_ref }}
+          fi
+
+      - name: Fail when validation failed
+        if: steps.validate.outcome != 'success'
+        run: exit 1
