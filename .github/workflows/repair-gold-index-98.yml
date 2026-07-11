@@ -43,6 +43,15 @@ jobs:
         run: |
           set +e
           : > repair_validation.log
+          echo '=== combined A1 replay ===' | tee -a repair_validation.log
+          python3 - <<'PY' 2>&1 | tee -a repair_validation.log
+          import json
+          from pathlib import Path
+          from spwin_engine import v260, v261_a1
+          root = Path.cwd()
+          records = v260.load_gold_records(root / 'data' / 'world_cup_2026' / 'gold')
+          print(json.dumps(v261_a1.combined_replay(records), indent=2, sort_keys=True))
+          PY
           echo '=== unittest ===' | tee -a repair_validation.log
           python3 -m unittest discover -s tests -v 2>&1 | tee -a repair_validation.log
           s1=${PIPESTATUS[0]}
