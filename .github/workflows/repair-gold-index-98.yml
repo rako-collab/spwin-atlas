@@ -8,6 +8,8 @@ on:
       - tools/repair_gold_index_98.py
       - .github/workflows/repair-gold-index-98.yml
       - data/world_cup_2026/gold/MATCH_INDEX.json
+      - tests/test_replay_integrity.py
+      - tests/test_a1_micro_lane.py
 
 permissions:
   contents: write
