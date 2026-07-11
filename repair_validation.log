@@ -1,0 +1,286 @@
+=== combined A1 replay ===
+{
+  "bankroll_roi_pct": 1.89,
+  "bets": 12,
+  "engine_version": "SPWIN v2.6.1 Production + A1 Experimental Micro Lane",
+  "final_bankroll": 1018.86,
+  "hit_rate_pct": 91.67,
+  "losses": 1,
+  "max_drawdown_pct": 0.25,
+  "net_profit": 18.86,
+  "pushes": 0,
+  "return_on_stakes_pct": 31.22,
+  "rows": [
+    {
+      "bankroll": 1000.7,
+      "date": "2026-06-12",
+      "lane": "A1 Experimental",
+      "match": "Mexico vs South Africa",
+      "match_id": "WC2026-GRP-MEX-RSA",
+      "odds": 1.28,
+      "outcome": "Win",
+      "pnl": 0.7,
+      "selection": "Mexico",
+      "stake": 2.5,
+      "stake_pct": 0.0025
+    },
+    {
+      "bankroll": 1002.37,
+      "date": "2026-06-15",
+      "lane": "A1 Experimental",
+      "match": "Sweden vs Tunisia",
+      "match_id": "WC2026-GRP-SWE-TUN",
+      "odds": 1.67,
+      "outcome": "Win",
+      "pnl": 1.67,
+      "selection": "Sweden",
+      "stake": 2.5,
+      "stake_pct": 0.0025
+    },
+    {
+      "bankroll": 999.86,
+      "date": "2026-06-16",
+      "lane": "A1 Experimental",
+      "match": "Iran vs New Zealand",
+      "match_id": "WC2026-GRP-IRN-NZL",
+      "odds": 1.67,
+      "outcome": "Loss",
+      "pnl": -2.51,
+      "selection": "Iran",
+      "stake": 2.51,
+      "stake_pct": 0.0025
+    },
+    {
+      "bankroll": 1000.69,
+      "date": "2026-06-21",
+      "lane": "A1 Experimental",
+      "match": "Germany vs Ivory Coast",
+      "match_id": "WC2026-GRP-GER-CIV",
+      "odds": 1.33,
+      "outcome": "Win",
+      "pnl": 0.83,
+      "selection": "Germany",
+      "stake": 2.5,
+      "stake_pct": 0.0025
+    },
+    {
+      "bankroll": 1001.31,
+      "date": "2026-06-21",
+      "lane": "A1 Experimental",
+      "match": "Tunisia vs Japan",
+      "match_id": "WC2026-GRP-TUN-JPN",
+      "odds": 1.25,
+      "outcome": "Win",
+      "pnl": 0.62,
+      "selection": "Japan",
+      "stake": 2.5,
+      "stake_pct": 0.0025
+    },
+    {
+      "bankroll": 1002.24,
+      "date": "2026-06-22",
+      "lane": "A1 Experimental",
+      "match": "New Zealand vs Egypt",
+      "match_id": "WC2026-GRP-NZL-EGY",
+      "odds": 1.37,
+      "outcome": "Win",
+      "pnl": 0.93,
+      "selection": "Egypt",
+      "stake": 2.5,
+      "stake_pct": 0.0025
+    },
+    {
+      "bankroll": 1004.62,
+      "date": "2026-06-23",
+      "lane": "A1 Experimental",
+      "match": "Norway vs Senegal",
+      "match_id": "WC2026-GRP-NOR-SEN",
+      "odds": 1.95,
+      "outcome": "Win",
+      "pnl": 2.38,
+      "selection": "Norway",
+      "stake": 2.51,
+      "stake_pct": 0.0025
+    },
+    {
+      "bankroll": 1006.13,
+      "date": "2026-06-25",
+      "lane": "v2.6.1 Production",
+      "match": "Scotland vs Brazil",
+      "match_id": "WC2026-GRP-SCO-BRA",
+      "odds": 1.2,
+      "outcome": "Win",
+      "pnl": 1.51,
+      "selection": "Brazil",
+      "stake": 7.53,
+      "stake_pct": 0.0075
+    },
+    {
+      "bankroll": 1008.92,
+      "date": "2026-06-27",
+      "lane": "v2.6.1 Production",
+      "match": "Norway vs France",
+      "match_id": "WC2026-GRP-NOR-FRA",
+      "odds": 1.37,
+      "outcome": "Win",
+      "pnl": 2.79,
+      "selection": "France",
+      "stake": 7.55,
+      "stake_pct": 0.0075
+    },
+    {
+      "bankroll": 1010.66,
+      "date": "2026-07-02",
+      "lane": "v2.6.1 Production",
+      "match": "USA vs Bosnia and Herzegovina",
+      "match_id": "WC2026-R32-USA-BIH",
+      "odds": 1.23,
+      "outcome": "Win",
+      "pnl": 1.74,
+      "selection": "USA",
+      "stake": 7.57,
+      "stake_pct": 0.0075
+    },
+    {
+      "bankroll": 1014.83,
+      "date": "2026-07-04",
+      "lane": "v2.6.1 Production",
+      "match": "Colombia vs Ghana",
+      "match_id": "WC2026-R32-COL-GHA",
+      "odds": 1.33,
+      "outcome": "Win",
+      "pnl": 4.17,
+      "selection": "Colombia",
+      "stake": 12.63,
+      "stake_pct": 0.0125
+    },
+    {
+      "bankroll": 1018.86,
+      "date": "2026-07-05",
+      "lane": "v2.6.1 Production",
+      "match": "Canada vs Morocco",
+      "match_id": "WC2026-R16-CAN-MAR",
+      "odds": 1.53,
+      "outcome": "Win",
+      "pnl": 4.03,
+      "selection": "Morocco",
+      "stake": 7.61,
+      "stake_pct": 0.0075
+    }
+  ],
+  "starting_bankroll": 1000.0,
+  "total_staked": 60.41,
+  "wins": 11
+}
+=== unittest ===
+test_empty_trial_ledger_is_valid (test_a1_forward_trial.A1ForwardTrialTests.test_empty_trial_ledger_is_valid) ... ok
+test_inconsistent_movement_fails (test_a1_forward_trial.A1ForwardTrialTests.test_inconsistent_movement_fails) ... ok
+test_incorrect_observation_label_fails (test_a1_forward_trial.A1ForwardTrialTests.test_incorrect_observation_label_fails) ... ok
+test_unlocked_decision_fails (test_a1_forward_trial.A1ForwardTrialTests.test_unlocked_decision_fails) ... ok
+test_valid_locked_bet (test_a1_forward_trial.A1ForwardTrialTests.test_valid_locked_bet) ... ok
+test_a1_historical_replay (test_a1_micro_lane.A1MicroLaneTests.test_a1_historical_replay) ... ok
+test_a1_historical_selection_set (test_a1_micro_lane.A1MicroLaneTests.test_a1_historical_selection_set) ... ok
+test_combined_historical_replay (test_a1_micro_lane.A1MicroLaneTests.test_combined_historical_replay) ... ok
+test_label_boundaries (test_observation_labels.ObservationLabelTests.test_label_boundaries) ... ok
+test_label_generation_does_not_mutate_record_or_engine_outputs (test_observation_labels.ObservationLabelTests.test_label_generation_does_not_mutate_record_or_engine_outputs) ... ok
+test_unavailable_labels_are_explicit (test_observation_labels.ObservationLabelTests.test_unavailable_labels_are_explicit) ... ok
+test_archived_1x2_falls_back_to_score (test_replay_integrity.ReplayIntegrityTests.test_archived_1x2_falls_back_to_score) ... ok
+test_frozen_ultra_short_threshold_is_restored (test_replay_integrity.ReplayIntegrityTests.test_frozen_ultra_short_threshold_is_restored) ... ok
+test_gold_loader_follows_match_index (test_replay_integrity.ReplayIntegrityTests.test_gold_loader_follows_match_index) ... ok
+test_lose_alias_is_normalized (test_replay_integrity.ReplayIntegrityTests.test_lose_alias_is_normalized) ... ok
+test_recommendations_are_blind_to_results_and_scores (test_replay_integrity.ReplayIntegrityTests.test_recommendations_are_blind_to_results_and_scores) ... ok
+test_unresolved_staked_bet_fails_closed (test_replay_integrity.ReplayIntegrityTests.test_unresolved_staked_bet_fails_closed) ... ok
+test_v261_baseline_replay_is_unchanged (test_replay_integrity.ReplayIntegrityTests.test_v261_baseline_replay_is_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.070s
+
+OK
+=== gold replay integrity ===
+{
+  "gold_records": 98,
+  "raw_result_labels": {
+    "<missing>": 17,
+    "Archived": 322,
+    "Half Loss": 11,
+    "Half Win": 10,
+    "Lose": 37,
+    "Loss": 233,
+    "Push": 14,
+    "Win": 456
+  },
+  "one_x_two_result_labels": {
+    "Archived": 120,
+    "Lose": 16,
+    "Loss": 80,
+    "Win": 58
+  },
+  "unresolved_1x2_rows": [],
+  "unresolved_1x2_count": 0,
+  "data_status_counts": {
+    "PARTIAL": 62,
+    "COMPLETE": 36
+  },
+  "decision_status_counts": {
+    "PASS_INCOMPLETE_DATA": 61,
+    "PASS_RED_FLAG": 17,
+    "PASS_MODEL": 15,
+    "BET": 5
+  },
+  "staked_bets": [
+    {
+      "match_id": "WC2026-GRP-SCO-BRA",
+      "selection": "Brazil",
+      "outcome": "Win"
+    },
+    {
+      "match_id": "WC2026-GRP-NOR-FRA",
+      "selection": "France",
+      "outcome": "Win"
+    },
+    {
+      "match_id": "WC2026-R32-USA-BIH",
+      "selection": "USA",
+      "outcome": "Win"
+    },
+    {
+      "match_id": "WC2026-R32-COL-GHA",
+      "selection": "Colombia",
+      "outcome": "Win"
+    },
+    {
+      "match_id": "WC2026-R16-CAN-MAR",
+      "selection": "Morocco",
+      "outcome": "Win"
+    }
+  ],
+  "status": "PASS"
+}
+=== frozen v2.6.1 replay ===
+{
+  "engine_version": "SPWIN v2.6.1 Calibrated Capital Preservation",
+  "starting_bankroll": 1000.0,
+  "final_bankroll": 1014.18,
+  "net_profit": 14.18,
+  "roi_pct": 1.42,
+  "records": 98,
+  "bets": 5,
+  "passes": 93,
+  "wins": 5,
+  "losses": 0,
+  "pushes": 0,
+  "hit_rate_pct": 100.0,
+  "max_drawdown_pct": 0.0,
+  "decision_status_counts": {
+    "PASS_INCOMPLETE_DATA": 61,
+    "PASS_RED_FLAG": 17,
+    "PASS_MODEL": 15,
+    "BET": 5
+  },
+  "data_status_counts": {
+    "PARTIAL": 62,
+    "COMPLETE": 36
+  },
+  "replay_integrity_patch": "2026-07-02"
+}
+statuses: unittest=0 integrity=0 replay=0

@@ -54,8 +54,8 @@ class ReplayIntegrityTests(unittest.TestCase):
         records = v260.load_gold_records(GOLD_DIR)
 
         self.assertEqual(len(records), index["total_records"])
-        self.assertEqual(len(records), 82)
-        self.assertEqual(len({record["match_id"] for record in records}), 82)
+        self.assertEqual(len(records), 98)
+        self.assertEqual(len({record["match_id"] for record in records}), 98)
 
         loaded_files = {record["_file"] for record in records}
         indexed_files = {entry["file"] for entry in index["records"]}
@@ -74,11 +74,11 @@ class ReplayIntegrityTests(unittest.TestCase):
     def test_v261_baseline_replay_is_unchanged(self) -> None:
         records = v260.load_gold_records(GOLD_DIR)
         result = v261.replay(records)
-        self.assertEqual(result["records"], 82)
-        self.assertEqual(result["bets"], 3)
-        self.assertEqual(result["wins"], 3)
+        self.assertEqual(result["records"], 98)
+        self.assertEqual(result["bets"], 5)
+        self.assertEqual(result["wins"], 5)
         self.assertEqual(result["losses"], 0)
-        self.assertEqual(result["final_bankroll"], 1006.01)
+        self.assertEqual(result["final_bankroll"], 1014.18)
 
     def test_recommendations_are_blind_to_results_and_scores(self) -> None:
         for record in v260.load_gold_records(GOLD_DIR):
