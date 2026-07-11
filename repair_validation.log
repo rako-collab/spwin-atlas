@@ -1,3 +1,177 @@
+=== combined A1 replay ===
+{
+  "bankroll_roi_pct": 1.89,
+  "bets": 12,
+  "engine_version": "SPWIN v2.6.1 Production + A1 Experimental Micro Lane",
+  "final_bankroll": 1018.86,
+  "hit_rate_pct": 91.67,
+  "losses": 1,
+  "max_drawdown_pct": 0.25,
+  "net_profit": 18.86,
+  "pushes": 0,
+  "return_on_stakes_pct": 31.22,
+  "rows": [
+    {
+      "bankroll": 1000.7,
+      "date": "2026-06-12",
+      "lane": "A1 Experimental",
+      "match": "Mexico vs South Africa",
+      "match_id": "WC2026-GRP-MEX-RSA",
+      "odds": 1.28,
+      "outcome": "Win",
+      "pnl": 0.7,
+      "selection": "Mexico",
+      "stake": 2.5,
+      "stake_pct": 0.0025
+    },
+    {
+      "bankroll": 1002.37,
+      "date": "2026-06-15",
+      "lane": "A1 Experimental",
+      "match": "Sweden vs Tunisia",
+      "match_id": "WC2026-GRP-SWE-TUN",
+      "odds": 1.67,
+      "outcome": "Win",
+      "pnl": 1.67,
+      "selection": "Sweden",
+      "stake": 2.5,
+      "stake_pct": 0.0025
+    },
+    {
+      "bankroll": 999.86,
+      "date": "2026-06-16",
+      "lane": "A1 Experimental",
+      "match": "Iran vs New Zealand",
+      "match_id": "WC2026-GRP-IRN-NZL",
+      "odds": 1.67,
+      "outcome": "Loss",
+      "pnl": -2.51,
+      "selection": "Iran",
+      "stake": 2.51,
+      "stake_pct": 0.0025
+    },
+    {
+      "bankroll": 1000.69,
+      "date": "2026-06-21",
+      "lane": "A1 Experimental",
+      "match": "Germany vs Ivory Coast",
+      "match_id": "WC2026-GRP-GER-CIV",
+      "odds": 1.33,
+      "outcome": "Win",
+      "pnl": 0.83,
+      "selection": "Germany",
+      "stake": 2.5,
+      "stake_pct": 0.0025
+    },
+    {
+      "bankroll": 1001.31,
+      "date": "2026-06-21",
+      "lane": "A1 Experimental",
+      "match": "Tunisia vs Japan",
+      "match_id": "WC2026-GRP-TUN-JPN",
+      "odds": 1.25,
+      "outcome": "Win",
+      "pnl": 0.62,
+      "selection": "Japan",
+      "stake": 2.5,
+      "stake_pct": 0.0025
+    },
+    {
+      "bankroll": 1002.24,
+      "date": "2026-06-22",
+      "lane": "A1 Experimental",
+      "match": "New Zealand vs Egypt",
+      "match_id": "WC2026-GRP-NZL-EGY",
+      "odds": 1.37,
+      "outcome": "Win",
+      "pnl": 0.93,
+      "selection": "Egypt",
+      "stake": 2.5,
+      "stake_pct": 0.0025
+    },
+    {
+      "bankroll": 1004.62,
+      "date": "2026-06-23",
+      "lane": "A1 Experimental",
+      "match": "Norway vs Senegal",
+      "match_id": "WC2026-GRP-NOR-SEN",
+      "odds": 1.95,
+      "outcome": "Win",
+      "pnl": 2.38,
+      "selection": "Norway",
+      "stake": 2.51,
+      "stake_pct": 0.0025
+    },
+    {
+      "bankroll": 1006.13,
+      "date": "2026-06-25",
+      "lane": "v2.6.1 Production",
+      "match": "Scotland vs Brazil",
+      "match_id": "WC2026-GRP-SCO-BRA",
+      "odds": 1.2,
+      "outcome": "Win",
+      "pnl": 1.51,
+      "selection": "Brazil",
+      "stake": 7.53,
+      "stake_pct": 0.0075
+    },
+    {
+      "bankroll": 1008.92,
+      "date": "2026-06-27",
+      "lane": "v2.6.1 Production",
+      "match": "Norway vs France",
+      "match_id": "WC2026-GRP-NOR-FRA",
+      "odds": 1.37,
+      "outcome": "Win",
+      "pnl": 2.79,
+      "selection": "France",
+      "stake": 7.55,
+      "stake_pct": 0.0075
+    },
+    {
+      "bankroll": 1010.66,
+      "date": "2026-07-02",
+      "lane": "v2.6.1 Production",
+      "match": "USA vs Bosnia and Herzegovina",
+      "match_id": "WC2026-R32-USA-BIH",
+      "odds": 1.23,
+      "outcome": "Win",
+      "pnl": 1.74,
+      "selection": "USA",
+      "stake": 7.57,
+      "stake_pct": 0.0075
+    },
+    {
+      "bankroll": 1014.83,
+      "date": "2026-07-04",
+      "lane": "v2.6.1 Production",
+      "match": "Colombia vs Ghana",
+      "match_id": "WC2026-R32-COL-GHA",
+      "odds": 1.33,
+      "outcome": "Win",
+      "pnl": 4.17,
+      "selection": "Colombia",
+      "stake": 12.63,
+      "stake_pct": 0.0125
+    },
+    {
+      "bankroll": 1018.86,
+      "date": "2026-07-05",
+      "lane": "v2.6.1 Production",
+      "match": "Canada vs Morocco",
+      "match_id": "WC2026-R16-CAN-MAR",
+      "odds": 1.53,
+      "outcome": "Win",
+      "pnl": 4.03,
+      "selection": "Morocco",
+      "stake": 7.61,
+      "stake_pct": 0.0075
+    }
+  ],
+  "starting_bankroll": 1000.0,
+  "total_staked": 60.41,
+  "wins": 11
+}
 === unittest ===
 test_empty_trial_ledger_is_valid (test_a1_forward_trial.A1ForwardTrialTests.test_empty_trial_ledger_is_valid) ... ok
 test_inconsistent_movement_fails (test_a1_forward_trial.A1ForwardTrialTests.test_inconsistent_movement_fails) ... ok
@@ -43,7 +217,7 @@ Traceback (most recent call last):
 AssertionError: 98 != 82
 
 ----------------------------------------------------------------------
-Ran 18 tests in 0.079s
+Ran 18 tests in 0.054s
 
 FAILED (failures=3)
 === gold replay integrity ===
