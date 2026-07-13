@@ -4,8 +4,9 @@
 
 - Research only.
 - Production `spwin_engine/v261.py` is unchanged.
-- Gold records and `MATCH_INDEX.json` are unchanged.
-- Not approved for live use until the chronological Gold replay and review are complete.
+- The approved Argentina vs Switzerland completed Gold record is active in the research branch.
+- The authoritative research index contains 99 records.
+- Not approved for live use; one historical guard-trigger case is insufficient for promotion.
 
 ## Failure mode addressed
 
@@ -60,9 +61,20 @@ Regression tests cover:
 - qualification market value requirement;
 - group-stage non-application;
 - distinct 90-minute and qualification settlement;
-- replay audit output.
+- replay audit output;
+- explicit T-10 closing-lock validation without weakening the ordinary T-30 to T-15 rule.
 
-The full replay must use the authoritative indexed Gold set in chronological order:
+The 99-record chronological replay produced:
+
+| Engine | Bets | W-L | Net | ROI | Max drawdown |
+|---|---:|---:|---:|---:|---:|
+| v2.6.1 production baseline | 6 | 5-1 | +1.50 | +0.15% | 1.25% |
+| v2.7 correctness research | 4 | 3-1 | -6.57 | -0.66% | 1.25% |
+| v2.7.1 knockout guard | 3 | 3-0 | +6.01 | +0.60% | 0.00% |
+
+For Argentina vs Switzerland, v2.7.1 triggered the guard and returned `PASS_MARKET_MISMATCH`, while v2.6.1 and v2.7 selected Argentina regulation 1X2 and lost on the 1-1 90-minute score.
+
+The full replay uses the authoritative indexed Gold set in chronological order:
 
 ```bash
 python tools/run_spwin_v271_research_replay.py \
@@ -71,4 +83,4 @@ python tools/run_spwin_v271_research_replay.py \
   --out-dir reports/research/spwin_v2_7_1_knockout_market_guard
 ```
 
-Promotion remains blocked until replay results are reviewed and explicitly approved.
+Promotion remains blocked until more independent guard-trigger cases are accumulated and reviewed.
