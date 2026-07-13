@@ -43,3 +43,7 @@ The v2.7.1 guard triggered because Argentina closed below 1.50 in a knockout mat
 ## Research conclusion
 
 The new Gold record supplies the first historical guard-trigger case. On the 99-record replay, v2.7.1 removed one losing regulation-time bet, improved net profit by 12.58 units versus v2.7, and reduced maximum drawdown by 1.25 percentage points. This is one case only and is not sufficient for production promotion.
+
+## Integrity follow-up
+
+A branch-only diagnostic workflow captures the full unit-test, snapshot-validation, replay-integrity, and frozen v2.6.1 outputs so any legacy 98-record assertions can be updated explicitly rather than bypassed.
