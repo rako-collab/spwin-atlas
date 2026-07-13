@@ -1,0 +1,43 @@
+name: SPWIN v2.7.1 Gold Integrity Diagnostic
+
+on:
+  push:
+    branches:
+      - research/v2.7.1-knockout-market-guard
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Capture full Gold integrity diagnostics
+        shell: bash
+        run: |
+          mkdir -p reports/diagnostic
+          set +e
+          python3 -m unittest discover -s tests -v > reports/diagnostic/unit_tests.log 2>&1
+          echo $? > reports/diagnostic/unit_tests.exit
+          python3 tools/validate_gold_snapshot_integrity.py > reports/diagnostic/snapshot.log 2>&1
+          echo $? > reports/diagnostic/snapshot.exit
+          python3 tools/validate_gold_replay_integrity.py > reports/diagnostic/replay_integrity.log 2>&1
+          echo $? > reports/diagnostic/replay_integrity.exit
+          python3 tools/run_spwin_v261_gold_replay.py > reports/diagnostic/v261_replay.log 2>&1
+          echo $? > reports/diagnostic/v261_replay.exit
+          set -e
+          cat reports/diagnostic/*.exit
+
+      - name: Upload diagnostic evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: spwin-v271-gold-integrity-diagnostic
+          path: reports/diagnostic
+          if-no-files-found: error
+          retention-days: 7
