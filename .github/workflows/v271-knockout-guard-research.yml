@@ -1,0 +1,118 @@
+name: SPWIN v2.7.1 Knockout Guard Research
+
+on:
+  push:
+    branches:
+      - research/v2.7.1-knockout-market-guard
+  pull_request:
+    branches:
+      - research/v2.7-correctness-fixes
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  chronological-gold-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out research branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Confirm production and Gold are untouched
+        shell: bash
+        run: |
+          git fetch origin research/v2.7-correctness-fixes
+          if git diff --name-only origin/research/v2.7-correctness-fixes...HEAD -- \
+            spwin_engine/v261.py data/world_cup_2026/gold | grep -q .; then
+            echo "Production engine or Gold data changed in research branch."
+            git diff --name-only origin/research/v2.7-correctness-fixes...HEAD -- \
+              spwin_engine/v261.py data/world_cup_2026/gold
+            exit 1
+          fi
+
+      - name: Run research regression tests
+        run: python -m unittest discover -s tests -p "test_v27*.py" -v
+
+      - name: Replay frozen v2.6.1
+        run: |
+          python tools/run_spwin_v261_gold_replay.py \
+            --gold-dir data/world_cup_2026/gold \
+            --bankroll 1000 \
+            --out-dir reports/validation/v261
+
+      - name: Replay v2.7 correctness research
+        run: |
+          python tools/run_spwin_v270_research_replay.py \
+            --gold-dir data/world_cup_2026/gold \
+            --bankroll 1000 \
+            --out-dir reports/validation/v270
+
+      - name: Replay v2.7.1 knockout guard research
+        run: |
+          python tools/run_spwin_v271_research_replay.py \
+            --gold-dir data/world_cup_2026/gold \
+            --bankroll 1000 \
+            --out-dir reports/validation/v271
+
+      - name: Verify authoritative record count and chronological order
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          index = json.loads(
+              Path("data/world_cup_2026/gold/MATCH_INDEX.json").read_text()
+          )
+          expected = index["total_records"]
+          replay_files = [
+              (
+                  Path("reports/validation/v261/spwin_v2_6_1_gold_replay_summary.json"),
+                  Path("reports/validation/v261/spwin_v2_6_1_gold_replay_rows.json"),
+              ),
+              (
+                  Path("reports/validation/v270/spwin_v2_7_research_summary.json"),
+                  Path("reports/validation/v270/spwin_v2_7_research_rows.json"),
+              ),
+              (
+                  Path("reports/validation/v271/spwin_v2_7_1_research_summary.json"),
+                  Path("reports/validation/v271/spwin_v2_7_1_research_rows.json"),
+              ),
+          ]
+
+          for summary_path, rows_path in replay_files:
+              summary = json.loads(summary_path.read_text())
+              rows = json.loads(rows_path.read_text())
+              assert summary["records"] == expected, (
+                  summary_path, summary["records"], expected
+              )
+              order = [(row["date"], row["match_id"]) for row in rows]
+              assert order == sorted(order), f"Non-chronological replay: {rows_path}"
+          print(f"Validated {expected} authoritative Gold records chronologically.")
+          PY
+
+      - name: Build replay comparison
+        run: |
+          python tools/compare_v271_gold_replay.py \
+            --v261 reports/validation/v261/spwin_v2_6_1_gold_replay_summary.json \
+            --v270 reports/validation/v270/spwin_v2_7_research_summary.json \
+            --v271 reports/validation/v271/spwin_v2_7_1_research_summary.json \
+            --out reports/validation/v271_gold_replay_comparison.json
+
+      - name: Upload replay evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: spwin-v271-knockout-guard-gold-replay
+          path: reports/validation
+          if-no-files-found: error
+          retention-days: 30
