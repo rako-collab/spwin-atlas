@@ -44,13 +44,13 @@ class A1MicroLaneTests(unittest.TestCase):
 
     def test_combined_historical_replay(self) -> None:
         result = v261_a1.combined_replay(self.records)
-        self.assertEqual(result["bets"], 12)
+        self.assertEqual(result["bets"], 13)
         self.assertEqual(result["wins"], 11)
-        self.assertEqual(result["losses"], 1)
-        self.assertEqual(result["final_bankroll"], 1018.86)
-        self.assertEqual(result["net_profit"], 18.86)
-        self.assertEqual(result["return_on_stakes_pct"], 31.22)
-        self.assertEqual(result["max_drawdown_pct"], 0.25)
+        self.assertEqual(result["losses"], 2)
+        self.assertEqual(result["final_bankroll"], 1006.12)
+        self.assertEqual(result["net_profit"], 6.12)
+        self.assertEqual(result["return_on_stakes_pct"], 8.37)
+        self.assertEqual(result["max_drawdown_pct"], 1.25)
 
 
 if __name__ == "__main__":

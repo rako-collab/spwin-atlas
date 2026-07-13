@@ -50,6 +50,26 @@ def _movement(opening: float, current: float) -> float:
     return (current - opening) / opening * 100.0
 
 
+def _validate_locked_window(snapshot: dict[str, Any], minutes: int, errors: list[str], match_id: str) -> None:
+    """Validate the declared lock window without weakening the default rule.
+
+    Ordinary LOCKED snapshots must remain between T-30 and T-15. The explicit
+    T_MINUS_10_CLOSING_LOCK role is a separate documented execution control and
+    is valid only at T-11 through T-9.
+    """
+
+    role = str(snapshot.get("snapshot_role", ""))
+    if role == "T_MINUS_10_CLOSING_LOCK":
+        if not 9 <= minutes <= 11:
+            errors.append(
+                f"{match_id}: T_MINUS_10_CLOSING_LOCK must be T-11 to T-9, got T-{minutes}"
+            )
+        return
+
+    if not 15 <= minutes <= 30:
+        errors.append(f"{match_id}: LOCKED snapshot must be T-30 to T-15, got T-{minutes}")
+
+
 def _validate_record(record: dict[str, Any], filename: str) -> list[str]:
     errors: list[str] = []
     match_id = str(record.get("match_id", filename))
@@ -140,8 +160,7 @@ def _validate_record(record: dict[str, Any], filename: str) -> list[str]:
     if snapshot.get("forward_lock_status") == "LOCKED":
         try:
             minutes = int(snapshot.get("minutes_before_kickoff"))
-            if not 15 <= minutes <= 30:
-                errors.append(f"{match_id}: LOCKED snapshot must be T-30 to T-15, got T-{minutes}")
+            _validate_locked_window(snapshot, minutes, errors, match_id)
         except (TypeError, ValueError):
             pass
 

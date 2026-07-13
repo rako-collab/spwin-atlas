@@ -1,0 +1,165 @@
+name: SPWIN v2.7.1 Knockout Guard Research
+
+on:
+  push:
+    branches:
+      - research/v2.7.1-knockout-market-guard
+  pull_request:
+    branches:
+      - research/v2.7-correctness-fixes
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  chronological-gold-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out research branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Confirm production is untouched and Gold scope is restricted
+        shell: bash
+        run: |
+          git fetch origin research/v2.7-correctness-fixes
+
+          if git diff --name-only origin/research/v2.7-correctness-fixes...HEAD -- \
+            spwin_engine/v261.py | grep -q .; then
+            echo "Frozen production engine changed in research branch."
+            exit 1
+          fi
+
+          disallowed=""
+          while IFS= read -r path; do
+            [ -z "$path" ] && continue
+            case "$path" in
+              data/world_cup_2026/gold/WC2026-QF-ARG-SUI_v1.0.json|data/world_cup_2026/gold/MATCH_INDEX.json)
+                ;;
+              *)
+                disallowed="${disallowed}${path}\n"
+                ;;
+            esac
+          done < <(git diff --name-only origin/research/v2.7-correctness-fixes...HEAD -- data/world_cup_2026/gold)
+
+          if [ -n "$disallowed" ]; then
+            echo "Unexpected Gold data changes:"
+            printf "%b" "$disallowed"
+            exit 1
+          fi
+
+      - name: Activate approved Argentina Switzerland Gold record
+        run: python tools/add_arg_sui_gold_index.py
+
+      - name: Persist activated 99-record index
+        if: github.event_name == 'push'
+        shell: bash
+        run: |
+          if git diff --quiet -- data/world_cup_2026/gold/MATCH_INDEX.json; then
+            echo "Gold index already committed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/world_cup_2026/gold/MATCH_INDEX.json
+          git commit -m "data(gold): index Argentina vs Switzerland"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Run research regression tests
+        run: python -m unittest discover -s tests -p "test_v27*.py" -v
+
+      - name: Replay frozen v2.6.1
+        run: |
+          python tools/run_spwin_v261_gold_replay.py \
+            --gold-dir data/world_cup_2026/gold \
+            --bankroll 1000 \
+            --out-dir reports/validation/v261
+
+      - name: Replay v2.7 correctness research
+        run: |
+          python tools/run_spwin_v270_research_replay.py \
+            --gold-dir data/world_cup_2026/gold \
+            --bankroll 1000 \
+            --out-dir reports/validation/v270
+
+      - name: Replay v2.7.1 knockout guard research
+        run: |
+          python tools/run_spwin_v271_research_replay.py \
+            --gold-dir data/world_cup_2026/gold \
+            --bankroll 1000 \
+            --out-dir reports/validation/v271
+
+      - name: Verify authoritative record count and chronological order
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          index = json.loads(
+              Path("data/world_cup_2026/gold/MATCH_INDEX.json").read_text()
+          )
+          expected = index["total_records"]
+          assert expected == 99, f"Expected 99 active Gold records; found {expected}"
+          arg_sui = [
+              row for row in index["records"]
+              if row["match_id"] == "WC2026-QF-ARG-SUI"
+          ]
+          assert len(arg_sui) == 1, f"Argentina–Switzerland index entries: {len(arg_sui)}"
+          assert arg_sui[0]["score"]["ft_90"] == "1-1"
+          assert arg_sui[0]["score"]["aet"] == "3-1"
+          assert arg_sui[0]["qualifier"] == "Argentina"
+
+          replay_files = [
+              (
+                  Path("reports/validation/v261/spwin_v2_6_1_gold_replay_summary.json"),
+                  Path("reports/validation/v261/spwin_v2_6_1_gold_replay_rows.json"),
+              ),
+              (
+                  Path("reports/validation/v270/spwin_v2_7_research_summary.json"),
+                  Path("reports/validation/v270/spwin_v2_7_research_rows.json"),
+              ),
+              (
+                  Path("reports/validation/v271/spwin_v2_7_1_research_summary.json"),
+                  Path("reports/validation/v271/spwin_v2_7_1_research_rows.json"),
+              ),
+          ]
+
+          for summary_path, rows_path in replay_files:
+              summary = json.loads(summary_path.read_text())
+              rows = json.loads(rows_path.read_text())
+              assert summary["records"] == expected, (
+                  summary_path, summary["records"], expected
+              )
+              order = [(row["date"], row["match_id"]) for row in rows]
+              assert order == sorted(order), f"Non-chronological replay: {rows_path}"
+          print(f"Validated {expected} authoritative Gold records chronologically.")
+          PY
+
+      - name: Build replay comparison
+        run: |
+          python tools/compare_v271_gold_replay.py \
+            --v261 reports/validation/v261/spwin_v2_6_1_gold_replay_summary.json \
+            --v270 reports/validation/v270/spwin_v2_7_research_summary.json \
+            --v271 reports/validation/v271/spwin_v2_7_1_research_summary.json \
+            --out reports/validation/v271_gold_replay_comparison.json
+
+      - name: Copy activated index into replay evidence
+        run: cp data/world_cup_2026/gold/MATCH_INDEX.json reports/validation/MATCH_INDEX_99.json
+
+      - name: Upload replay evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: spwin-v271-knockout-guard-gold-replay
+          path: reports/validation
+          if-no-files-found: error
+          retention-days: 30

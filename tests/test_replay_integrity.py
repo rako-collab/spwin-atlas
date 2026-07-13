@@ -54,8 +54,8 @@ class ReplayIntegrityTests(unittest.TestCase):
         records = v260.load_gold_records(GOLD_DIR)
 
         self.assertEqual(len(records), index["total_records"])
-        self.assertEqual(len(records), 98)
-        self.assertEqual(len({record["match_id"] for record in records}), 98)
+        self.assertEqual(len(records), 99)
+        self.assertEqual(len({record["match_id"] for record in records}), 99)
 
         loaded_files = {record["_file"] for record in records}
         indexed_files = {entry["file"] for entry in index["records"]}
@@ -66,19 +66,21 @@ class ReplayIntegrityTests(unittest.TestCase):
         self.assertIn("WC2026-GRP-COD-UZB", active_ids)
         self.assertIn("WC2026-GRP-COL-POR", active_ids)
         self.assertIn("WC2026-GRP-JOR-ARG", active_ids)
+        self.assertIn("WC2026-QF-ARG-SUI", active_ids)
         self.assertNotIn("WC2026-R32-ALG-AUT", active_ids)
         self.assertNotIn("WC2026-R32-COD-UZB", active_ids)
         self.assertNotIn("WC2026-R32-COL-POR", active_ids)
         self.assertNotIn("WC2026-R32-JOR-ARG", active_ids)
 
-    def test_v261_baseline_replay_is_unchanged(self) -> None:
+    def test_v261_baseline_replay_tracks_99_record_dataset(self) -> None:
         records = v260.load_gold_records(GOLD_DIR)
         result = v261.replay(records)
-        self.assertEqual(result["records"], 98)
-        self.assertEqual(result["bets"], 5)
+        self.assertEqual(result["records"], 99)
+        self.assertEqual(result["bets"], 6)
         self.assertEqual(result["wins"], 5)
-        self.assertEqual(result["losses"], 0)
-        self.assertEqual(result["final_bankroll"], 1014.18)
+        self.assertEqual(result["losses"], 1)
+        self.assertEqual(result["final_bankroll"], 1001.50)
+        self.assertEqual(result["max_drawdown_pct"], 1.25)
 
     def test_recommendations_are_blind_to_results_and_scores(self) -> None:
         for record in v260.load_gold_records(GOLD_DIR):
