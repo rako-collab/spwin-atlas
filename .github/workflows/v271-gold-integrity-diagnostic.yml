@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - research/v2.7.1-knockout-market-guard
+  pull_request:
+    branches:
+      - research/v2.7-correctness-fixes
   workflow_dispatch:
 
 permissions:
