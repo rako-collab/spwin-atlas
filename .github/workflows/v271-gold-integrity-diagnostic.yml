@@ -34,6 +34,8 @@ jobs:
           echo $? > reports/diagnostic/replay_integrity.exit
           python3 tools/run_spwin_v261_gold_replay.py > reports/diagnostic/v261_replay.log 2>&1
           echo $? > reports/diagnostic/v261_replay.exit
+          python3 -m spwin_engine.v261_a1 --out-dir reports/diagnostic/a1 > reports/diagnostic/a1_replay.log 2>&1
+          echo $? > reports/diagnostic/a1_replay.exit
           set -e
           cat reports/diagnostic/*.exit
 
