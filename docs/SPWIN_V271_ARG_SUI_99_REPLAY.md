@@ -44,6 +44,12 @@ The v2.7.1 guard triggered because Argentina closed below 1.50 in a knockout mat
 
 The new Gold record supplies the first historical guard-trigger case. On the 99-record replay, v2.7.1 removed one losing regulation-time bet, improved net profit by 12.58 units versus v2.7, and reduced maximum drawdown by 1.25 percentage points. This is one case only and is not sufficient for production promotion.
 
-## Integrity follow-up
+## Integrity status
 
-A branch-only diagnostic workflow captures the full unit-test, snapshot-validation, replay-integrity, and frozen v2.6.1 outputs so any legacy 98-record assertions can be updated explicitly rather than bypassed.
+- Full unit-test suite: PASS.
+- Gold snapshot integrity: PASS.
+- Gold replay integrity: PASS.
+- Frozen v2.6.1 replay settlement: PASS.
+- Research chronological replay: PASS.
+
+The validator recognises the existing explicit `T_MINUS_10_CLOSING_LOCK` role only within T-11 to T-9. Ordinary locked snapshots continue to require T-30 to T-15.
